@@ -1,0 +1,30 @@
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="component.xsd">
+ <schema_version/>
+ <name>Australian_Class9b_Spaces</name>
+ <uid>ad0fa861-7b32-43d4-8d42-42d615cd6cd0</uid>
+ <version_id>3cf06644-ec2a-4ebf-95c7-6932c22ab0a5</version_id>
+ <xml_checksum/>
+ <display_name>Australian NCC2019 Class 9b School-SpaceTypes</display_name>
+ <description>Australian National Construction Code Standard Reference Space Types for K-12 Schools</description>
+ <modeler_description/>
+ <tags>
+  <tag>Whole Building</tag>
+ </tags>
+ <attributes>
+  <attribute>
+   <name>Building Type</name>
+   <value>k-12 school</value>
+   <datatype>string</datatype>
+  </attribute>
+ </attributes>
+ <files>
+  <file>
+   <version>
+    <software_program>OpenStudio</software_program>
+    <identifier>3.2</identifier>
+   </version>
+   <filename>Australian NCC2019 Class 9b School-SpaceTypes3.2.0.osm</filename>
+   <filetype>osm</filetype>
+  </file>
+ </files>
+</component>

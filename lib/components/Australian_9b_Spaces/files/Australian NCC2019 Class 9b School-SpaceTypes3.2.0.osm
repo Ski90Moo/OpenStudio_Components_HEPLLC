@@ -1,0 +1,3275 @@
+
+OS:Version,
+  {8e1c8713-cb23-41c2-b2e5-9441c8675a16}, !- Handle
+  3.2.0;                                  !- Version Identifier
+
+OS:Site,
+  {7f45631f-41a9-4dcb-9b0d-21645153ad46}, !- Handle
+  Site 1,                                 !- Name
+  39.7653,                                !- Latitude {deg}
+  39.7653,                                !- Longitude {deg}
+  ,                                       !- Time Zone {hr}
+  ,                                       !- Elevation {m}
+  ;                                       !- Terrain
+
+OS:YearDescription,
+  {a6dffb97-a2bf-4807-b15e-f7bbb3144c37}; !- Handle
+
+OS:ClimateZones,
+  {fdb458bb-f507-4232-8029-68e993cd3522}, !- Handle
+  ASHRAE,                                 !- Climate Zone Institution Name 1
+  ANSI/ASHRAE Standard 169,               !- Climate Zone Document Name 1
+  2006,                                   !- Climate Zone Document Year 1
+  ,                                       !- Climate Zone Value 1
+  CEC,                                    !- Climate Zone Institution Name 2
+  California Climate Zone Descriptions,   !- Climate Zone Document Name 2
+  1995,                                   !- Climate Zone Document Year 2
+  ;                                       !- Climate Zone Value 2
+
+OS:Building,
+  {160818ab-9866-4826-9940-2001e035d7cb}, !- Handle
+  Building 1,                             !- Name
+  ,                                       !- Building Sector Type
+  -0,                                     !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ;                                       !- Default Schedule Set Name
+
+OS:Facility,
+  {0274b8bf-5ea4-49fb-80e6-f8993da59624}; !- Handle
+
+OS:SimulationControl,
+  {a36c5a2a-b3f8-489e-84af-b35c3cf1898e}; !- Handle
+
+OS:Sizing:Parameters,
+  {5327f064-fc8c-47b0-8358-641c4c7248f6}, !- Handle
+  1.25,                                   !- Heating Sizing Factor
+  1.15;                                   !- Cooling Sizing Factor
+
+OS:Timestep,
+  {76665edd-6b10-429b-9e12-0cf693ec2338}, !- Handle
+  6;                                      !- Number of Timesteps per Hour
+
+OS:ShadowCalculation,
+  {8e7bfa70-5820-46a4-8d9d-04c798590978}, !- Handle
+  PolygonClipping,                        !- Shading Calculation Method
+  ,                                       !- Shading Calculation Update Frequency Method
+  20,                                     !- Shading Calculation Update Frequency
+  15000,                                  !- Maximum Figures in Shadow Overlap Calculations
+  ,                                       !- Polygon Clipping Algorithm
+  512,                                    !- Pixel Counting Resolution
+  ,                                       !- Sky Diffuse Modeling Algorithm
+  No,                                     !- Output External Shading Calculation Results
+  No,                                     !- Disable Self-Shading Within Shading Zone Groups
+  No;                                     !- Disable Self-Shading From Shading Zone Groups to Other Zones
+
+OS:HeatBalanceAlgorithm,
+  {14c62402-d6e8-4a71-967d-1832f3fcc725}, !- Handle
+  ConductionTransferFunction,             !- Algorithm
+  200;                                    !- Surface Temperature Upper Limit {C}
+
+OS:RunPeriod,
+  {eefe34fd-38c3-461c-9eca-17bf85af8756}, !- Handle
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  ,                                       !- Use Weather File Holidays and Special Days
+  ,                                       !- Use Weather File Daylight Saving Period
+  ,                                       !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:LifeCycleCost:Parameters,
+  {e794e4d4-c688-4a3e-b5c0-adda1452d587}, !- Handle
+  ,                                       !- Analysis Type
+  ,                                       !- Discounting Convention
+  ,                                       !- Inflation Approach
+  ,                                       !- Real Discount Rate
+  ,                                       !- Nominal Discount Rate
+  ,                                       !- Inflation
+  ,                                       !- Base Date Month
+  ,                                       !- Base Date Year
+  ,                                       !- Service Date Month
+  ,                                       !- Service Date Year
+  ;                                       !- Length of Study Period in Years
+
+OS:SpaceType,
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Handle
+  Classroom <16yrs_age NCC2019 Class 9b,  !- Name
+  ,                                       !- Default Construction Set Name
+  {b05e0df4-9357-4b55-9067-3127989abaea}, !- Default Schedule Set Name
+  {ef07196c-b0f3-4173-93d5-15d6da7e998e}, !- Group Rendering Name
+  {bac33412-400f-4aa6-8855-96959daf4224}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {ef07196c-b0f3-4173-93d5-15d6da7e998e}, !- Handle
+  Rendering Color 1,                      !- Name
+  30,                                     !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  144,                                    !- Rendering Blue Value
+  255;                                    !- Rendering Alpha Value
+
+OS:DesignSpecification:OutdoorAir,
+  {bac33412-400f-4aa6-8855-96959daf4224}, !- Handle
+  Classroom <16yrs_age 2012AS1668.2 Table A1 Ventilation, !- Name
+  Maximum,                                !- Outdoor Air Method
+  0.012,                                  !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:Schedule:Constant,
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Handle
+  Always On Discrete,                     !- Name
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+OS:ScheduleTypeLimits,
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Handle
+  OnOff,                                  !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:AirLoopHVAC,
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- Handle
+  Packaged Rooftop Air Conditioner,       !- Name
+  ,                                       !- Controller List Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule
+  {7a14f94b-2400-4308-ba6b-e5f978b4135c}, !- Availability Manager List Name
+  autosize,                               !- Design Supply Air Flow Rate {m3/s}
+  1,                                      !- Design Return Air Flow Fraction of Supply Air Flow
+  ,                                       !- Branch List Name
+  ,                                       !- Connector List Name
+  {3c33cb84-971f-4e66-a7b4-43fb94af6aff}, !- Supply Side Inlet Node Name
+  {9fd917dc-b623-487e-a243-62ddcdbb84ae}, !- Demand Side Outlet Node Name
+  {a1e54a5e-3ff8-4e60-a787-9f1bfc41a9bf}, !- Demand Side Inlet Node A
+  {a371041a-191a-49c3-95f7-dc695a5c5f96}, !- Supply Side Outlet Node A
+  ,                                       !- Demand Side Inlet Node B
+  ,                                       !- Supply Side Outlet Node B
+  ,                                       !- Return Air Bypass Flow Temperature Setpoint Schedule Name
+  {0c5df7ae-66ab-405f-844f-2aba5ae8e629}, !- Demand Mixer Name
+  {b24b4a47-a831-4796-80d5-66a5b53946db}, !- Demand Splitter A Name
+  ,                                       !- Demand Splitter B Name
+  ;                                       !- Supply Splitter Name
+
+OS:Node,
+  {d9e9d039-53fe-4797-951f-3574b29e2cb2}, !- Handle
+  Node 1,                                 !- Name
+  {3c33cb84-971f-4e66-a7b4-43fb94af6aff}, !- Inlet Port
+  {25ccdb0d-5d5d-42c0-a99e-4fbffd401733}; !- Outlet Port
+
+OS:Node,
+  {89c754f5-7202-4b29-bebe-4b4a0c393ed4}, !- Handle
+  Node 2,                                 !- Name
+  {cd7740ae-c71b-4010-b4f4-7a65de68b41c}, !- Inlet Port
+  {a371041a-191a-49c3-95f7-dc695a5c5f96}; !- Outlet Port
+
+OS:Connection,
+  {3c33cb84-971f-4e66-a7b4-43fb94af6aff}, !- Handle
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- Source Object
+  9,                                      !- Outlet Port
+  {d9e9d039-53fe-4797-951f-3574b29e2cb2}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {a371041a-191a-49c3-95f7-dc695a5c5f96}, !- Handle
+  {89c754f5-7202-4b29-bebe-4b4a0c393ed4}, !- Source Object
+  3,                                      !- Outlet Port
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- Target Object
+  12;                                     !- Inlet Port
+
+OS:Node,
+  {ff7c458b-7f39-49e7-82ad-a8e985b0e51b}, !- Handle
+  Node 3,                                 !- Name
+  {a1e54a5e-3ff8-4e60-a787-9f1bfc41a9bf}, !- Inlet Port
+  {da400da0-efe0-4ef9-b054-cfaac80ed84c}; !- Outlet Port
+
+OS:Node,
+  {8148b389-92ea-42bf-a404-fe0b4175743e}, !- Handle
+  Node 4,                                 !- Name
+  {b498407e-3fff-4fb2-8197-6eb1f40d0efc}, !- Inlet Port
+  {9fd917dc-b623-487e-a243-62ddcdbb84ae}; !- Outlet Port
+
+OS:Node,
+  {f84c5f10-a308-4ec6-900f-1b8b273a45fc}, !- Handle
+  Node 5,                                 !- Name
+  {83e05785-26bb-46b5-b2ec-f996894a58ef}, !- Inlet Port
+  {626ca5a0-80e4-4a3d-86d0-dda97ef2a053}; !- Outlet Port
+
+OS:Connection,
+  {a1e54a5e-3ff8-4e60-a787-9f1bfc41a9bf}, !- Handle
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- Source Object
+  11,                                     !- Outlet Port
+  {ff7c458b-7f39-49e7-82ad-a8e985b0e51b}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {9fd917dc-b623-487e-a243-62ddcdbb84ae}, !- Handle
+  {8148b389-92ea-42bf-a404-fe0b4175743e}, !- Source Object
+  3,                                      !- Outlet Port
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- Target Object
+  10;                                     !- Inlet Port
+
+OS:AirLoopHVAC:ZoneSplitter,
+  {b24b4a47-a831-4796-80d5-66a5b53946db}, !- Handle
+  Air Loop HVAC Zone Splitter 1,          !- Name
+  {da400da0-efe0-4ef9-b054-cfaac80ed84c}, !- Inlet Node Name
+  {30ad7fdc-ab7c-4f7d-a866-16a71f29e33f}; !- Outlet Node Name 1
+
+OS:AirLoopHVAC:ZoneMixer,
+  {0c5df7ae-66ab-405f-844f-2aba5ae8e629}, !- Handle
+  Air Loop HVAC Zone Mixer 1,             !- Name
+  {b498407e-3fff-4fb2-8197-6eb1f40d0efc}, !- Outlet Node Name
+  {626ca5a0-80e4-4a3d-86d0-dda97ef2a053}; !- Inlet Node Name 1
+
+OS:Connection,
+  {da400da0-efe0-4ef9-b054-cfaac80ed84c}, !- Handle
+  {ff7c458b-7f39-49e7-82ad-a8e985b0e51b}, !- Source Object
+  3,                                      !- Outlet Port
+  {b24b4a47-a831-4796-80d5-66a5b53946db}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {626ca5a0-80e4-4a3d-86d0-dda97ef2a053}, !- Handle
+  {f84c5f10-a308-4ec6-900f-1b8b273a45fc}, !- Source Object
+  3,                                      !- Outlet Port
+  {0c5df7ae-66ab-405f-844f-2aba5ae8e629}, !- Target Object
+  3;                                      !- Inlet Port
+
+OS:Connection,
+  {b498407e-3fff-4fb2-8197-6eb1f40d0efc}, !- Handle
+  {0c5df7ae-66ab-405f-844f-2aba5ae8e629}, !- Source Object
+  2,                                      !- Outlet Port
+  {8148b389-92ea-42bf-a404-fe0b4175743e}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Sizing:System,
+  {4bad61d1-cde2-449e-915c-ed1f5cd022c1}, !- Handle
+  {31e8886b-e2e3-4ddf-a2c0-3d41d903277e}, !- AirLoop Name
+  Sensible,                               !- Type of Load to Size On
+  Autosize,                               !- Design Outdoor Air Flow Rate {m3/s}
+  1,                                      !- Central Heating Maximum System Air Flow Ratio
+  7,                                      !- Preheat Design Temperature {C}
+  0.008,                                  !- Preheat Design Humidity Ratio {kg-H2O/kg-Air}
+  12.8,                                   !- Precool Design Temperature {C}
+  0.008,                                  !- Precool Design Humidity Ratio {kg-H2O/kg-Air}
+  12.8,                                   !- Central Cooling Design Supply Air Temperature {C}
+  40,                                     !- Central Heating Design Supply Air Temperature {C}
+  NonCoincident,                          !- Sizing Option
+  Yes,                                    !- 100% Outdoor Air in Cooling
+  Yes,                                    !- 100% Outdoor Air in Heating
+  0.0085,                                 !- Central Cooling Design Supply Air Humidity Ratio {kg-H2O/kg-Air}
+  0.008,                                  !- Central Heating Design Supply Air Humidity Ratio {kg-H2O/kg-Air}
+  DesignDay,                              !- Cooling Design Air Flow Method
+  0,                                      !- Cooling Design Air Flow Rate {m3/s}
+  DesignDay,                              !- Heating Design Air Flow Method
+  0,                                      !- Heating Design Air Flow Rate {m3/s}
+  VentilationRateProcedure,               !- System Outdoor Air Method
+  1,                                      !- Zone Maximum Outdoor Air Fraction {dimensionless}
+  0.0099676501,                           !- Cooling Supply Air Flow Rate Per Floor Area {m3/s-m2}
+  1,                                      !- Cooling Fraction of Autosized Cooling Supply Air Flow Rate
+  3.9475456e-05,                          !- Cooling Supply Air Flow Rate Per Unit Cooling Capacity {m3/s-W}
+  0.0099676501,                           !- Heating Supply Air Flow Rate Per Floor Area {m3/s-m2}
+  1,                                      !- Heating Fraction of Autosized Heating Supply Air Flow Rate
+  1,                                      !- Heating Fraction of Autosized Cooling Supply Air Flow Rate
+  3.1588213e-05,                          !- Heating Supply Air Flow Rate Per Unit Heating Capacity {m3/s-W}
+  CoolingDesignCapacity,                  !- Cooling Design Capacity Method
+  autosize,                               !- Cooling Design Capacity {W}
+  234.7,                                  !- Cooling Design Capacity Per Floor Area {W/m2}
+  1,                                      !- Fraction of Autosized Cooling Design Capacity
+  HeatingDesignCapacity,                  !- Heating Design Capacity Method
+  autosize,                               !- Heating Design Capacity {W}
+  157,                                    !- Heating Design Capacity Per Floor Area {W/m2}
+  1,                                      !- Fraction of Autosized Heating Design Capacity
+  OnOff;                                  !- Central Cooling Capacity Control Method
+
+OS:AvailabilityManagerAssignmentList,
+  {7a14f94b-2400-4308-ba6b-e5f978b4135c}, !- Handle
+  Air Loop HVAC 1 AvailabilityManagerAssignmentList; !- Name
+
+OS:Fan:ConstantVolume,
+  {da48e408-b89e-40ae-92c3-8ea9e1c22a8f}, !- Handle
+  Fan Constant Volume 1,                  !- Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule Name
+  ,                                       !- Fan Total Efficiency
+  500,                                    !- Pressure Rise {Pa}
+  AutoSize,                               !- Maximum Flow Rate {m3/s}
+  ,                                       !- Motor Efficiency
+  ,                                       !- Motor In Airstream Fraction
+  {d3af4924-94be-46c3-9175-01c6cd147528}, !- Air Inlet Node Name
+  {cd7740ae-c71b-4010-b4f4-7a65de68b41c}, !- Air Outlet Node Name
+  ;                                       !- End-Use Subcategory
+
+OS:Coil:Heating:Gas,
+  {214fb8b3-d744-40dd-a5ce-d8626fb77c63}, !- Handle
+  Coil Heating Gas 1,                     !- Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule Name
+  0.8,                                    !- Gas Burner Efficiency
+  AutoSize,                               !- Nominal Capacity {W}
+  {2208bbac-b8f8-4768-9c6f-b5e484fecb0f}, !- Air Inlet Node Name
+  {80278fe4-bd54-4da5-ad02-af6243c802f3}, !- Air Outlet Node Name
+  ,                                       !- Temperature Setpoint Node Name
+  0,                                      !- Parasitic Electric Load {W}
+  ,                                       !- Part Load Fraction Correlation Curve Name
+  0;                                      !- Parasitic Gas Load {W}
+
+OS:Coil:Cooling:DX:SingleSpeed,
+  {ced1deed-2157-4a75-9669-2f7504b2f8b5}, !- Handle
+  Coil Cooling DX Single Speed 1,         !- Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule Name
+  autosize,                               !- Rated Total Cooling Capacity {W}
+  autosize,                               !- Rated Sensible Heat Ratio
+  3,                                      !- Rated COP {W/W}
+  autosize,                               !- Rated Air Flow Rate {m3/s}
+  773.3,                                  !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+  {00903f5d-f0c4-4a86-b1b0-4e5b5c63ff14}, !- Air Inlet Node Name
+  {0237fda4-9603-400e-94e0-5426eb9c244b}, !- Air Outlet Node Name
+  {133a236a-44db-4b4f-97a1-587365c9c685}, !- Total Cooling Capacity Function of Temperature Curve Name
+  {3011e2bc-aa00-47b8-9469-928aafaa1463}, !- Total Cooling Capacity Function of Flow Fraction Curve Name
+  {29061072-f05e-44a3-8822-bfa975659006}, !- Energy Input Ratio Function of Temperature Curve Name
+  {cb426271-3469-4419-9432-c1072bb12e7e}, !- Energy Input Ratio Function of Flow Fraction Curve Name
+  {8ba427c3-5c07-4ddb-91b1-59b5430fa327}, !- Part Load Fraction Correlation Curve Name
+  -25,                                    !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+  ,                                       !- Nominal Time for Condensate Removal to Begin {s}
+  ,                                       !- Ratio of Initial Moisture Evaporation Rate and Steady State Latent Capacity {dimensionless}
+  ,                                       !- Maximum Cycling Rate {cycles/hr}
+  ,                                       !- Latent Capacity Time Constant {s}
+  ,                                       !- Condenser Air Inlet Node Name
+  AirCooled,                              !- Condenser Type
+  0,                                      !- Evaporative Condenser Effectiveness {dimensionless}
+  Autosize,                               !- Evaporative Condenser Air Flow Rate {m3/s}
+  Autosize,                               !- Evaporative Condenser Pump Rated Power Consumption {W}
+  0,                                      !- Crankcase Heater Capacity {W}
+  0,                                      !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+  ,                                       !- Supply Water Storage Tank Name
+  ,                                       !- Condensate Collection Water Storage Tank Name
+  0,                                      !- Basin Heater Capacity {W/K}
+  10,                                     !- Basin Heater Setpoint Temperature {C}
+  ;                                       !- Basin Heater Operating Schedule Name
+
+OS:Curve:Biquadratic,
+  {133a236a-44db-4b4f-97a1-587365c9c685}, !- Handle
+  Curve Biquadratic 1,                    !- Name
+  0.942587793,                            !- Coefficient1 Constant
+  0.009543347,                            !- Coefficient2 x
+  0.00068377,                             !- Coefficient3 x**2
+  -0.011042676,                           !- Coefficient4 y
+  5.249e-06,                              !- Coefficient5 y**2
+  -9.72e-06,                              !- Coefficient6 x*y
+  17,                                     !- Minimum Value of x
+  22,                                     !- Maximum Value of x
+  13,                                     !- Minimum Value of y
+  46;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {3011e2bc-aa00-47b8-9469-928aafaa1463}, !- Handle
+  Curve Quadratic 1,                      !- Name
+  0.8,                                    !- Coefficient1 Constant
+  0.2,                                    !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0.5,                                    !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Biquadratic,
+  {29061072-f05e-44a3-8822-bfa975659006}, !- Handle
+  Curve Biquadratic 2,                    !- Name
+  0.342414409,                            !- Coefficient1 Constant
+  0.034885008,                            !- Coefficient2 x
+  -0.0006237,                             !- Coefficient3 x**2
+  0.004977216,                            !- Coefficient4 y
+  0.000437951,                            !- Coefficient5 y**2
+  -0.000728028,                           !- Coefficient6 x*y
+  17,                                     !- Minimum Value of x
+  22,                                     !- Maximum Value of x
+  13,                                     !- Minimum Value of y
+  46;                                     !- Maximum Value of y
+
+OS:Curve:Quadratic,
+  {cb426271-3469-4419-9432-c1072bb12e7e}, !- Handle
+  Curve Quadratic 2,                      !- Name
+  1.1552,                                 !- Coefficient1 Constant
+  -0.1808,                                !- Coefficient2 x
+  0.0256,                                 !- Coefficient3 x**2
+  0.5,                                    !- Minimum Value of x
+  1.5;                                    !- Maximum Value of x
+
+OS:Curve:Quadratic,
+  {8ba427c3-5c07-4ddb-91b1-59b5430fa327}, !- Handle
+  Curve Quadratic 3,                      !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Minimum Value of x
+  1;                                      !- Maximum Value of x
+
+OS:SetpointManager:SingleZone:Reheat,
+  {065becc9-7551-4ce5-9f43-aedc75c98dff}, !- Handle
+  Setpoint Manager Single Zone Reheat 1,  !- Name
+  -99,                                    !- Minimum Supply Air Temperature {C}
+  99,                                     !- Maximum Supply Air Temperature {C}
+  ,                                       !- Control Zone Name
+  {89c754f5-7202-4b29-bebe-4b4a0c393ed4}; !- Setpoint Node or NodeList Name
+
+OS:Controller:OutdoorAir,
+  {8fe3b013-fd13-4b3f-a16e-cb8f33ce4f34}, !- Handle
+  Controller Outdoor Air 1,               !- Name
+  ,                                       !- Relief Air Outlet Node Name
+  ,                                       !- Return Air Node Name
+  ,                                       !- Mixed Air Node Name
+  ,                                       !- Actuator Node Name
+  0,                                      !- Minimum Outdoor Air Flow Rate {m3/s}
+  Autosize,                               !- Maximum Outdoor Air Flow Rate {m3/s}
+  NoEconomizer,                           !- Economizer Control Type
+  ModulateFlow,                           !- Economizer Control Action Type
+  28,                                     !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+  64000,                                  !- Economizer Maximum Limit Enthalpy {J/kg}
+  ,                                       !- Economizer Maximum Limit Dewpoint Temperature {C}
+  ,                                       !- Electronic Enthalpy Limit Curve Name
+  -100,                                   !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+  NoLockout,                              !- Lockout Type
+  FixedMinimum,                           !- Minimum Limit Type
+  ,                                       !- Minimum Outdoor Air Schedule Name
+  ,                                       !- Minimum Fraction of Outdoor Air Schedule Name
+  ,                                       !- Maximum Fraction of Outdoor Air Schedule Name
+  {5d0f4d04-c969-4f93-b103-64dcaf1e897d}, !- Controller Mechanical Ventilation
+  ,                                       !- Time of Day Economizer Control Schedule Name
+  No,                                     !- High Humidity Control
+  ,                                       !- Humidistat Control Zone Name
+  ,                                       !- High Humidity Outdoor Air Flow Ratio
+  ,                                       !- Control High Indoor Humidity Based on Outdoor Humidity Ratio
+  BypassWhenWithinEconomizerLimits;       !- Heat Recovery Bypass Control Type
+
+OS:Controller:MechanicalVentilation,
+  {5d0f4d04-c969-4f93-b103-64dcaf1e897d}, !- Handle
+  Controller Mechanical Ventilation 1,    !- Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule
+  Yes,                                    !- Demand Controlled Ventilation
+  ZoneSum;                                !- System Outdoor Air Method
+
+OS:AirLoopHVAC:OutdoorAirSystem,
+  {6250d8de-950e-4df3-adbd-856d2a8b9f76}, !- Handle
+  Air Loop HVAC Outdoor Air System 1,     !- Name
+  {8fe3b013-fd13-4b3f-a16e-cb8f33ce4f34}, !- Controller Name
+  ,                                       !- Outdoor Air Equipment List Name
+  ,                                       !- Availability Manager List Name
+  {a66f66ad-b521-46ef-b000-cc258eb15ec2}, !- Mixed Air Node Name
+  {513ff066-cb64-4649-84d1-21d5f8c2b0ed}, !- Outdoor Air Stream Node Name
+  {9db4cd79-dcfc-474c-aeba-44d244903677}, !- Relief Air Stream Node Name
+  {25ccdb0d-5d5d-42c0-a99e-4fbffd401733}; !- Return Air Stream Node Name
+
+OS:Node,
+  {97c5f38b-0e45-4877-bb45-b916002bf818}, !- Handle
+  Node 6,                                 !- Name
+  ,                                       !- Inlet Port
+  {513ff066-cb64-4649-84d1-21d5f8c2b0ed}; !- Outlet Port
+
+OS:Connection,
+  {513ff066-cb64-4649-84d1-21d5f8c2b0ed}, !- Handle
+  {97c5f38b-0e45-4877-bb45-b916002bf818}, !- Source Object
+  3,                                      !- Outlet Port
+  {6250d8de-950e-4df3-adbd-856d2a8b9f76}, !- Target Object
+  6;                                      !- Inlet Port
+
+OS:Node,
+  {d8102e99-3e22-4b7c-8260-712cd0496d3d}, !- Handle
+  Node 7,                                 !- Name
+  {9db4cd79-dcfc-474c-aeba-44d244903677}, !- Inlet Port
+  ;                                       !- Outlet Port
+
+OS:Connection,
+  {9db4cd79-dcfc-474c-aeba-44d244903677}, !- Handle
+  {6250d8de-950e-4df3-adbd-856d2a8b9f76}, !- Source Object
+  7,                                      !- Outlet Port
+  {d8102e99-3e22-4b7c-8260-712cd0496d3d}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {25ccdb0d-5d5d-42c0-a99e-4fbffd401733}, !- Handle
+  {d9e9d039-53fe-4797-951f-3574b29e2cb2}, !- Source Object
+  3,                                      !- Outlet Port
+  {6250d8de-950e-4df3-adbd-856d2a8b9f76}, !- Target Object
+  8;                                      !- Inlet Port
+
+OS:Node,
+  {df02dd2b-52aa-4d35-b30b-0ef1423acd58}, !- Handle
+  Node 8,                                 !- Name
+  {a66f66ad-b521-46ef-b000-cc258eb15ec2}, !- Inlet Port
+  {00903f5d-f0c4-4a86-b1b0-4e5b5c63ff14}; !- Outlet Port
+
+OS:Connection,
+  {a66f66ad-b521-46ef-b000-cc258eb15ec2}, !- Handle
+  {6250d8de-950e-4df3-adbd-856d2a8b9f76}, !- Source Object
+  5,                                      !- Outlet Port
+  {df02dd2b-52aa-4d35-b30b-0ef1423acd58}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {00903f5d-f0c4-4a86-b1b0-4e5b5c63ff14}, !- Handle
+  {df02dd2b-52aa-4d35-b30b-0ef1423acd58}, !- Source Object
+  3,                                      !- Outlet Port
+  {ced1deed-2157-4a75-9669-2f7504b2f8b5}, !- Target Object
+  8;                                      !- Inlet Port
+
+OS:Node,
+  {7a560a0a-75f4-4e0b-9355-03f8d450a6e8}, !- Handle
+  Node 9,                                 !- Name
+  {0237fda4-9603-400e-94e0-5426eb9c244b}, !- Inlet Port
+  {2208bbac-b8f8-4768-9c6f-b5e484fecb0f}; !- Outlet Port
+
+OS:Connection,
+  {0237fda4-9603-400e-94e0-5426eb9c244b}, !- Handle
+  {ced1deed-2157-4a75-9669-2f7504b2f8b5}, !- Source Object
+  9,                                      !- Outlet Port
+  {7a560a0a-75f4-4e0b-9355-03f8d450a6e8}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {2208bbac-b8f8-4768-9c6f-b5e484fecb0f}, !- Handle
+  {7a560a0a-75f4-4e0b-9355-03f8d450a6e8}, !- Source Object
+  3,                                      !- Outlet Port
+  {214fb8b3-d744-40dd-a5ce-d8626fb77c63}, !- Target Object
+  5;                                      !- Inlet Port
+
+OS:Node,
+  {d118d601-c73b-4476-8a87-eb8e759a6208}, !- Handle
+  Node 10,                                !- Name
+  {80278fe4-bd54-4da5-ad02-af6243c802f3}, !- Inlet Port
+  {d3af4924-94be-46c3-9175-01c6cd147528}; !- Outlet Port
+
+OS:Connection,
+  {80278fe4-bd54-4da5-ad02-af6243c802f3}, !- Handle
+  {214fb8b3-d744-40dd-a5ce-d8626fb77c63}, !- Source Object
+  6,                                      !- Outlet Port
+  {d118d601-c73b-4476-8a87-eb8e759a6208}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {d3af4924-94be-46c3-9175-01c6cd147528}, !- Handle
+  {d118d601-c73b-4476-8a87-eb8e759a6208}, !- Source Object
+  3,                                      !- Outlet Port
+  {da48e408-b89e-40ae-92c3-8ea9e1c22a8f}, !- Target Object
+  8;                                      !- Inlet Port
+
+OS:Connection,
+  {cd7740ae-c71b-4010-b4f4-7a65de68b41c}, !- Handle
+  {da48e408-b89e-40ae-92c3-8ea9e1c22a8f}, !- Source Object
+  9,                                      !- Outlet Port
+  {89c754f5-7202-4b29-bebe-4b4a0c393ed4}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:AirTerminal:SingleDuct:ConstantVolume:NoReheat,
+  {4fa867b3-0dca-4833-a52a-43795f9a2615}, !- Handle
+  Air Terminal Single Duct Constant Volume No Reheat 1, !- Name
+  {054a1eb8-2e18-4d02-97e9-cbcfa7ba4762}, !- Availability Schedule Name
+  {e8fccc23-bb93-4f56-8d6b-9b5e52b06595}, !- Air Inlet Node Name
+  {83e05785-26bb-46b5-b2ec-f996894a58ef}, !- Air Outlet Node Name
+  AutoSize;                               !- Maximum Air Flow Rate {m3/s}
+
+OS:Node,
+  {19ff8396-b4d8-47a5-b4ab-b29bd8d53092}, !- Handle
+  Node 11,                                !- Name
+  {30ad7fdc-ab7c-4f7d-a866-16a71f29e33f}, !- Inlet Port
+  {e8fccc23-bb93-4f56-8d6b-9b5e52b06595}; !- Outlet Port
+
+OS:Connection,
+  {30ad7fdc-ab7c-4f7d-a866-16a71f29e33f}, !- Handle
+  {b24b4a47-a831-4796-80d5-66a5b53946db}, !- Source Object
+  3,                                      !- Outlet Port
+  {19ff8396-b4d8-47a5-b4ab-b29bd8d53092}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:Connection,
+  {e8fccc23-bb93-4f56-8d6b-9b5e52b06595}, !- Handle
+  {19ff8396-b4d8-47a5-b4ab-b29bd8d53092}, !- Source Object
+  3,                                      !- Outlet Port
+  {4fa867b3-0dca-4833-a52a-43795f9a2615}, !- Target Object
+  3;                                      !- Inlet Port
+
+OS:Connection,
+  {83e05785-26bb-46b5-b2ec-f996894a58ef}, !- Handle
+  {4fa867b3-0dca-4833-a52a-43795f9a2615}, !- Source Object
+  4,                                      !- Outlet Port
+  {f84c5f10-a308-4ec6-900f-1b8b273a45fc}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:ScheduleTypeLimits,
+  {685ea45a-613d-441a-9247-ef173485fe9f}, !- Handle
+  Dimensionless,                          !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {e01897b4-493a-4bb7-bc30-cb3e2b9f98ac}, !- Handle
+  Dimensionless 1,                        !- Name
+  -1,                                     !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Handle
+  Fractional,                             !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {5d2fde01-1a6b-412a-bb57-877e091c2414}, !- Handle
+  Dimensionless 2,                        !- Name
+  0.1,                                    !- Lower Limit Value
+  1000,                                   !- Upper Limit Value
+  Continuous;                             !- Numeric Type
+
+OS:ScheduleTypeLimits,
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Handle
+  ActivityLevel,                          !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {b8623bb8-bd85-4845-9922-cd05d4ff3631}, !- Handle
+  Capacity,                               !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Capacity;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {666b8134-1f88-4bf8-bc57-51bee6c166bb}, !- Handle
+  ClothingInsulation,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  ClothingInsulation;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {a89a13ad-92e5-4069-b4a1-89d7c072a7f9}, !- Handle
+  ControlMode,                            !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  ControlMode;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {d9a9dd03-ef3e-413f-b5d8-09e529a44132}, !- Handle
+  DeltaTemperature,                       !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  DeltaTemperature;                       !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {a93e7343-6204-4f2a-ad49-9b81bd122b9b}, !- Handle
+  Dimensionless 3,                        !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {17c33536-2a9b-4e03-9aa4-4e2e3cf6da0e}, !- Handle
+  LinearPowerDensity,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  LinearPowerDensity;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {395397ea-465b-4f60-b573-b57e7e0bc77f}, !- Handle
+  MassFlowRate,                           !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  MassFlowRate;                           !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {62a4b91e-5ea8-45ec-b68b-3154502e6dcf}, !- Handle
+  Percent,                                !- Name
+  0,                                      !- Lower Limit Value
+  100,                                    !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Percent;                                !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {a7510ce0-ac06-4e33-aadc-d3b074bf520c}, !- Handle
+  Pressure,                               !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Pressure;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {55590b22-cb11-4d53-bea7-d0ddf3226dfe}, !- Handle
+  RotationsPerMinute,                     !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  RotationsPerMinute;                     !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {c35a4258-c452-40ff-9ad7-3b7d873275cc}, !- Handle
+  Temperature,                            !- Name
+  ,                                       !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {41e77e9f-0396-49c6-b9f3-c22d75b7d6d0}, !- Handle
+  Temperature 1,                          !- Name
+  ,                                       !- Lower Limit Value
+  0,                                      !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {677d2e0a-0df4-4816-bd1a-823d6915c1ef}, !- Handle
+  Temperature 2,                          !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {26f95466-e6d6-4d08-9bec-57e934e6cd48}, !- Handle
+  Velocity,                               !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  Velocity;                               !- Unit Type
+
+OS:ScheduleTypeLimits,
+  {ea9231df-d1f4-4484-bf4f-58158f0778ad}, !- Handle
+  VolumetricFlowRate,                     !- Name
+  0,                                      !- Lower Limit Value
+  ,                                       !- Upper Limit Value
+  Continuous,                             !- Numeric Type
+  VolumetricFlowRate;                     !- Unit Type
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {2958cf9a-cc5d-4781-b94f-bce10e7426fb}, !- Handle
+  NCC2019 JVb.2.d Infiltration,           !- Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:Schedule:Ruleset,
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Handle
+  Infiltration Sched Class 9b school NCC2019 Table 2j per JVb.2.d, !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  {d3fbefaf-7a23-4836-a97a-6d3a67bdc200}, !- Default Day Schedule Name
+  {5f208f91-a9c4-4b98-925b-c45e82e8ff4a}, !- Summer Design Day Schedule Name
+  {182be2b4-a727-4782-b6b1-b1f5b1ed9e02}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {d3fbefaf-7a23-4836-a97a-6d3a67bdc200}, !- Handle
+  Schedule Day 3,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.7,                                    !- Value Until Time 1
+  24,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.35;                                   !- Value Until Time 2
+
+OS:People:Definition,
+  {f445c4f7-be73-4e4b-af7b-e7abeaebad7e}, !- Handle
+  School—general classroom NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  2,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:Lights:Definition,
+  {a22f4880-0238-460e-bd86-73d85e79605a}, !- Handle
+  School - general purpose NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  4.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:ElectricEquipment:Definition,
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Handle
+  Class 9b School NCC2019 JVc Table 2l,   !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:InternalMass:Definition,
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Handle
+  Internal Mass Definition - Classroom Furnishings, !- Name
+  {e1e68fb8-a230-4d8e-ae24-f39a9eb3d309}, !- Construction Name
+  SurfaceArea/Area,                       !- Design Level Calculation Method
+  ,                                       !- Surface Area {m2}
+  4,                                      !- Surface Area per Space Floor Area {dimensionless}
+  ;                                       !- Surface Area per Person {m2/person}
+
+OS:Material,
+  {2f36ad57-78f2-468a-8aec-1915fde48363}, !- Handle
+  G05 25mm wood,                          !- Name
+  MediumSmooth,                           !- Roughness
+  0.0254,                                 !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  608,                                    !- Density {kg/m3}
+  1630,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+OS:StandardsInformation:Material,
+  {aa203396-dd9a-41b1-b43e-d09514514a16}, !- Handle
+  {2f36ad57-78f2-468a-8aec-1915fde48363}; !- Material Name
+
+OS:Construction,
+  {e1e68fb8-a230-4d8e-ae24-f39a9eb3d309}, !- Handle
+  Classroom Furnishings,                  !- Name
+  {5d7ce981-e754-4636-b003-9549b3bb7e24}, !- Surface Rendering Name
+  {2f36ad57-78f2-468a-8aec-1915fde48363}; !- Layer 1
+
+OS:StandardsInformation:Construction,
+  {1c916e60-b29c-4a02-8f45-3f5602918730}, !- Handle
+  {e1e68fb8-a230-4d8e-ae24-f39a9eb3d309}; !- Construction Name
+
+OS:WaterUse:Equipment:Definition,
+  {78fe3f68-e664-4861-a765-58f0c7c136cf}, !- Handle
+  Water Use Equipment Definition 1,       !- Name
+  ,                                       !- End-Use Subcategory
+  0;                                      !- Peak Flow Rate {m3/s}
+
+OS:People,
+  {76b19f1c-8555-43e0-87bb-be02727f4d09}, !- Handle
+  Classroom <16yrs_age People,            !- Name
+  {f445c4f7-be73-4e4b-af7b-e7abeaebad7e}, !- People Definition Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:Lights,
+  {e2782ccd-9bd3-4936-8484-917167d4e9ec}, !- Handle
+  Classroom <16yrs_age Lights,            !- Name
+  {a22f4880-0238-460e-bd86-73d85e79605a}, !- Lights Definition Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {1bd97cdf-9190-47b5-a01e-3030984f0be8}, !- Handle
+  Classroom <16yrs_age Electric Equipment, !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:InternalMass,
+  {fd65c247-66d0-4571-876b-43eff9ae2e12}, !- Handle
+  Internal Mass - Classroom Furnishings,  !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:DefaultScheduleSet,
+  {b05e0df4-9357-4b55-9067-3127989abaea}, !- Handle
+  Classroom NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {eec8893b-2969-4776-a4f6-3850a26c4a20}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:Schedule:Ruleset,
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Handle
+  Occupancy Sched Class 9b school NCC2019 Table 2j, !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  {79e9d4b9-6b3b-48a3-95e8-6d40b90f24a6}, !- Default Day Schedule Name
+  {0d5489bd-f388-4872-a323-f78892f8cbf1}, !- Summer Design Day Schedule Name
+  {5522a9fb-fc9a-4531-93dd-57bf14b4246a}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {79e9d4b9-6b3b-48a3-95e8-6d40b90f24a6}, !- Handle
+  Schedule Day 6,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.05,                                   !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.75,                                   !- Value Until Time 3
+  12,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.9,                                    !- Value Until Time 4
+  14,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.5,                                    !- Value Until Time 5
+  15,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.9,                                    !- Value Until Time 6
+  16,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.7,                                    !- Value Until Time 7
+  17,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.5,                                    !- Value Until Time 8
+  20,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.2,                                    !- Value Until Time 9
+  21,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.1,                                    !- Value Until Time 10
+  24,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.05;                                   !- Value Until Time 11
+
+OS:Schedule:Rule,
+  {635b2536-49f0-41ef-a996-994b94281131}, !- Handle
+  Occupancy Sched Class 9b school NCC2019 Table 2j Sat-Sun, !- Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {11a25965-55f0-425e-9248-9335fea0e694}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes;                                    !- Apply Saturday
+
+OS:Schedule:Day,
+  {11a25965-55f0-425e-9248-9335fea0e694}, !- Handle
+  Schedule Day 7,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {0d5489bd-f388-4872-a323-f78892f8cbf1}, !- Handle
+  Schedule Day 9,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {5522a9fb-fc9a-4531-93dd-57bf14b4246a}, !- Handle
+  Schedule Day 10,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Handle
+  Lighting Sched Class 9b school NCC2019 Table 2j, !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  {5811b52b-d338-461c-82e0-1ca84bbffc3e}, !- Default Day Schedule Name
+  {4bb714e9-c7bc-491b-9d3d-fabe6992ba8d}, !- Summer Design Day Schedule Name
+  {bec32d11-78c0-4a39-b394-7c7a26aa9001}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {5811b52b-d338-461c-82e0-1ca84bbffc3e}, !- Handle
+  Schedule Day 1,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.05,                                   !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.3,                                    !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.85,                                   !- Value Until Time 3
+  12,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.95,                                   !- Value Until Time 4
+  14,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.8,                                    !- Value Until Time 5
+  15,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.95,                                   !- Value Until Time 6
+  16,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.9,                                    !- Value Until Time 7
+  17,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.7,                                    !- Value Until Time 8
+  20,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.2,                                    !- Value Until Time 9
+  21,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.1,                                    !- Value Until Time 10
+  24,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.05;                                   !- Value Until Time 11
+
+OS:Schedule:Ruleset,
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Handle
+  Equipment Sched Class 9b school NCC2019 Table 2j, !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  {1b86b19f-93de-487b-8682-89b84819cd4f}, !- Default Day Schedule Name
+  {73b6e809-27ed-486c-bfdb-0a1cc8c3f1cf}, !- Summer Design Day Schedule Name
+  {daa7a572-e0a6-4397-b53a-6f3b440e3821}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {1b86b19f-93de-487b-8682-89b84819cd4f}, !- Handle
+  Schedule Day 2,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.05,                                   !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.3,                                    !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.85,                                   !- Value Until Time 3
+  12,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.95,                                   !- Value Until Time 4
+  14,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.7,                                    !- Value Until Time 5
+  15,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.95,                                   !- Value Until Time 6
+  16,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.8,                                    !- Value Until Time 7
+  17,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.6,                                    !- Value Until Time 8
+  20,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.2,                                    !- Value Until Time 9
+  21,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.1,                                    !- Value Until Time 10
+  24,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.05;                                   !- Value Until Time 11
+
+OS:Schedule:Ruleset,
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Handle
+  HVAC Operation Sched Class 9b school NCC2019 Table 2j, !- Name
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Schedule Type Limits Name
+  {d35fd2c7-09ec-44ea-8ebf-6e81e8887f53}, !- Default Day Schedule Name
+  {fc4298a4-c0a4-402a-a746-7cfc5ff7598e}, !- Summer Design Day Schedule Name
+  {65d6dc06-f5c9-47c8-b6bb-bb8ed88ac2e0}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {d35fd2c7-09ec-44ea-8ebf-6e81e8887f53}, !- Handle
+  Schedule Day 4,                         !- Name
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  17,                                     !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0;                                      !- Value Until Time 3
+
+OS:Schedule:Rule,
+  {b7556c10-8274-4c85-81d2-d031ec957294}, !- Handle
+  Lighting Sched Class 9b school NCC2019 Table 2j Sat-Sun, !- Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {dc306a7a-bdb0-406b-a147-53851add4e64}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes;                                    !- Apply Saturday
+
+OS:Schedule:Day,
+  {dc306a7a-bdb0-406b-a147-53851add4e64}, !- Handle
+  Schedule Day 5,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.05;                                   !- Value Until Time 1
+
+OS:Schedule:Day,
+  {4bb714e9-c7bc-491b-9d3d-fabe6992ba8d}, !- Handle
+  Schedule Day 11,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {bec32d11-78c0-4a39-b394-7c7a26aa9001}, !- Handle
+  Schedule Day 12,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {095c4b11-842b-4968-8c3b-e35862c748a2}, !- Handle
+  Equipment Sched Class 9b school NCC2019 Table 2j Sat-Sun, !- Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {fb9b83c4-63bc-4ca9-9a92-5dcb70032304}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes;                                    !- Apply Saturday
+
+OS:Schedule:Day,
+  {fb9b83c4-63bc-4ca9-9a92-5dcb70032304}, !- Handle
+  Schedule Day 8,                         !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.05;                                   !- Value Until Time 1
+
+OS:Schedule:Day,
+  {daa7a572-e0a6-4397-b53a-6f3b440e3821}, !- Handle
+  Schedule Day 14,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {73b6e809-27ed-486c-bfdb-0a1cc8c3f1cf}, !- Handle
+  Schedule Day 15,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {65d6dc06-f5c9-47c8-b6bb-bb8ed88ac2e0}, !- Handle
+  Schedule Day 16,                        !- Name
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {fc4298a4-c0a4-402a-a746-7cfc5ff7598e}, !- Handle
+  Schedule Day 17,                        !- Name
+  {ca0a5fdb-6417-4d40-9a36-f90a455c5f6e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {eec8893b-2969-4776-a4f6-3850a26c4a20}, !- Handle
+  Occ Heat Gain Sched Other applications NCC2019 Table 2n, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {820c5f80-a777-4626-9590-f32a9133d94c}, !- Default Day Schedule Name
+  {c415a552-7ad3-4a7e-9b19-5433c79af4f0}, !- Summer Design Day Schedule Name
+  {df29f0f2-ef2a-48ef-9d19-32ebe01f3752}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {820c5f80-a777-4626-9590-f32a9133d94c}, !- Handle
+  Schedule Day 13,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {c415a552-7ad3-4a7e-9b19-5433c79af4f0}, !- Handle
+  Schedule Day 19,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {df29f0f2-ef2a-48ef-9d19-32ebe01f3752}, !- Handle
+  Schedule Day 20,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:Space,
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Handle
+  Space 1 - 1,                            !- Name
+  {a3b83675-c39d-4a9a-9aae-ff482ffeb0f8}, !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  ,                                       !- Direction of Relative North {deg}
+  ,                                       !- X Origin {m}
+  ,                                       !- Y Origin {m}
+  ,                                       !- Z Origin {m}
+  {459e0b85-521b-4ff1-ac19-9bd6442d6803}, !- Building Story Name
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}, !- Thermal Zone Name
+  ,                                       !- Part of Total Floor Area
+  ,                                       !- Design Specification Outdoor Air Object Name
+  ;                                       !- Building Unit Name
+
+OS:Surface,
+  {1c067aef-b749-4b45-a04d-801e5a71fc68}, !- Handle
+  Face 3,                                 !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, -100, 10,                            !- X,Y,Z Vertex 1 {m}
+  55, -100, 10,                           !- X,Y,Z Vertex 2 {m}
+  55, -100, 0,                            !- X,Y,Z Vertex 3 {m}
+  0, -100, 0;                             !- X,Y,Z Vertex 4 {m}
+
+OS:SubSurface,
+  {88690f16-14fe-4f1e-afa1-da3de6c29bf1}, !- Handle
+  Face 4,                                 !- Name
+  FixedWindow,                            !- Sub Surface Type
+  ,                                       !- Construction Name
+  {1c067aef-b749-4b45-a04d-801e5a71fc68}, !- Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  30.3048, -100, 2.1336,                  !- X,Y,Z Vertex 1 {m}
+  30.3048, -100, 0.9144,                  !- X,Y,Z Vertex 2 {m}
+  29.6952, -100, 0.9144,                  !- X,Y,Z Vertex 3 {m}
+  29.6952, -100, 2.1336;                  !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {e8af24cc-a7eb-4593-b7d0-41105fa1c3c4}, !- Handle
+  Face 5,                                 !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  55, -100, 10,                           !- X,Y,Z Vertex 1 {m}
+  55, -145, 10,                           !- X,Y,Z Vertex 2 {m}
+  55, -145, 0,                            !- X,Y,Z Vertex 3 {m}
+  55, -100, 0;                            !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {104bcfaf-3a4b-43fb-96a9-af281c070fb6}, !- Handle
+  Face 1,                                 !- Name
+  RoofCeiling,                            !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  55, -145, 10,                           !- X,Y,Z Vertex 1 {m}
+  55, -100, 10,                           !- X,Y,Z Vertex 2 {m}
+  0, -100, 10,                            !- X,Y,Z Vertex 3 {m}
+  0, -145, 10;                            !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {78e31cc3-7bba-470c-8aa0-8f6b4ad364ee}, !- Handle
+  Face 2,                                 !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, -145, 10,                            !- X,Y,Z Vertex 1 {m}
+  0, -100, 10,                            !- X,Y,Z Vertex 2 {m}
+  0, -100, 0,                             !- X,Y,Z Vertex 3 {m}
+  0, -145, 0;                             !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {669cd801-94ce-4abf-ad4a-07177a49eff1}, !- Handle
+  Face 0,                                 !- Name
+  Floor,                                  !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Ground,                                 !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, -145, 0,                             !- X,Y,Z Vertex 1 {m}
+  0, -100, 0,                             !- X,Y,Z Vertex 2 {m}
+  55, -100, 0,                            !- X,Y,Z Vertex 3 {m}
+  55, -145, 0;                            !- X,Y,Z Vertex 4 {m}
+
+OS:Surface,
+  {914c8c9e-fb7b-4763-8e89-b487b14f7c58}, !- Handle
+  Face 6,                                 !- Name
+  Wall,                                   !- Surface Type
+  ,                                       !- Construction Name
+  {d7df2f83-151b-483b-b8e7-e6f71a38464a}, !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  55, -145, 10,                           !- X,Y,Z Vertex 1 {m}
+  0, -145, 10,                            !- X,Y,Z Vertex 2 {m}
+  0, -145, 0,                             !- X,Y,Z Vertex 3 {m}
+  55, -145, 0;                            !- X,Y,Z Vertex 4 {m}
+
+OS:ThermalZone,
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}, !- Handle
+  Thermal Zone 1,                         !- Name
+  1,                                      !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ,                                       !- Zone Outside Convection Algorithm
+  ,                                       !- Zone Conditioning Equipment List Name
+  {ba286546-984a-4281-b43e-77151b4e0c9b}, !- Zone Air Inlet Port List
+  {d867e1f6-2375-45f2-954a-8920d1ff7c20}, !- Zone Air Exhaust Port List
+  {ac35b795-7184-4d1a-a659-89bf485c3aea}, !- Zone Air Node Name
+  {f72c64bb-9b9e-4c59-861e-75f837d2bb74}, !- Zone Return Air Port List
+  ,                                       !- Primary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Primary Daylighting Control
+  ,                                       !- Secondary Daylighting Control Name
+  ,                                       !- Fraction of Zone Controlled by Secondary Daylighting Control
+  ,                                       !- Illuminance Map Name
+  {dad1e00a-cead-4f04-93f6-bcba0edac82c}, !- Group Rendering Name
+  ,                                       !- Thermostat Name
+  No;                                     !- Use Ideal Air Loads
+
+OS:Node,
+  {0d0fb7f3-cad0-492d-8ea6-f86f4e08c1b7}, !- Handle
+  Node 12,                                !- Name
+  {ac35b795-7184-4d1a-a659-89bf485c3aea}, !- Inlet Port
+  ;                                       !- Outlet Port
+
+OS:Connection,
+  {ac35b795-7184-4d1a-a659-89bf485c3aea}, !- Handle
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}, !- Source Object
+  11,                                     !- Outlet Port
+  {0d0fb7f3-cad0-492d-8ea6-f86f4e08c1b7}, !- Target Object
+  2;                                      !- Inlet Port
+
+OS:PortList,
+  {ba286546-984a-4281-b43e-77151b4e0c9b}, !- Handle
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}; !- HVAC Component
+
+OS:PortList,
+  {d867e1f6-2375-45f2-954a-8920d1ff7c20}, !- Handle
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}; !- HVAC Component
+
+OS:PortList,
+  {f72c64bb-9b9e-4c59-861e-75f837d2bb74}, !- Handle
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}; !- HVAC Component
+
+OS:Sizing:Zone,
+  {56132600-c495-42da-be6e-b97a3904ec1f}, !- Handle
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}, !- Zone or ZoneList Name
+  SupplyAirTemperature,                   !- Zone Cooling Design Supply Air Temperature Input Method
+  14,                                     !- Zone Cooling Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+  SupplyAirTemperature,                   !- Zone Heating Design Supply Air Temperature Input Method
+  40,                                     !- Zone Heating Design Supply Air Temperature {C}
+  11.11,                                  !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+  0.0085,                                 !- Zone Cooling Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  0.008,                                  !- Zone Heating Design Supply Air Humidity Ratio {kg-H2O/kg-air}
+  ,                                       !- Zone Heating Sizing Factor
+  ,                                       !- Zone Cooling Sizing Factor
+  DesignDay,                              !- Cooling Design Air Flow Method
+  ,                                       !- Cooling Design Air Flow Rate {m3/s}
+  ,                                       !- Cooling Minimum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Cooling Minimum Air Flow {m3/s}
+  ,                                       !- Cooling Minimum Air Flow Fraction
+  DesignDay,                              !- Heating Design Air Flow Method
+  ,                                       !- Heating Design Air Flow Rate {m3/s}
+  ,                                       !- Heating Maximum Air Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Heating Maximum Air Flow {m3/s}
+  ,                                       !- Heating Maximum Air Flow Fraction
+  No,                                     !- Account for Dedicated Outdoor Air System
+  NeutralSupplyAir,                       !- Dedicated Outdoor Air System Control Strategy
+  autosize,                               !- Dedicated Outdoor Air Low Setpoint Temperature for Design {C}
+  autosize;                               !- Dedicated Outdoor Air High Setpoint Temperature for Design {C}
+
+OS:ZoneHVAC:EquipmentList,
+  {57187eff-b415-4e47-9d32-484d01cdd340}, !- Handle
+  Zone HVAC Equipment List 1,             !- Name
+  {9fb40ec0-331e-4078-8243-d2d781ae9c9d}; !- Thermal Zone
+
+OS:Rendering:Color,
+  {dad1e00a-cead-4f04-93f6-bcba0edac82c}, !- Handle
+  Rendering Color 2,                      !- Name
+  136,                                    !- Rendering Red Value
+  204,                                    !- Rendering Green Value
+  238;                                    !- Rendering Blue Value
+
+OS:BuildingStory,
+  {459e0b85-521b-4ff1-ac19-9bd6442d6803}, !- Handle
+  Story 1,                                !- Name
+  0,                                      !- Nominal Z Coordinate {m}
+  2.4384,                                 !- Nominal Floor to Floor Height {m}
+  ,                                       !- Default Construction Set Name
+  ,                                       !- Default Schedule Set Name
+  {bf1ae0a5-ea65-446d-ab1e-ab51ad302dc5}, !- Group Rendering Name
+  2.4384;                                 !- Nominal Floor to Ceiling Height {m}
+
+OS:Rendering:Color,
+  {bf1ae0a5-ea65-446d-ab1e-ab51ad302dc5}, !- Handle
+  Rendering Color 3,                      !- Name
+  51,                                     !- Rendering Red Value
+  34,                                     !- Rendering Green Value
+  136;                                    !- Rendering Blue Value
+
+OS:Rendering:Color,
+  {5d7ce981-e754-4636-b003-9549b3bb7e24}, !- Handle
+  Rendering Color 4,                      !- Name
+  255,                                    !- Rendering Red Value
+  196,                                    !- Rendering Green Value
+  228;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Handle
+  Cafeteria NCC2019 Class 9b,             !- Name
+  ,                                       !- Default Construction Set Name
+  {8790ac8c-a703-4ecb-90a2-8d78eb05e4e6}, !- Default Schedule Set Name
+  {0f384ffc-a107-4d9a-8c3c-4c5b2b421bf2}, !- Group Rendering Name
+  {58458054-9d1a-4b3f-a1eb-21a0e2a333f6}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {0f384ffc-a107-4d9a-8c3c-4c5b2b421bf2}, !- Handle
+  Rendering Color 5,                      !- Name
+  255,                                    !- Rendering Red Value
+  250,                                    !- Rendering Green Value
+  250;                                    !- Rendering Blue Value
+
+OS:DefaultScheduleSet,
+  {8790ac8c-a703-4ecb-90a2-8d78eb05e4e6}, !- Handle
+  Cafeteria NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {346a0951-4539-4257-8ccb-23180e5446b8}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:Schedule:Day,
+  {182be2b4-a727-4782-b6b1-b1f5b1ed9e02}, !- Handle
+  Schedule Day 21,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.7;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {5f208f91-a9c4-4b98-925b-c45e82e8ff4a}, !- Handle
+  Schedule Day 22,                        !- Name
+  {90ab2088-72b7-4f5b-bc9a-43587f0ffee5}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.7;                                    !- Value Until Time 1
+
+OS:DesignSpecification:OutdoorAir,
+  {58458054-9d1a-4b3f-a1eb-21a0e2a333f6}, !- Handle
+  Cafeteria 2012AS1668.2 Table A1 Ventilation, !- Name
+  Maximum,                                !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {1894bdd5-2d94-4463-809a-46ef70ad4228}, !- Handle
+  NCC2019 JVb.2.d Infiltration 1,         !- Name
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:People:Definition,
+  {4cedb203-37d8-4c4f-88e3-ce1fa74a194f}, !- Handle
+  School—multi-purpose hall NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  1,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {09d48e6e-86f0-4f90-aaa7-0cd35bd9bb86}, !- Handle
+  School—staff room NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  10,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {2cdc1825-a715-4fe0-9bc9-eb7baf8ede2f}, !- Handle
+  School—trade and practical area—primary NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  4,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {27b698ee-b2fa-45e9-8dff-1073bdc3a0af}, !- Handle
+  School—Workshop—secondary NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  30,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {4036446d-43b6-4b8f-ae6f-77bf205441b6}, !- Handle
+  Gymnasium NCC2019 Table D1.13,          !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  3,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {dbaf1119-ca64-4c0d-9f76-8517d4a8dd99}, !- Handle
+  Kitchen&#44 laboratory&#44 laundry NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  10,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {7e8f5f02-b053-44e9-8d47-3ec201413831}, !- Handle
+  Library—reading space NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  2,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {b05180d8-3176-4642-8a42-97e0989b9986}, !- Handle
+  Library—storage space NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  30,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {c39df475-c8eb-4ac4-aded-5a2e468d0b2a}, !- Handle
+  Switch room&#44 transformer room NCC2019 Table D1.13, !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  30,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {5e5e7b72-9aa2-49c0-8a66-170ce4ccc4d5}, !- Handle
+  Storage space NCC2019 Table D1.13,      !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  30,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {b9efb41c-0444-4421-8828-bbdc8adabcc8}, !- Handle
+  Office NCC2019 Table D1.13,             !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  10,                                     !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:People:Definition,
+  {5421b977-73c9-4fef-ab62-9ca43f94ded9}, !- Handle
+  Board room NCC2019 Table D1.13,         !- Name
+  Area/Person,                            !- Number of People Calculation Method
+  ,                                       !- Number of People {people}
+  ,                                       !- People per Space Floor Area {person/m2}
+  2,                                      !- Space Floor Area per Person {m2/person}
+  0.3,                                    !- Fraction Radiant
+  ,                                       !- Sensible Heat Fraction
+  ,                                       !- Carbon Dioxide Generation Rate {m3/s-W}
+  Yes,                                    !- Enable ASHRAE 55 Comfort Warnings
+  ,                                       !- Mean Radiant Temperature Calculation Type
+  AdaptiveASH55;                          !- Thermal Comfort Model Type 1
+
+OS:Lights:Definition,
+  {66c783f2-4bf2-4032-8b4b-0b14e5451591}, !- Handle
+  Board room and conference room NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {be67f73b-eef1-4a73-b394-4c4bd8c53e3b}, !- Handle
+  Corridors NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {c6290ab2-52ff-4311-b9a0-79a6a80ffb56}, !- Handle
+  Kitchen and food preparation area NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  4,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {a3b1f1a1-ea7b-47e0-9014-23d8372ba8e0}, !- Handle
+  Library - stack and shelving area NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  2.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {d86e131d-5a81-4657-9486-af8e26b303f1}, !- Handle
+  Library - reading room and general areas NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  4.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {2b632c43-f5a1-4141-ace5-1f3e75ce7d1a}, !- Handle
+  Office - artificially lit to an ambient level of >200 lx NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  4.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {82dc4001-fa79-4c0a-a5f0-264b80ad6d78}, !- Handle
+  Office - artificially lit to an ambient level of <200 lx NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  2.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {422071a2-8cb2-46b7-ad42-c7791aa8cd17}, !- Handle
+  Plant rooms with a horizontal illuminance target of 80 lx NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  2,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {3bf6f664-7711-4f72-9437-3058779df2fc}, !- Handle
+  Restaurant&#44 café&#44 bar&#44 hotel lounge NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  14,                                     !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {c3355867-86a5-47de-8dc3-b79407b97332}, !- Handle
+  Storage NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  1.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {2966b3f3-dac5-451b-9c8b-c89677823b68}, !- Handle
+  Service area&#44 cleaner’s room NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  1.5,                                    !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {a39ef680-2b28-49e5-9b75-fab86714f757}, !- Handle
+  Toilet&#44locker room&#44staff room&#44rest room NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  3,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {654938e5-c07a-4710-b0a1-a654f2f685cf}, !- Handle
+  Stairways NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  2,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:Lights:Definition,
+  {22f86a18-2962-489f-8783-25448343f45b}, !- Handle
+  Auditorium&#44 church and public hall NCC2019 J6 Table J6.2a T-8 LED, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Lighting Level {W}
+  8,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  0.75,                                   !- Fraction Radiant
+  0.25;                                   !- Fraction Visible
+
+OS:ElectricEquipment:Definition,
+  {fc9083a1-263c-4241-8b72-d026d6af9d61}, !- Handle
+  Class 6 shop&#44 shopping centre NCC2019 JVc Table 2l, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {537aa2fb-9a8d-47d3-8109-4c0c3cf1cdec}, !- Handle
+  Class 6 cafe NCC2019 JVc Table 2l,      !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {24b97348-03a5-4e1e-8604-ac9585942209}, !- Handle
+  Class 3 sole-occupancy unit NCC2019 JVc Table 2l, !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  160,                                    !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {2ac11e4e-8cd7-4d48-8ba5-82c745c8201d}, !- Handle
+  Class 3 dormitories NCC2019 JVc Table 2l, !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  1e-06,                                  !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {f770ec95-52f7-44eb-9dd6-1c4ca85c7610}, !- Handle
+  Class 5 building NCC2019 JVc Table 2l,  !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  11,                                     !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {2e5919e7-7379-49af-b79d-b7bef24acff8}, !- Handle
+  Class 9c building NCC2019 JVc Table 2l, !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  160,                                    !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {18e7d9ec-3fa1-43aa-9f9b-ace785d0977e}, !- Handle
+  Class 9b conference facilities PerPerson NCC2019 JVc Table 2l, !- Name
+  Watts/Person,                           !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  10,                                     !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {5ffed381-2ab6-404b-9c2a-29eb1d97b073}, !- Handle
+  Class 9b conference facilities PerRoom NCC2019 JVc Table 2l, !- Name
+  EquipmentLevel,                         !- Design Level Calculation Method
+  150,                                    !- Design Level {W}
+  ,                                       !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {05cdf547-b2d3-4f1f-9fc4-3cf2ae5120d4}, !- Handle
+  Class 8 laboratory NCC2019 JVc Table 2l, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  15,                                     !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {d3c64655-ee0b-496a-85c5-6c9bcd68ece0}, !- Handle
+  Class 9a clinic&#44day surgery&#44 procedure NCC2019 JVc Table 2l, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  15,                                     !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:ElectricEquipment:Definition,
+  {8fc6dd95-3da3-455c-9dac-3ef4fda6c1a1}, !- Handle
+  Class 9a building ward area NCC2019 JVc Table 2l, !- Name
+  Watts/Area,                             !- Design Level Calculation Method
+  ,                                       !- Design Level {W}
+  5,                                      !- Watts per Space Floor Area {W/m2}
+  ,                                       !- Watts per Person {W/person}
+  ,                                       !- Fraction Latent
+  0.5;                                    !- Fraction Radiant
+
+OS:DefaultScheduleSet,
+  {c46623a9-9265-4f58-98fe-7852395ec256}, !- Handle
+  Kitchen NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {06662bde-c30d-474e-8297-6586c00bfdde}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:Schedule:Ruleset,
+  {346a0951-4539-4257-8ccb-23180e5446b8}, !- Handle
+  Occ Heat Gain Sched Dining&#44restaurant&#44cafe NCC2019 Table 2n, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {2bae30f1-d440-44f3-b485-aa27c89a3a96}, !- Default Day Schedule Name
+  {4d3e9d88-d995-47c1-abaa-95f4e1264081}, !- Summer Design Day Schedule Name
+  {0232d179-83bb-4951-84ce-2b643f599f56}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {2bae30f1-d440-44f3-b485-aa27c89a3a96}, !- Handle
+  Schedule Day 26,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  160;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {4d3e9d88-d995-47c1-abaa-95f4e1264081}, !- Handle
+  Schedule Day 27,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  160;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {0232d179-83bb-4951-84ce-2b643f599f56}, !- Handle
+  Schedule Day 28,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  160;                                    !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {06662bde-c30d-474e-8297-6586c00bfdde}, !- Handle
+  Occ Heat Gain Sched NCC2019 Table 2n AIRAH-DA09 Light Work, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {9b386533-499e-402f-b9b8-adb468c07757}, !- Default Day Schedule Name
+  {94db79d5-d717-4dad-96b3-ec6d348cb351}, !- Summer Design Day Schedule Name
+  {f74ef504-1d5a-48a6-bf4f-610b0f0900c2}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {9b386533-499e-402f-b9b8-adb468c07757}, !- Handle
+  Schedule Day 29,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  220;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {94db79d5-d717-4dad-96b3-ec6d348cb351}, !- Handle
+  Schedule Day 30,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  220;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {f74ef504-1d5a-48a6-bf4f-610b0f0900c2}, !- Handle
+  Schedule Day 31,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  220;                                    !- Value Until Time 1
+
+OS:DefaultScheduleSet,
+  {e7910fcb-5792-437a-9869-6724a1e85a49}, !- Handle
+  Office NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {a2418da6-a699-4b6b-89f4-8ad4fc3f267c}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:Schedule:Ruleset,
+  {a2418da6-a699-4b6b-89f4-8ad4fc3f267c}, !- Handle
+  Occ Heat Gain Sched NCC2019 Table 2n AIRAH-DA09 Seated&#44Standing, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {3c2e09be-b53e-42fc-967f-515bc103e1ec}, !- Default Day Schedule Name
+  {abf13c79-2f9f-4613-978e-71077469577f}, !- Summer Design Day Schedule Name
+  {ad29982a-a29b-457a-a523-153bc222cd58}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {3c2e09be-b53e-42fc-967f-515bc103e1ec}, !- Handle
+  Schedule Day 32,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {abf13c79-2f9f-4613-978e-71077469577f}, !- Handle
+  Schedule Day 33,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {ad29982a-a29b-457a-a523-153bc222cd58}, !- Handle
+  Schedule Day 34,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  130;                                    !- Value Until Time 1
+
+OS:SpaceType,
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Handle
+  Board room NCC2019 Class 9b,            !- Name
+  ,                                       !- Default Construction Set Name
+  {e7910fcb-5792-437a-9869-6724a1e85a49}, !- Default Schedule Set Name
+  {08342fe7-2b0e-43a6-8cfa-72ecdec9f86c}, !- Group Rendering Name
+  {a8e5cd0b-7b8c-4332-ac69-81c4704ec5a8}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {08342fe7-2b0e-43a6-8cfa-72ecdec9f86c}, !- Handle
+  Rendering Color 6,                      !- Name
+  0,                                      !- Rendering Red Value
+  127,                                    !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {a8e5cd0b-7b8c-4332-ac69-81c4704ec5a8}, !- Handle
+  Board room 2012AS1668.2 Table A1 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {bd9203b9-ef99-439c-8223-37a47c139d58}, !- Handle
+  NCC2019 JVb.2.d Infiltration 2,         !- Name
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:ElectricEquipment,
+  {611f451f-1205-4e0b-b15d-9953a563afcf}, !- Handle
+  Cafeteria Electric Equipment,           !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {a604140a-67bb-4c5a-9187-291631f4d153}, !- Handle
+  Board room Electric Equipment,          !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {73c21003-57b5-4076-89c8-af410367dd00}, !- Handle
+  Cafeteria Lights,                       !- Name
+  {3bf6f664-7711-4f72-9437-3058779df2fc}, !- Lights Definition Name
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {7353c67d-f9fe-4e1f-beb6-bcdc3819f9f9}, !- Handle
+  Board room Lights,                      !- Name
+  {2b632c43-f5a1-4141-ace5-1f3e75ce7d1a}, !- Lights Definition Name
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:People,
+  {e85a6a8d-7c1a-4982-aeb2-464bd8d5f3dd}, !- Handle
+  Board room People,                      !- Name
+  {5421b977-73c9-4fef-ab62-9ca43f94ded9}, !- People Definition Name
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {c09cb85c-7ca4-4832-9283-1d3652f05f91}, !- Handle
+  Cafeteria People,                       !- Name
+  {4cedb203-37d8-4c4f-88e3-ce1fa74a194f}, !- People Definition Name
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {0e167d08-912b-423f-8390-cecba57ce6d7}, !- Handle
+  Internal Mass - Classroom Furnishings 1, !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {5b043889-1b8b-4d7a-8f5b-efebeb6d6f47}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {923a8fe1-c10d-424a-a00d-6fdb59ca3c57}, !- Handle
+  Internal Mass - Classroom Furnishings 2, !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {da3eade6-b89b-46c5-86fb-ed973ecd6582}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:SpaceType,
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Handle
+  Kitchen NCC2019 Class 9b,               !- Name
+  ,                                       !- Default Construction Set Name
+  {c46623a9-9265-4f58-98fe-7852395ec256}, !- Default Schedule Set Name
+  {12f82c5d-1d32-4829-b683-94200da3438d}, !- Group Rendering Name
+  {b4044c9c-756b-4dd9-b19d-eb7f68e0f353}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {12f82c5d-1d32-4829-b683-94200da3438d}, !- Handle
+  Rendering Color 7,                      !- Name
+  238,                                    !- Rendering Red Value
+  170,                                    !- Rendering Green Value
+  232;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Handle
+  Office NCC2019 Class 9b,                !- Name
+  ,                                       !- Default Construction Set Name
+  {e7910fcb-5792-437a-9869-6724a1e85a49}, !- Default Schedule Set Name
+  {451dfa97-7355-4bd6-a60c-f0b37680eab7}, !- Group Rendering Name
+  {bad25b68-6b1e-4860-9ade-f5783baa1c60}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {451dfa97-7355-4bd6-a60c-f0b37680eab7}, !- Handle
+  Rendering Color 8,                      !- Name
+  176,                                    !- Rendering Red Value
+  222,                                    !- Rendering Green Value
+  196;                                    !- Rendering Blue Value
+
+OS:DesignSpecification:OutdoorAir,
+  {bad25b68-6b1e-4860-9ade-f5783baa1c60}, !- Handle
+  Office 2012AS1668.2 Table A1 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {b4044c9c-756b-4dd9-b19d-eb7f68e0f353}, !- Handle
+  Kitchen 2012AS1668.2 Table A1 Ventilation, !- Name
+  Sum,                                    !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  ,                                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {1a5e09b2-a870-46cc-bc0d-3ce443b55ea7}, !- Handle
+  NCC2019 JVb.2.d Infiltration 3,         !- Name
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {68454eac-7d63-4aa3-a705-0a6a83ca8690}, !- Handle
+  NCC2019 JVb.2.d Infiltration 4,         !- Name
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceType,
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Handle
+  Gymnasium NCC2019 Class 9b,             !- Name
+  ,                                       !- Default Construction Set Name
+  {901c0845-f2df-4697-abcf-325fdf801953}, !- Default Schedule Set Name
+  {19ab7ed0-a2ec-45ca-9ed5-2e8328e2bee3}, !- Group Rendering Name
+  {546574bf-7eb8-4577-9fdd-74d8aef51681}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {19ab7ed0-a2ec-45ca-9ed5-2e8328e2bee3}, !- Handle
+  Rendering Color 9,                      !- Name
+  128,                                    !- Rendering Red Value
+  0,                                      !- Rendering Green Value
+  128;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Handle
+  Library reading NCC2019 Class 9b,       !- Name
+  ,                                       !- Default Construction Set Name
+  {b05e0df4-9357-4b55-9067-3127989abaea}, !- Default Schedule Set Name
+  {d1fb61c2-3e76-47b2-881b-1e21e8c43ca6}, !- Group Rendering Name
+  {cf4c0e99-54a2-4228-98ee-216aca5ebd58}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {d1fb61c2-3e76-47b2-881b-1e21e8c43ca6}, !- Handle
+  Rendering Color 10,                     !- Name
+  255,                                    !- Rendering Red Value
+  205,                                    !- Rendering Green Value
+  235;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Handle
+  Library storage NCC2019 Class 9b,       !- Name
+  ,                                       !- Default Construction Set Name
+  {b05e0df4-9357-4b55-9067-3127989abaea}, !- Default Schedule Set Name
+  {dd695ba1-eab1-4ea8-809b-7453ee75f554}, !- Group Rendering Name
+  {cf4c0e99-54a2-4228-98ee-216aca5ebd58}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {dd695ba1-eab1-4ea8-809b-7453ee75f554}, !- Handle
+  Rendering Color 11,                     !- Name
+  176,                                    !- Rendering Red Value
+  222,                                    !- Rendering Green Value
+  196;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Handle
+  Classroom >16yrs_age NCC2019 Class 9b,  !- Name
+  ,                                       !- Default Construction Set Name
+  {b05e0df4-9357-4b55-9067-3127989abaea}, !- Default Schedule Set Name
+  {ba1972c7-0627-477d-a8ef-1caa46ecc0eb}, !- Group Rendering Name
+  {0d034d2e-edb3-46e8-a7a4-c465244be3ab}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {ba1972c7-0627-477d-a8ef-1caa46ecc0eb}, !- Handle
+  Rendering Color 12,                     !- Name
+  255,                                    !- Rendering Red Value
+  245,                                    !- Rendering Green Value
+  240;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Handle
+  Multipurpose NCC2019 Class 9b,          !- Name
+  ,                                       !- Default Construction Set Name
+  {901c0845-f2df-4697-abcf-325fdf801953}, !- Default Schedule Set Name
+  {12d80da8-9bc2-41c2-af76-86d14d9ffcf8}, !- Group Rendering Name
+  {083b2917-d1d4-4312-9058-a39dba6b071a}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {12d80da8-9bc2-41c2-af76-86d14d9ffcf8}, !- Handle
+  Rendering Color 13,                     !- Name
+  160,                                    !- Rendering Red Value
+  45,                                     !- Rendering Green Value
+  82;                                     !- Rendering Blue Value
+
+OS:SpaceType,
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Handle
+  Staff room NCC2019 Class 9b,            !- Name
+  ,                                       !- Default Construction Set Name
+  {8790ac8c-a703-4ecb-90a2-8d78eb05e4e6}, !- Default Schedule Set Name
+  {33ded067-a2b8-4872-a943-f319df1161c7}, !- Group Rendering Name
+  {eee824af-81eb-483c-a6ab-5809031656a0}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {33ded067-a2b8-4872-a943-f319df1161c7}, !- Handle
+  Rendering Color 14,                     !- Name
+  210,                                    !- Rendering Red Value
+  140,                                    !- Rendering Green Value
+  180;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Handle
+  Trade/practical NCC2019 Class 9b,       !- Name
+  ,                                       !- Default Construction Set Name
+  {059438ba-1503-4e54-968b-85e8999bfff2}, !- Default Schedule Set Name
+  {97bca166-ad06-4c67-8619-f77f721d242d}, !- Group Rendering Name
+  {ff3bb500-4c83-4dd9-a3ae-6a9a6af72e01}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {97bca166-ad06-4c67-8619-f77f721d242d}, !- Handle
+  Rendering Color 15,                     !- Name
+  72,                                     !- Rendering Red Value
+  139,                                    !- Rendering Green Value
+  61;                                     !- Rendering Blue Value
+
+OS:SpaceType,
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Handle
+  Workshop NCC2019 Class 9b,              !- Name
+  ,                                       !- Default Construction Set Name
+  {059438ba-1503-4e54-968b-85e8999bfff2}, !- Default Schedule Set Name
+  {74379161-0036-4e2d-9cae-557454518848}, !- Group Rendering Name
+  {8cde0496-9a85-46cd-b9eb-6faf0d9025c2}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {74379161-0036-4e2d-9cae-557454518848}, !- Handle
+  Rendering Color 16,                     !- Name
+  240,                                    !- Rendering Red Value
+  255,                                    !- Rendering Green Value
+  248;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {cfd1e4dc-5a23-4b45-a9cf-b0b8af88ba3d}, !- Handle
+  Storage NCC2019 Class 9b,               !- Name
+  ,                                       !- Default Construction Set Name
+  {0f280ae4-dadf-468f-b4c3-9eda59eaf988}, !- Default Schedule Set Name
+  {222680ec-4736-4b40-87fc-05fe5e7cb4a3}, !- Group Rendering Name
+  {bc9e116c-1ece-48bb-bcfe-d840614f5214}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {222680ec-4736-4b40-87fc-05fe5e7cb4a3}, !- Handle
+  Rendering Color 17,                     !- Name
+  210,                                    !- Rendering Red Value
+  30,                                     !- Rendering Green Value
+  105;                                    !- Rendering Blue Value
+
+OS:SpaceType,
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Handle
+  Electrical/Mechanical NCC2019 Class 9b, !- Name
+  ,                                       !- Default Construction Set Name
+  {0f280ae4-dadf-468f-b4c3-9eda59eaf988}, !- Default Schedule Set Name
+  {ee78968a-9f69-4bc9-93ea-964caade494f}, !- Group Rendering Name
+  {d6dc81ea-f629-40d9-aa9a-2711ea68c91b}; !- Design Specification Outdoor Air Object Name
+
+OS:Rendering:Color,
+  {ee78968a-9f69-4bc9-93ea-964caade494f}, !- Handle
+  Rendering Color 18,                     !- Name
+  173,                                    !- Rendering Red Value
+  47,                                     !- Rendering Green Value
+  255;                                    !- Rendering Blue Value
+
+OS:Schedule:Ruleset,
+  {1e62756a-ceb5-48d7-bdb8-2007b4ea4239}, !- Handle
+  Occ Heat Gain Sched NCC2019 Table 2n AIRAH-DA09 Athletics, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {c0dbb6e1-266e-42e3-990a-18b9039b01d3}, !- Default Day Schedule Name
+  {848ca4d5-deda-4137-90d4-07535b8b09a9}, !- Summer Design Day Schedule Name
+  {08474927-fdae-43fd-89e8-3bbffaa9a13a}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {c0dbb6e1-266e-42e3-990a-18b9039b01d3}, !- Handle
+  Schedule Day 35,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  525;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {848ca4d5-deda-4137-90d4-07535b8b09a9}, !- Handle
+  Schedule Day 36,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  525;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {08474927-fdae-43fd-89e8-3bbffaa9a13a}, !- Handle
+  Schedule Day 37,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  525;                                    !- Value Until Time 1
+
+OS:DefaultScheduleSet,
+  {901c0845-f2df-4697-abcf-325fdf801953}, !- Handle
+  Gymnasium NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {1e62756a-ceb5-48d7-bdb8-2007b4ea4239}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:DefaultScheduleSet,
+  {0f280ae4-dadf-468f-b4c3-9eda59eaf988}, !- Handle
+  Electrical/Mechanical NCC2019 Class 9b School Schedule Set 1, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:Schedule:Ruleset,
+  {17225cee-0e14-4c95-923f-60c12021201b}, !- Handle
+  Occ Heat Gain Sched NCC2019 Table 2n AIRAH-DA09 Heavy Work, !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  {6d8956c0-7b2c-4196-ba2e-33515693c569}, !- Default Day Schedule Name
+  {f0e53c1f-5fbb-4fd8-9cdb-1a92f29c3bf7}, !- Summer Design Day Schedule Name
+  {2032e66b-b646-457b-95d1-0809ba8d92ad}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {6d8956c0-7b2c-4196-ba2e-33515693c569}, !- Handle
+  Schedule Day 38,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  425;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {f0e53c1f-5fbb-4fd8-9cdb-1a92f29c3bf7}, !- Handle
+  Schedule Day 39,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  425;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {2032e66b-b646-457b-95d1-0809ba8d92ad}, !- Handle
+  Schedule Day 40,                        !- Name
+  {dd816df4-31c6-4570-971d-8ddac48569f3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  425;                                    !- Value Until Time 1
+
+OS:DefaultScheduleSet,
+  {059438ba-1503-4e54-968b-85e8999bfff2}, !- Handle
+  Trade/practical NCC2019 Class 9b School Schedule Set, !- Name
+  {acb3c318-936c-4cf6-a697-5724759dda46}, !- Hours of Operation Schedule Name
+  {69541495-d71a-476f-901e-d5c1b8d3e409}, !- Number of People Schedule Name
+  {17225cee-0e14-4c95-923f-60c12021201b}, !- People Activity Level Schedule Name
+  {6d28da58-30c1-4ff3-b481-889f1a22ea59}, !- Lighting Schedule Name
+  {a4bac78c-e9c4-48ef-af24-3ac45ebd628d}, !- Electric Equipment Schedule Name
+  ,                                       !- Gas Equipment Schedule Name
+  ,                                       !- Hot Water Equipment Schedule Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Infiltration Schedule Name
+  ,                                       !- Steam Equipment Schedule Name
+  ;                                       !- Other Equipment Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {0d034d2e-edb3-46e8-a7a4-c465244be3ab}, !- Handle
+  Classroom >16yrs_age 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {d6dc81ea-f629-40d9-aa9a-2711ea68c91b}, !- Handle
+  Electrical/mechanical room 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0,                                      !- Outdoor Air Flow per Person {m3/s-person}
+  0.004,                                  !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {546574bf-7eb8-4577-9fdd-74d8aef51681}, !- Handle
+  Gymnasium 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {cf4c0e99-54a2-4228-98ee-216aca5ebd58}, !- Handle
+  Library 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {083b2917-d1d4-4312-9058-a39dba6b071a}, !- Handle
+  Multipurpose 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {eee824af-81eb-483c-a6ab-5809031656a0}, !- Handle
+  Staff room 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {bc9e116c-1ece-48bb-bcfe-d840614f5214}, !- Handle
+  Storage 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0,                                      !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {ff3bb500-4c83-4dd9-a3ae-6a9a6af72e01}, !- Handle
+  Trade/practical 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:DesignSpecification:OutdoorAir,
+  {8cde0496-9a85-46cd-b9eb-6faf0d9025c2}, !- Handle
+  Workshop 2012AS1668.2 Table A1 Ventilation, !- Name
+  ,                                       !- Outdoor Air Method
+  0.01,                                   !- Outdoor Air Flow per Person {m3/s-person}
+  0.00035,                                !- Outdoor Air Flow per Floor Area {m3/s-m2}
+  ,                                       !- Outdoor Air Flow Rate {m3/s}
+  0,                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+  ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {86fad54e-be35-4f93-bc71-f52da6fc7617}, !- Handle
+  NCC2019 JVb.2.d Infiltration 5,         !- Name
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {b9d56740-b0da-4fd3-9742-7ad0ee308a9b}, !- Handle
+  NCC2019 JVb.2.d Infiltration 6,         !- Name
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {99a809de-9afd-4b56-97c8-03cfaf665ec0}, !- Handle
+  NCC2019 JVb.2.d Infiltration 7,         !- Name
+  {cfd1e4dc-5a23-4b45-a9cf-b0b8af88ba3d}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {28cb34c6-e946-4323-ad6b-126876a6cbb1}, !- Handle
+  NCC2019 JVb.2.d Infiltration 8,         !- Name
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {bb38621b-37bd-4703-a1f6-3d28510b42d0}, !- Handle
+  NCC2019 JVb.2.d Infiltration 9,         !- Name
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {83c0d415-8575-4a3e-a0bf-25faddf68d4a}, !- Handle
+  NCC2019 JVb.2.d Infiltration 10,        !- Name
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {0f21c3db-fbb8-49e3-b699-16c3c1946523}, !- Handle
+  NCC2019 JVb.2.d Infiltration 11,        !- Name
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {5df1e88c-422a-4837-8b60-c0dd332d5a30}, !- Handle
+  NCC2019 JVb.2.d Infiltration 12,        !- Name
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {8a32a40b-bffa-4875-a4d1-513ed9a5494c}, !- Handle
+  NCC2019 JVb.2.d Infiltration 13,        !- Name
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:SpaceInfiltration:DesignFlowRate,
+  {aa55b142-4338-402a-b649-a8e1842d13c1}, !- Handle
+  NCC2019 JVb.2.d Infiltration 14,        !- Name
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Space or SpaceType Name
+  {dbaf5bff-7b92-4c32-b353-fcf7418589dd}, !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Space Floor Area {m3/s-m2}
+  0,                                      !- Flow per Exterior Surface Area {m3/s-m2}
+  1,                                      !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
+
+OS:ElectricEquipment,
+  {abb2c38c-4edf-43e3-baa7-48ae4ad346d1}, !- Handle
+  Classroom >16yrs_age Electric Equipment, !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {1881849b-eabe-471d-b37c-4d02c432e33e}, !- Handle
+  Electrical/Mechanical Electric Equipment, !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {e2ef3095-54b2-4a71-9c26-00618e864d9c}, !- Handle
+  Gymnasium Electric Equipment,           !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {b3d8ef31-b504-4829-bbe3-c870600c6159}, !- Handle
+  Kitchen Electric Equipment,             !- Name
+  {537aa2fb-9a8d-47d3-8109-4c0c3cf1cdec}, !- Electric Equipment Definition Name
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {153fd6f2-0f10-4d55-8b41-6466639721dd}, !- Handle
+  Library reading Electric Equipment,     !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {267a7904-570d-4e79-909f-a7b4e93309d9}, !- Handle
+  Library storage Electric Equipment,     !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {d0b815b3-02b2-4d62-9a68-774bbf6f4441}, !- Handle
+  Multipurpose Electric Equipment,        !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {057e6562-382e-4e95-be7e-db932fa11886}, !- Handle
+  Office Electric Equipment,              !- Name
+  {f770ec95-52f7-44eb-9dd6-1c4ca85c7610}, !- Electric Equipment Definition Name
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {5e42cf84-0fe2-4aa5-8af9-472b2d99a1c0}, !- Handle
+  Staff room Electric Equipment,          !- Name
+  {f770ec95-52f7-44eb-9dd6-1c4ca85c7610}, !- Electric Equipment Definition Name
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {9453d772-3212-4411-891d-8571655f9361}, !- Handle
+  Trade/practical Electric Equipment,     !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:ElectricEquipment,
+  {790215fe-81b7-4933-a6a5-bb661b89f5de}, !- Handle
+  Workshop Electric Equipment,            !- Name
+  {6cb01180-e343-4ddb-8606-1ff979c26dda}, !- Electric Equipment Definition Name
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {2a1037e7-5e14-4a0a-aa4a-036fc5d8de0c}, !- Handle
+  Classroom >16yrs_age Lights,            !- Name
+  {a22f4880-0238-460e-bd86-73d85e79605a}, !- Lights Definition Name
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {4d6b2f66-5e18-47ae-b0ae-07b7c263f799}, !- Handle
+  Electrical/Mechanical Lights,           !- Name
+  {422071a2-8cb2-46b7-ad42-c7791aa8cd17}, !- Lights Definition Name
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {46826771-b9f3-450a-bc1a-d17aa711928d}, !- Handle
+  Gymnasium Lights,                       !- Name
+  {22f86a18-2962-489f-8783-25448343f45b}, !- Lights Definition Name
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {20379c36-9ec0-4976-ba0e-15fe5576e163}, !- Handle
+  Kitchen Lights,                         !- Name
+  {c6290ab2-52ff-4311-b9a0-79a6a80ffb56}, !- Lights Definition Name
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {2bda0f01-3a55-4464-bcef-ac615165a711}, !- Handle
+  Library reading Lights,                 !- Name
+  {d86e131d-5a81-4657-9486-af8e26b303f1}, !- Lights Definition Name
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {0da1f158-b907-4e01-859c-2e3d71ac01c6}, !- Handle
+  Library storage Lights,                 !- Name
+  {a3b1f1a1-ea7b-47e0-9014-23d8372ba8e0}, !- Lights Definition Name
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {b5a85d87-c2f9-4c60-8082-92decebc6afd}, !- Handle
+  Multipurpose Lights,                    !- Name
+  {22f86a18-2962-489f-8783-25448343f45b}, !- Lights Definition Name
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {9962486b-b429-4e20-bd8f-492e6cc2398a}, !- Handle
+  Office Lights,                          !- Name
+  {82dc4001-fa79-4c0a-a5f0-264b80ad6d78}, !- Lights Definition Name
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {8a9611bb-ce80-4f85-b06c-68fd48293ffc}, !- Handle
+  Staff room Lights,                      !- Name
+  {2b632c43-f5a1-4141-ace5-1f3e75ce7d1a}, !- Lights Definition Name
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {99af71ae-ad49-463d-9468-7f5f49f19770}, !- Handle
+  Storage Lights,                         !- Name
+  {c3355867-86a5-47de-8dc3-b79407b97332}, !- Lights Definition Name
+  {cfd1e4dc-5a23-4b45-a9cf-b0b8af88ba3d}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {383fe034-4681-41e9-86df-3473721cedda}, !- Handle
+  Trade/practical Lights,                 !- Name
+  {422071a2-8cb2-46b7-ad42-c7791aa8cd17}, !- Lights Definition Name
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:Lights,
+  {884bb638-ecd0-4d85-b101-ae0dc13b5e64}, !- Handle
+  Workshop Lights,                        !- Name
+  {422071a2-8cb2-46b7-ad42-c7791aa8cd17}, !- Lights Definition Name
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Space or SpaceType Name
+  ,                                       !- Schedule Name
+  1,                                      !- Fraction Replaceable
+  ,                                       !- Multiplier
+  General;                                !- End-Use Subcategory
+
+OS:People,
+  {a4e736ea-a254-4164-9f29-80f182ab2129}, !- Handle
+  Classroom >16yrs_age People,            !- Name
+  {f445c4f7-be73-4e4b-af7b-e7abeaebad7e}, !- People Definition Name
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {bbcdb238-7f91-4cc1-b042-ff6625ddac73}, !- Handle
+  Electrical/Mechanical People,           !- Name
+  {c39df475-c8eb-4ac4-aded-5a2e468d0b2a}, !- People Definition Name
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {68297b4b-1888-4b69-9c4f-d9e9a0b0d3db}, !- Handle
+  Gymnasium People,                       !- Name
+  {4036446d-43b6-4b8f-ae6f-77bf205441b6}, !- People Definition Name
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {a55b7770-8d98-4abf-9140-3ab264a2c46e}, !- Handle
+  Kitchen People,                         !- Name
+  {dbaf1119-ca64-4c0d-9f76-8517d4a8dd99}, !- People Definition Name
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {5822e47f-b239-45eb-8d0b-96ee45bb239c}, !- Handle
+  Library reading People,                 !- Name
+  {7e8f5f02-b053-44e9-8d47-3ec201413831}, !- People Definition Name
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {a41eadae-78a1-432e-8a34-43831fd852f9}, !- Handle
+  Library storage People,                 !- Name
+  {b05180d8-3176-4642-8a42-97e0989b9986}, !- People Definition Name
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {132a22c3-9672-4964-8f63-ca04cd302542}, !- Handle
+  Multipurpose People,                    !- Name
+  {4cedb203-37d8-4c4f-88e3-ce1fa74a194f}, !- People Definition Name
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {87293a87-47f5-492b-98d5-256a143fcd4b}, !- Handle
+  Office People,                          !- Name
+  {b9efb41c-0444-4421-8828-bbdc8adabcc8}, !- People Definition Name
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {0c8fbfb0-b593-4801-a66b-ba859b5d5974}, !- Handle
+  Staff room People,                      !- Name
+  {09d48e6e-86f0-4f90-aaa7-0cd35bd9bb86}, !- People Definition Name
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {3387565b-b060-4227-a21c-244625afd549}, !- Handle
+  Trade/practical People,                 !- Name
+  {27b698ee-b2fa-45e9-8dff-1073bdc3a0af}, !- People Definition Name
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:People,
+  {1b1cccb8-b295-404f-a244-393f01e4a90c}, !- Handle
+  Workshop People,                        !- Name
+  {27b698ee-b2fa-45e9-8dff-1073bdc3a0af}, !- People Definition Name
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Space or SpaceType Name
+  ,                                       !- Number of People Schedule Name
+  ,                                       !- Activity Level Schedule Name
+  ,                                       !- Surface Name/Angle Factor List Name
+  ,                                       !- Work Efficiency Schedule Name
+  ,                                       !- Clothing Insulation Schedule Name
+  ,                                       !- Air Velocity Schedule Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {41bb92e5-f7ff-4162-913b-373a7cb70400}, !- Handle
+  Internal Mass 1,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {6198108e-126b-475d-bca0-2172e0425973}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {419ac072-b343-4551-ac00-140660302c09}, !- Handle
+  Internal Mass 2,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {ba5e45a4-6bb2-4974-9532-e895003591c0}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {4a05b99e-4e73-4a27-acd4-ecd98f227e0e}, !- Handle
+  Internal Mass 3,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {3aebc6b6-c940-40b4-aee7-7a0aa6252388}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {b541320f-1667-407d-96eb-6656260c2eb1}, !- Handle
+  Internal Mass 4,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {6e0f79c5-2010-431c-a40f-2a76cffc0e7a}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {bfdfa468-7f29-4349-97ff-29d128fb6411}, !- Handle
+  Internal Mass 5,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {6fabbadb-27bc-49b6-a8eb-4e009bee13b8}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {147980a3-4d60-4762-a173-f3c3fc862fc4}, !- Handle
+  Internal Mass 6,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {6afd0d76-2a3d-44ae-a933-ab9cf665eede}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {1d72e159-34f3-4f63-8b8e-c98da605be64}, !- Handle
+  Internal Mass 7,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {1768ab55-3770-4618-bacc-3df78bda35d1}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {3374e14d-d99e-45e6-89f2-919cde7b043c}, !- Handle
+  Internal Mass 8,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {7997b85b-5db3-4d42-916c-33e56d9791e8}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {78cdd3c8-7101-448a-b47e-7af32404c983}, !- Handle
+  Internal Mass 9,                        !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {6a087f21-b31b-422c-a5f0-b1c9d03847c6}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {3c12e920-8bf9-4515-be5e-af1ec7875ed2}, !- Handle
+  Internal Mass 10,                       !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {cfd1e4dc-5a23-4b45-a9cf-b0b8af88ba3d}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {c7f8ae07-c610-4dc5-b807-ca1ae91d6be8}, !- Handle
+  Internal Mass 11,                       !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {5e1bcf47-8fd8-429c-8688-d995137d719b}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+
+OS:InternalMass,
+  {696bdce2-e5d8-4541-bdf7-a94309cce4e4}, !- Handle
+  Internal Mass 12,                       !- Name
+  {f1577225-0258-4e61-b673-cf9818678ed1}, !- Internal Mass Definition Name
+  {73869691-0c13-4a78-a3cd-eb734a8be50a}, !- Space or SpaceType Name
+  1;                                      !- Multiplier
+

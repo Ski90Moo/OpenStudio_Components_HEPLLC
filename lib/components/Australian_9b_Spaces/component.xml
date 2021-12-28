@@ -22,7 +22,6 @@
    <datatype>string</datatype>
   </attribute>
   <attribute>
-  <attribute>
    <name>Building Type</name>
    <value>k-12 school</value>
    <datatype>string</datatype>

@@ -11,6 +11,17 @@
   <tag>Whole Building</tag>
  </tags>
  <attributes>
+   <attribute>
+   <name>Country</name>
+   <value>Australia</value>
+   <datatype>string</datatype>
+  </attribute>
+   <attribute>
+   <name>Climate Zone</name>
+   <value>All</value>
+   <datatype>string</datatype>
+  </attribute>
+  <attribute>
   <attribute>
    <name>Building Type</name>
    <value>k-12 school</value>

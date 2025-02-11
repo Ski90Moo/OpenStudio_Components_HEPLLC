@@ -1,0 +1,87 @@
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="component.xsd">
+ <schema_version/>
+ <name>Library_Mitsubishi</name>
+ <uid>810c7754-2057-4706-8e0f-b1fff5e2e3ef</uid>
+ <version_id>fde78ae4-bb0d-48bb-86ad-bf3399ec9688</version_id>
+ <xml_checksum/>
+ <display_name>Library Mitsubishi</display_name>
+ <description>Library of objects for various Mitsubishi Equipment.  Currently holds P-Series VRF equipment, but additional equipment is planned. This information was compiled from data available on Mitsubishi USA (mylinkdrive.com/USA)</description>
+ <modeler_description/> See notes to the energy modeler PDF <modeler_description/>
+<source>
+<manufacturer/>
+<model/>
+<serial_no/>
+<year/>
+<url>https://www.helix-engineers.net/</url>
+</source>
+ <tags>
+  <tag>Ductless Heat Pump</tag>
+ </tags>
+ <attributes>
+<attribute>
+<name>TPE uuid</name>
+<value>50470338-f37b-4181-a22e-ea5df1a12db3</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Manufacturer</name>
+<value>LG Electronics USA</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Model Number</name>
+<value>ARNU053TRC2</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Brand</name>
+<value>Mitsubishi USA</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>OpenStudio Type</name>
+<value>OS:ZoneHVAC:TerminalUnit:VariableRefrigerantFlow</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Product Line/Family Name</name>
+<value>VRF</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Rated Cooling Capacity</name>
+<value>VARIOUS</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Rated Heating Capacity</name>
+<value>VARIOUS</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Rated Cooling Air Flow Rate</name>
+<value>VARIOUS</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Rated Heating Air Flow Rate</name>
+<value>VARIOUS</value>
+<datatype>string</datatype>
+</attribute>
+<attribute>
+<name>Working Refrigerant</name>
+<value>VARIOUS</value>
+<datatype>string</datatype>
+</attribute>
+ </attributes>
+ <files>
+  <file>
+   <version>
+    <software_program>OpenStudio</software_program>
+    <identifier>3.8.0</identifier>
+   </version>
+   <filename>Library_Mitsubishi_VRF.osm</filename>
+   <filetype>osm</filetype>
+  </file>
+ </files>
+</component>

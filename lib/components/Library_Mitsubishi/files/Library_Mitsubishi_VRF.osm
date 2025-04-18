@@ -7062,7 +7062,7 @@ OS:Table:IndependentVariable,
 
 OS:ZoneHVAC:TerminalUnit:VariableRefrigerantFlow,
   {b26b72fc-3152-4d72-aa5b-a315c6c600f9}, !- Handle
-  Mitsubishi PEFY_P06NMSU-ER2 NONDUCTED VRF-TU, !- Name
+  Mitsubishi PEFY_P06NMSU-ER2 DUCTED VRF-TU, !- Name
   {daa43977-fdc6-4078-8925-676b425434b3}, !- Terminal Unit Availability schedule
   ,                                       !- Terminal Unit Air Inlet Node
   ,                                       !- Terminal Unit Air Outlet Node
@@ -7268,7 +7268,7 @@ OS:Table:IndependentVariable,
 
 OS:ZoneHVAC:TerminalUnit:VariableRefrigerantFlow,
   {d0900054-667a-4752-bd16-6a0fb36776f1}, !- Handle
-  Mitsubishi PEFY_P30NMAU-E5 NONDUCTED VRF-TU, !- Name
+  Mitsubishi PEFY_P30NMAU-E5 DUCTED VRF-TU, !- Name
   {daa43977-fdc6-4078-8925-676b425434b3}, !- Terminal Unit Availability schedule
   ,                                       !- Terminal Unit Air Inlet Node
   ,                                       !- Terminal Unit Air Outlet Node

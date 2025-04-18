@@ -1,7 +1,7 @@
 
 OS:Version,
-  {5ab28d16-5a5c-45bb-b4a0-d5ac01ff7727}, !- Handle
-  3.8.0;                                  !- Version Identifier
+  {9c607387-1f94-43fb-b037-bdfa0b1149e8}, !- Handle
+  3.9.0;                                  !- Version Identifier
 
 OS:Site,
   {dd2b8ffc-62bd-440d-a2cf-2f78f9cf842b}, !- Handle
@@ -28,7 +28,7 @@ OS:ClimateZones,
 
 OS:Building,
   {49f394f2-ad8f-47a5-98a3-6f071517af27}, !- Handle
-  VRF Library 1,                          !- Name
+  VRF Library 0,                          !- Name
   ,                                       !- Building Sector Type
   ,                                       !- North Axis {deg}
   ,                                       !- Nominal Floor to Floor Height {m}
@@ -7097,7 +7097,7 @@ OS:Fan:SystemModel,
   0.1165710184704,                        !- Design Maximum Air Flow Rate {m3/s}
   Discrete,                               !- Speed Control Method
   0.712550607287449,                      !- Electric Power Minimum Flow Rate Fraction
-  49.818,                                 !- Design Pressure Rise {Pa}
+  199.272,                                !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
   1,                                      !- Motor In Air Stream Fraction
   40,                                     !- Design Electric Power Consumption {W}
@@ -7106,7 +7106,7 @@ OS:Fan:SystemModel,
   1.66667,                                !- Electric Power Per Unit Flow Rate Per Unit Pressure {W-s/m3-Pa}
   0.7,                                    !- Fan Total Efficiency
   {c32c4dbc-2fbb-4425-a499-f5aca4d2b4dd}, !- Electric Power Function of Flow Fraction Curve Name
-  27.3999,                                !- Night Ventilation Mode Pressure Rise {Pa}
+  168.21090094009,                        !- Night Ventilation Mode Pressure Rise {Pa}
   0.712550607287449,                      !- Night Ventilation Mode Flow Fraction
   ,                                       !- Motor Loss Zone Name
   0.5,                                    !- Motor Loss Radiative Fraction
@@ -7303,7 +7303,7 @@ OS:Fan:SystemModel,
   0.5998452003072,                        !- Design Maximum Air Flow Rate {m3/s}
   Discrete,                               !- Speed Control Method
   0.694728560188828,                      !- Electric Power Minimum Flow Rate Fraction
-  49.818,                                 !- Design Pressure Rise {Pa}
+  199.272,                                !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
   1,                                      !- Motor In Air Stream Fraction
   221,                                    !- Design Electric Power Consumption {W}
@@ -7312,7 +7312,7 @@ OS:Fan:SystemModel,
   1.66667,                                !- Electric Power Per Unit Flow Rate Per Unit Pressure {W-s/m3-Pa}
   0.7,                                    !- Fan Total Efficiency
   {8ba16f48-cbc0-486f-90e7-d70c0515fbb4}, !- Electric Power Function of Flow Fraction Curve Name
-  92.1633,                                !- Night Ventilation Mode Pressure Rise {Pa}
+  166.093966313793,                       !- Night Ventilation Mode Pressure Rise {Pa}
   0.694728560188828,                      !- Night Ventilation Mode Flow Fraction
   ,                                       !- Motor Loss Zone Name
   0.5,                                    !- Motor Loss Radiative Fraction

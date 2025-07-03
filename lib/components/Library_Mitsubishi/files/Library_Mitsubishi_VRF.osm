@@ -1,6 +1,6 @@
 
 OS:Version,
-  {9c607387-1f94-43fb-b037-bdfa0b1149e8}, !- Handle
+  {79dd9df3-e785-4d8c-b4b1-9e2876834d84}, !- Handle
   3.9.0;                                  !- Version Identifier
 
 OS:Site,
@@ -148,7 +148,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.3832213238784,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.783251231527094,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -1429,7 +1429,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.2331420369408,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.607287449392713,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -1635,7 +1635,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.28316846592,                          !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.823333333333333,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -1841,7 +1841,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.266650305408,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.874336283185841,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2047,7 +2047,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.28316846592,                          !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.883333333333333,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2253,7 +2253,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.3832213238784,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.783251231527094,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2459,7 +2459,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.3832213238784,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.783251231527094,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2665,7 +2665,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.3832213238784,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.783251231527094,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2740,7 +2740,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.516782450304,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.70958904109589,                       !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -2946,7 +2946,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.5833270397952,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.628640776699029,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -6311,7 +6311,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.132145284096,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.821428571428571,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -6517,7 +6517,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.148663444608,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.73015873015873,                       !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -6723,7 +6723,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.184059502848,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.67948717948718,                       !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -6889,7 +6889,7 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.217095823872,                         !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.684782608695652,                      !- Electric Power Minimum Flow Rate Fraction
   250,                                    !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
@@ -7095,9 +7095,9 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.1165710184704,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.712550607287449,                      !- Electric Power Minimum Flow Rate Fraction
-  199.272,                                !- Design Pressure Rise {Pa}
+  49.818,                                 !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
   1,                                      !- Motor In Air Stream Fraction
   40,                                     !- Design Electric Power Consumption {W}
@@ -7106,7 +7106,7 @@ OS:Fan:SystemModel,
   1.66667,                                !- Electric Power Per Unit Flow Rate Per Unit Pressure {W-s/m3-Pa}
   0.7,                                    !- Fan Total Efficiency
   {c32c4dbc-2fbb-4425-a499-f5aca4d2b4dd}, !- Electric Power Function of Flow Fraction Curve Name
-  168.21090094009,                        !- Night Ventilation Mode Pressure Rise {Pa}
+  27.3999,                                !- Night Ventilation Mode Pressure Rise {Pa}
   0.712550607287449,                      !- Night Ventilation Mode Flow Fraction
   ,                                       !- Motor Loss Zone Name
   0.5,                                    !- Motor Loss Radiative Fraction
@@ -7301,9 +7301,9 @@ OS:Fan:SystemModel,
   ,                                       !- Air Inlet Node Name
   ,                                       !- Air Outlet Node Name
   0.5998452003072,                        !- Design Maximum Air Flow Rate {m3/s}
-  Discrete,                               !- Speed Control Method
+  Continuous,                             !- Speed Control Method
   0.694728560188828,                      !- Electric Power Minimum Flow Rate Fraction
-  199.272,                                !- Design Pressure Rise {Pa}
+  49.818,                                 !- Design Pressure Rise {Pa}
   0.9,                                    !- Motor Efficiency
   1,                                      !- Motor In Air Stream Fraction
   221,                                    !- Design Electric Power Consumption {W}
@@ -7312,7 +7312,7 @@ OS:Fan:SystemModel,
   1.66667,                                !- Electric Power Per Unit Flow Rate Per Unit Pressure {W-s/m3-Pa}
   0.7,                                    !- Fan Total Efficiency
   {8ba16f48-cbc0-486f-90e7-d70c0515fbb4}, !- Electric Power Function of Flow Fraction Curve Name
-  166.093966313793,                       !- Night Ventilation Mode Pressure Rise {Pa}
+  92.1633,                                !- Night Ventilation Mode Pressure Rise {Pa}
   0.694728560188828,                      !- Night Ventilation Mode Flow Fraction
   ,                                       !- Motor Loss Zone Name
   0.5,                                    !- Motor Loss Radiative Fraction
@@ -7471,4 +7471,1311 @@ OS:Table:IndependentVariable,
   22.9824939964849,                       !- Value 5
   24.9956226977844,                       !- Value 6
   27;                                     !- Value 7
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {1ad2cf72-64dd-4a9f-b39c-5bc1bd65c76c}, !- Handle
+  Mitsubishi PUHY-EP144TNU/YNU-A1 DUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  40400,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.17610062893082,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {f9cb4ee8-d750-40c4-8127-f0aec6ae9752}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {530ec717-69e9-4208-bbbb-be437d56b50d}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {6dd3d6c0-620f-419d-babb-792ce6aba791}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Cooling Part-Load Fraction Correlation Curve Name
+  44500,                                  !- Gross Rated Heating Capacity {W}
+  1.10148514851485,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.03811252268603,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {ae6c95af-6631-4ddb-b690-55d7e1b1cbe1}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {103b0dcf-ee58-4fcb-a5d7-005caf8cd1ed}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {70dc2d89-a4e8-433b-be05-5fca766d4cc9}, !- Heating Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {eaab4a7f-b371-44f6-a0c5-b02b3bd493c3}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {d4be8f8f-dc68-4f95-89c0-546e1f866530}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {99e9e525-4a0a-4647-ae7f-80a6387407fc}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {f6d72cdc-cf73-4f67-bca3-f8ab284a0ba9}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.49,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {9cbad46f-4861-4ef8-be70-d997643dad58}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {5cfee121-a550-4b87-9a05-b51319ed3a5c}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {331862d1-a65b-4ae8-9d4e-7cab30f0ff38}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {5106aacd-d2c4-4989-84c1-5d91220dd1a0}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {f9cb4ee8-d750-40c4-8127-f0aec6ae9752}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CCR_fn_T-Output, !- Name
+  {901abcf1-ddeb-46fc-bf4a-41551b9a7b85}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.402,                                  !- Minimum Output {BasedOnField A5}
+  1.129,                                  !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.129,                                  !- Output Value 1 {BasedOnField A5}
+  1.126,                                  !- Output Value 2 {BasedOnField A5}
+  0.911,                                  !- Output Value 3 {BasedOnField A5}
+  0.402,                                  !- Output Value 4 {BasedOnField A5}
+  1.129,                                  !- Output Value 5 {BasedOnField A5}
+  1.126,                                  !- Output Value 6 {BasedOnField A5}
+  0.911,                                  !- Output Value 7 {BasedOnField A5}
+  0.402,                                  !- Output Value 8 {BasedOnField A5}
+  1.129,                                  !- Output Value 9 {BasedOnField A5}
+  1.126,                                  !- Output Value 10 {BasedOnField A5}
+  0.911,                                  !- Output Value 11 {BasedOnField A5}
+  0.402,                                  !- Output Value 12 {BasedOnField A5}
+  1.129,                                  !- Output Value 13 {BasedOnField A5}
+  1.126,                                  !- Output Value 14 {BasedOnField A5}
+  0.911,                                  !- Output Value 15 {BasedOnField A5}
+  0.402,                                  !- Output Value 16 {BasedOnField A5}
+  1.129,                                  !- Output Value 17 {BasedOnField A5}
+  1.126,                                  !- Output Value 18 {BasedOnField A5}
+  0.911,                                  !- Output Value 19 {BasedOnField A5}
+  0.402;                                  !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {901abcf1-ddeb-46fc-bf4a-41551b9a7b85}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CCR_fn_T-IV_List, !- Name
+  {c7f2940e-ede3-4ce7-8519-9b86f4b06d4c}, !- Model Object 1
+  {730d9e33-2d18-48d0-8f6c-d949c2eab170}; !- Model Object 2
+
+OS:Table:Lookup,
+  {530ec717-69e9-4208-bbbb-be437d56b50d}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_T-Output, !- Name
+  {164dfb2f-37a4-4fc0-93d1-d575cd5472a1}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.249573610687204,                      !- Minimum Output {BasedOnField A5}
+  1.21559073985875,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.552,                                  !- Output Value 1 {BasedOnField A5}
+  0.631,                                  !- Output Value 2 {BasedOnField A5}
+  0.638,                                  !- Output Value 3 {BasedOnField A5}
+  0.642,                                  !- Output Value 4 {BasedOnField A5}
+  0.645,                                  !- Output Value 5 {BasedOnField A5}
+  0.646,                                  !- Output Value 6 {BasedOnField A5}
+  0.649,                                  !- Output Value 7 {BasedOnField A5}
+  0.653,                                  !- Output Value 8 {BasedOnField A5}
+  1.063,                                  !- Output Value 9 {BasedOnField A5}
+  0.25,                                   !- Output Value 10 {BasedOnField A5}
+  0.602,                                  !- Output Value 11 {BasedOnField A5}
+  0.682,                                  !- Output Value 12 {BasedOnField A5}
+  0.688,                                  !- Output Value 13 {BasedOnField A5}
+  0.69,                                   !- Output Value 14 {BasedOnField A5}
+  0.694,                                  !- Output Value 15 {BasedOnField A5}
+  0.698,                                  !- Output Value 16 {BasedOnField A5}
+  0.701,                                  !- Output Value 17 {BasedOnField A5}
+  0.709,                                  !- Output Value 18 {BasedOnField A5}
+  1.111,                                  !- Output Value 19 {BasedOnField A5}
+  0.296,                                  !- Output Value 20 {BasedOnField A5}
+  0.66,                                   !- Output Value 21 {BasedOnField A5}
+  0.741,                                  !- Output Value 22 {BasedOnField A5}
+  0.745,                                  !- Output Value 23 {BasedOnField A5}
+  0.751,                                  !- Output Value 24 {BasedOnField A5}
+  0.752,                                  !- Output Value 25 {BasedOnField A5}
+  0.756,                                  !- Output Value 26 {BasedOnField A5}
+  0.775,                                  !- Output Value 27 {BasedOnField A5}
+  0.783,                                  !- Output Value 28 {BasedOnField A5}
+  1.167,                                  !- Output Value 29 {BasedOnField A5}
+  0.357,                                  !- Output Value 30 {BasedOnField A5}
+  0.668,                                  !- Output Value 31 {BasedOnField A5}
+  0.745,                                  !- Output Value 32 {BasedOnField A5}
+  0.751,                                  !- Output Value 33 {BasedOnField A5}
+  0.755,                                  !- Output Value 34 {BasedOnField A5}
+  0.76,                                   !- Output Value 35 {BasedOnField A5}
+  0.768,                                  !- Output Value 36 {BasedOnField A5}
+  0.784,                                  !- Output Value 37 {BasedOnField A5}
+  0.792,                                  !- Output Value 38 {BasedOnField A5}
+  1.178,                                  !- Output Value 39 {BasedOnField A5}
+  0.371,                                  !- Output Value 40 {BasedOnField A5}
+  0.673,                                  !- Output Value 41 {BasedOnField A5}
+  0.751,                                  !- Output Value 42 {BasedOnField A5}
+  0.756,                                  !- Output Value 43 {BasedOnField A5}
+  0.761,                                  !- Output Value 44 {BasedOnField A5}
+  0.769,                                  !- Output Value 45 {BasedOnField A5}
+  0.779,                                  !- Output Value 46 {BasedOnField A5}
+  0.795,                                  !- Output Value 47 {BasedOnField A5}
+  0.804,                                  !- Output Value 48 {BasedOnField A5}
+  1.189,                                  !- Output Value 49 {BasedOnField A5}
+  0.381,                                  !- Output Value 50 {BasedOnField A5}
+  0.685,                                  !- Output Value 51 {BasedOnField A5}
+  0.761,                                  !- Output Value 52 {BasedOnField A5}
+  0.767,                                  !- Output Value 53 {BasedOnField A5}
+  0.786,                                  !- Output Value 54 {BasedOnField A5}
+  0.795,                                  !- Output Value 55 {BasedOnField A5}
+  0.802,                                  !- Output Value 56 {BasedOnField A5}
+  0.818,                                  !- Output Value 57 {BasedOnField A5}
+  0.827,                                  !- Output Value 58 {BasedOnField A5}
+  1.202,                                  !- Output Value 59 {BasedOnField A5}
+  0.392,                                  !- Output Value 60 {BasedOnField A5}
+  0.701,                                  !- Output Value 61 {BasedOnField A5}
+  0.773,                                  !- Output Value 62 {BasedOnField A5}
+  0.796,                                  !- Output Value 63 {BasedOnField A5}
+  0.812,                                  !- Output Value 64 {BasedOnField A5}
+  0.822,                                  !- Output Value 65 {BasedOnField A5}
+  0.831,                                  !- Output Value 66 {BasedOnField A5}
+  0.847,                                  !- Output Value 67 {BasedOnField A5}
+  0.854,                                  !- Output Value 68 {BasedOnField A5}
+  1.216,                                  !- Output Value 69 {BasedOnField A5}
+  0.408;                                  !- Output Value 70 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {164dfb2f-37a4-4fc0-93d1-d575cd5472a1}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_T-IV_List, !- Name
+  {b467fc2e-221a-4300-93bf-57786327b15c}, !- Model Object 1
+  {7d7523a8-368d-4d0e-a763-3cf1c456ab83}; !- Model Object 2
+
+OS:Table:Lookup,
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_LPLR-Output, !- Name
+  {17c567f5-7c96-4c10-ada1-7dd4f44b615d}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.314877646925759,                      !- Minimum Output {BasedOnField A5}
+  1.02862517793299,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.315,                                  !- Output Value 1 {BasedOnField A5}
+  0.315,                                  !- Output Value 2 {BasedOnField A5}
+  0.443,                                  !- Output Value 3 {BasedOnField A5}
+  0.614,                                  !- Output Value 4 {BasedOnField A5}
+  0.816,                                  !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  1.029;                                  !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {17c567f5-7c96-4c10-ada1-7dd4f44b615d}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_LPLR-IV_List, !- Name
+  {839a926b-cca4-4496-b0c1-a6e129f0913b}; !- Model Object 1
+
+OS:Curve:Linear,
+  {6dd3d6c0-620f-419d-babb-792ce6aba791}, !- Handle
+  PUHY-EP144TNU/YNU-A1 CC_fn_CR_Curve,    !- Name
+  0.693248041822177,                      !- Coefficient1 Constant
+  0.306751958177823,                      !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.29972560084168,                       !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.09194141497421;                       !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Handle
+  PUHY-EP144TNU/YNU-A1 C_H_PLF_Cor_Curve, !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:Lookup,
+  {ae6c95af-6631-4ddb-b690-55d7e1b1cbe1}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HCR_fn_T-Output, !- Name
+  {1dc4db22-45a5-4f92-85ca-a6174bfab6ea}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.65,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.65,                                   !- Output Value 1 {BasedOnField A5}
+  0.7,                                    !- Output Value 2 {BasedOnField A5}
+  0.82,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.65,                                   !- Output Value 6 {BasedOnField A5}
+  0.7,                                    !- Output Value 7 {BasedOnField A5}
+  0.82,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.65,                                   !- Output Value 11 {BasedOnField A5}
+  0.7,                                    !- Output Value 12 {BasedOnField A5}
+  0.82,                                   !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.65,                                   !- Output Value 16 {BasedOnField A5}
+  0.7,                                    !- Output Value 17 {BasedOnField A5}
+  0.82,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.65,                                   !- Output Value 21 {BasedOnField A5}
+  0.7,                                    !- Output Value 22 {BasedOnField A5}
+  0.82,                                   !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {1dc4db22-45a5-4f92-85ca-a6174bfab6ea}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HCR_fn_T-IV_List, !- Name
+  {f7bf695a-5745-44ca-880e-fc4126d02c1d}, !- Model Object 1
+  {a2859a1e-ce69-4fd9-94de-04164617180e}; !- Model Object 2
+
+OS:Table:Lookup,
+  {103b0dcf-ee58-4fcb-a5d7-005caf8cd1ed}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HEIRM_fn_T-Output, !- Name
+  {65f536f3-0ed3-4f25-a7f8-14c9d83aecb5}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.59,                                   !- Minimum Output {BasedOnField A5}
+  1.87,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.51,                                   !- Output Value 1 {BasedOnField A5}
+  1.58,                                   !- Output Value 2 {BasedOnField A5}
+  1.62,                                   !- Output Value 3 {BasedOnField A5}
+  1.72,                                   !- Output Value 4 {BasedOnField A5}
+  1.77,                                   !- Output Value 5 {BasedOnField A5}
+  1.13,                                   !- Output Value 6 {BasedOnField A5}
+  0.95,                                   !- Output Value 7 {BasedOnField A5}
+  0.88,                                   !- Output Value 8 {BasedOnField A5}
+  0.85,                                   !- Output Value 9 {BasedOnField A5}
+  1.65,                                   !- Output Value 10 {BasedOnField A5}
+  1.72,                                   !- Output Value 11 {BasedOnField A5}
+  1.77,                                   !- Output Value 12 {BasedOnField A5}
+  1.87,                                   !- Output Value 13 {BasedOnField A5}
+  1.66,                                   !- Output Value 14 {BasedOnField A5}
+  1.05,                                   !- Output Value 15 {BasedOnField A5}
+  0.89,                                   !- Output Value 16 {BasedOnField A5}
+  0.82,                                   !- Output Value 17 {BasedOnField A5}
+  0.79,                                   !- Output Value 18 {BasedOnField A5}
+  1.73,                                   !- Output Value 19 {BasedOnField A5}
+  1.8,                                    !- Output Value 20 {BasedOnField A5}
+  1.86,                                   !- Output Value 21 {BasedOnField A5}
+  1.36,                                   !- Output Value 22 {BasedOnField A5}
+  1.18,                                   !- Output Value 23 {BasedOnField A5}
+  0.78,                                   !- Output Value 24 {BasedOnField A5}
+  0.71,                                   !- Output Value 25 {BasedOnField A5}
+  0.68,                                   !- Output Value 26 {BasedOnField A5}
+  0.66,                                   !- Output Value 27 {BasedOnField A5}
+  1.81,                                   !- Output Value 28 {BasedOnField A5}
+  1.86,                                   !- Output Value 29 {BasedOnField A5}
+  1.54,                                   !- Output Value 30 {BasedOnField A5}
+  1.12,                                   !- Output Value 31 {BasedOnField A5}
+  1,                                      !- Output Value 32 {BasedOnField A5}
+  0.69,                                   !- Output Value 33 {BasedOnField A5}
+  0.64,                                   !- Output Value 34 {BasedOnField A5}
+  0.61,                                   !- Output Value 35 {BasedOnField A5}
+  0.59;                                   !- Output Value 36 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {65f536f3-0ed3-4f25-a7f8-14c9d83aecb5}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HEIRM_fn_T-IV_List, !- Name
+  {a1208b50-18c4-4e19-9b28-749d68871de8}, !- Model Object 1
+  {bc6c2c45-2b71-4798-b2e5-91dfad124e0f}; !- Model Object 2
+
+OS:Table:Lookup,
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_LPLR-Output, !- Name
+  {1b483064-d6a6-4c2a-9fee-fa65c9cb6777}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.35,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.35,                                   !- Output Value 1 {BasedOnField A5}
+  0.35,                                   !- Output Value 2 {BasedOnField A5}
+  0.48,                                   !- Output Value 3 {BasedOnField A5}
+  0.64,                                   !- Output Value 4 {BasedOnField A5}
+  0.84,                                   !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  0.93;                                   !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {1b483064-d6a6-4c2a-9fee-fa65c9cb6777}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_LPLR-IV_List, !- Name
+  {0842fc2a-693a-4c6a-80c0-e3265c1699bf}; !- Model Object 1
+
+OS:Curve:Linear,
+  {70dc2d89-a4e8-433b-be05-5fca766d4cc9}, !- Handle
+  PUHY-EP144TNU/YNU-A1 HC_fn_CR_Curve,    !- Name
+  0.911111111111112,                      !- Coefficient1 Constant
+  0.0888888888888883,                     !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.16875,                                !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.015;                                  !- Maximum Curve Output
+
+OS:Table:Lookup,
+  {d4be8f8f-dc68-4f95-89c0-546e1f866530}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFC_fn_L_CR-Output, !- Name
+  {92c62103-236a-43f2-98f2-b844d2cf1540}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.761292139200471,                      !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.999606729598709,                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  0.999606729598709,                      !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  1,                                      !- Output Value 8 {BasedOnField A5}
+  0.998426954398717,                      !- Output Value 9 {BasedOnField A5}
+  0.998033701999367,                      !- Output Value 10 {BasedOnField A5}
+  0.94533707039911,                       !- Output Value 11 {BasedOnField A5}
+  0.941404492399786,                      !- Output Value 12 {BasedOnField A5}
+  0.999213477199358,                      !- Output Value 13 {BasedOnField A5}
+  0.995674151599385,                      !- Output Value 14 {BasedOnField A5}
+  0.911516860000654,                      !- Output Value 15 {BasedOnField A5}
+  0.905617984000697,                      !- Output Value 16 {BasedOnField A5}
+  0.998426954398717,                      !- Output Value 17 {BasedOnField A5}
+  0.847808999201125,                      !- Output Value 18 {BasedOnField A5}
+  0.772696620799092,                      !- Output Value 19 {BasedOnField A5}
+  0.761292139200471;                      !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {92c62103-236a-43f2-98f2-b844d2cf1540}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFC_fn_L_CR-IV_List, !- Name
+  {922627f5-fb36-4fb6-a465-6b582ac632e3}, !- Model Object 1
+  {483ee923-5ddc-4e30-a1f9-b71a6adb6735}; !- Model Object 2
+
+OS:Table:Lookup,
+  {99e9e525-4a0a-4647-ae7f-80a6387407fc}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFH_fn_L-Output, !- Name
+  {bfd2f017-8225-4f5b-8315-5fa06e55f24e}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.92,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  0.98,                                   !- Output Value 3 {BasedOnField A5}
+  0.96,                                   !- Output Value 4 {BasedOnField A5}
+  0.95,                                   !- Output Value 5 {BasedOnField A5}
+  0.93,                                   !- Output Value 6 {BasedOnField A5}
+  0.92,                                   !- Output Value 7 {BasedOnField A5}
+  0.92;                                   !- Output Value 8 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {bfd2f017-8225-4f5b-8315-5fa06e55f24e}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFH_fn_L-IV_List, !- Name
+  {ee9ae4a9-3d08-4410-a4ec-e7a95e963803}; !- Model Object 1
+
+OS:Table:Lookup,
+  {f6d72cdc-cf73-4f67-bca3-f8ab284a0ba9}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_DEF_EIRM_fn_T-Output, !- Name
+  {70cdec8a-103e-4b3a-919e-c352db208884}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.8,                                    !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.95,                                   !- Output Value 1 {BasedOnField A5}
+  0.95,                                   !- Output Value 2 {BasedOnField A5}
+  0.95,                                   !- Output Value 3 {BasedOnField A5}
+  0.9,                                    !- Output Value 4 {BasedOnField A5}
+  0.9,                                    !- Output Value 5 {BasedOnField A5}
+  0.86,                                   !- Output Value 6 {BasedOnField A5}
+  0.82,                                   !- Output Value 7 {BasedOnField A5}
+  0.8,                                    !- Output Value 8 {BasedOnField A5}
+  0.82,                                   !- Output Value 9 {BasedOnField A5}
+  0.93,                                   !- Output Value 10 {BasedOnField A5}
+  1,                                      !- Output Value 11 {BasedOnField A5}
+  0.95,                                   !- Output Value 12 {BasedOnField A5}
+  0.95,                                   !- Output Value 13 {BasedOnField A5}
+  0.95,                                   !- Output Value 14 {BasedOnField A5}
+  0.9,                                    !- Output Value 15 {BasedOnField A5}
+  0.9,                                    !- Output Value 16 {BasedOnField A5}
+  0.86,                                   !- Output Value 17 {BasedOnField A5}
+  0.82,                                   !- Output Value 18 {BasedOnField A5}
+  0.8,                                    !- Output Value 19 {BasedOnField A5}
+  0.82,                                   !- Output Value 20 {BasedOnField A5}
+  0.93,                                   !- Output Value 21 {BasedOnField A5}
+  1;                                      !- Output Value 22 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {70cdec8a-103e-4b3a-919e-c352db208884}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_DEF_EIRM_fn_T-IV_List, !- Name
+  {c7f5d8e5-8068-4cd0-87ee-72bbeb337e4a}, !- Model Object 1
+  {4df98473-4e94-474d-aa74-44fef9c1fbb9}; !- Model Object 2
+
+OS:Curve:Biquadratic,
+  {9cbad46f-4861-4ef8-be70-d997643dad58}, !- Handle
+  PUHY-EP144TNU/YNU-A1_HRCCR_fn_T_Curve,  !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {5cfee121-a550-4b87-9a05-b51319ed3a5c}, !- Handle
+  PUHY-EP144TNU/YNU-A1_HRCEIRM_fn_T_Curve, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {331862d1-a65b-4ae8-9d4e-7cab30f0ff38}, !- Handle
+  PUHY-EP144TNU/YNU-A1_HRHCR_fn_T_Curve,  !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {5106aacd-d2c4-4989-84c1-5d91220dd1a0}, !- Handle
+  PUHY-EP144TNU/YNU-A1_HRHCR_fn_T_Curve 1, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:IndependentVariable,
+  {c7f2940e-ede3-4ce7-8519-9b86f4b06d4c}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  24,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  16.1,                                   !- Value 2
+  17.8,                                   !- Value 3
+  20.6,                                   !- Value 4
+  24;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {730d9e33-2d18-48d0-8f6c-d949c2eab170}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5,                                     !- Minimum Value {BasedOnField A5}
+  52.0365429217998,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  20,                                     !- Value 2
+  46,                                     !- Value 3
+  52;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {b467fc2e-221a-4300-93bf-57786327b15c}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  23.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  16.1,                                   !- Value 2
+  17.8,                                   !- Value 3
+  19.4,                                   !- Value 4
+  20,                                     !- Value 5
+  22.2,                                   !- Value 6
+  23.9;                                   !- Value 7
+
+OS:Table:IndependentVariable,
+  {7d7523a8-368d-4d0e-a763-3cf1c456ab83}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5,                                     !- Minimum Value {BasedOnField A5}
+  52.0403372380064,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  16.7,                                   !- Value 2
+  18.3,                                   !- Value 3
+  19.5,                                   !- Value 4
+  20,                                     !- Value 5
+  20.5,                                   !- Value 6
+  21.7,                                   !- Value 7
+  22.1,                                   !- Value 8
+  46,                                     !- Value 9
+  52;                                     !- Value 10
+
+OS:Table:IndependentVariable,
+  {839a926b-cca4-4496-b0c1-a6e129f0913b}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_CEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.15,                                   !- Minimum Value {BasedOnField A5}
+  1.2988683144184,                        !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.15,                                   !- Value 1
+  0.5,                                    !- Value 2
+  0.63,                                   !- Value 3
+  0.77,                                   !- Value 4
+  0.9,                                    !- Value 5
+  1,                                      !- Value 6
+  1.3;                                    !- Value 7
+
+OS:Table:IndependentVariable,
+  {f7bf695a-5745-44ca-880e-fc4126d02c1d}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  18,                                     !- Value 2
+  21.1,                                   !- Value 3
+  25,                                     !- Value 4
+  27;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {a2859a1e-ce69-4fd9-94de-04164617180e}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  14.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -20,                                    !- Value 2
+  -14,                                    !- Value 3
+  -7.8,                                   !- Value 4
+  14.9;                                   !- Value 5
+
+OS:Table:IndependentVariable,
+  {a1208b50-18c4-4e19-9b28-749d68871de8}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {bc6c2c45-2b71-4798-b2e5-91dfad124e0f}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HH_HEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -18,                                    !- Value 2
+  -14.5,                                  !- Value 3
+  -7.8,                                   !- Value 4
+  -5,                                     !- Value 5
+  5,                                      !- Value 6
+  9,                                      !- Value 7
+  12.1,                                   !- Value 8
+  15;                                     !- Value 9
+
+OS:Table:IndependentVariable,
+  {0842fc2a-693a-4c6a-80c0-e3265c1699bf}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.15,                                   !- Minimum Value {BasedOnField A5}
+  1.17,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.15,                                   !- Value 1
+  0.45,                                   !- Value 2
+  0.56,                                   !- Value 3
+  0.69,                                   !- Value 4
+  0.81,                                   !- Value 5
+  0.9,                                    !- Value 6
+  1.17;                                   !- Value 7
+
+OS:Table:IndependentVariable,
+  {922627f5-fb36-4fb6-a465-6b582ac632e3}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFC_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  1.39888426544389,                       !- Minimum Value {BasedOnField A5}
+  190.884650041733,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.39888426544389,                       !- Value 1
+  8.39332887848788,                       !- Value 2
+  45.908969413306,                        !- Value 3
+  70.7074410997475,                       !- Value 4
+  190.884650041733;                       !- Value 5
+
+OS:Table:IndependentVariable,
+  {483ee923-5ddc-4e30-a1f9-b71a6adb6735}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFC_fn_CR-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.5,                                    !- Minimum Value {BasedOnField A5}
+  1.29861111111111,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.5,                                    !- Value 1
+  0.75,                                   !- Value 2
+  1,                                      !- Value 3
+  1.29861111111111;                       !- Value 4
+
+OS:Table:IndependentVariable,
+  {ee9ae4a9-3d08-4410-a4ec-e7a95e963803}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_PCFH_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  1.4,                                    !- Minimum Value {BasedOnField A5}
+  190.2,                                  !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.4,                                    !- Value 1
+  10.4,                                   !- Value 2
+  45.6,                                   !- Value 3
+  76,                                     !- Value 4
+  106.5,                                  !- Value 5
+  137,                                    !- Value 6
+  167.7,                                  !- Value 7
+  190.2;                                  !- Value 8
+
+OS:Table:IndependentVariable,
+  {c7f5d8e5-8068-4cd0-87ee-72bbeb337e4a}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_DEF_EIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  6,                                      !- Minimum Value {BasedOnField A5}
+  20.5,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  6,                                      !- Value 1
+  20.5;                                   !- Value 2
+
+OS:Table:IndependentVariable,
+  {4df98473-4e94-474d-aa74-44fef9c1fbb9}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_DEF_EIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -20,                                    !- Minimum Value {BasedOnField A5}
+  6,                                      !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -20,                                    !- Value 1
+  -10,                                    !- Value 2
+  -8,                                     !- Value 3
+  -6,                                     !- Value 4
+  -4,                                     !- Value 5
+  -2,                                     !- Value 6
+  0,                                      !- Value 7
+  1,                                      !- Value 8
+  2,                                      !- Value 9
+  4,                                      !- Value 10
+  6;                                      !- Value 11
+
+OS:ModelObjectList,
+  {eaab4a7f-b371-44f6-a0c5-b02b3bd493c3}, !- Handle
+  {b516e635-6f98-4e72-8f1d-b56e7595cf1a}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {2bc88d04-bccd-4dfa-b9db-2a22fb0c3fb4}, !- Handle
+  Mitsubishi PUHY-EP144TNU/YNU-A1 DUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  40400,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.17610062893082,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {f9cb4ee8-d750-40c4-8127-f0aec6ae9752}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {530ec717-69e9-4208-bbbb-be437d56b50d}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {6dd3d6c0-620f-419d-babb-792ce6aba791}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Cooling Part-Load Fraction Correlation Curve Name
+  44500,                                  !- Gross Rated Heating Capacity {W}
+  1.10148514851485,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.03811252268603,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {f0b9d01c-6a46-4377-83f4-9d75e184e498}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {99d4275c-4add-41d0-a527-b3e9173f18ba}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {70dc2d89-a4e8-433b-be05-5fca766d4cc9}, !- Heating Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {76bc24db-a804-41f8-938e-c108f83c44cb}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {d4be8f8f-dc68-4f95-89c0-546e1f866530}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {99e9e525-4a0a-4647-ae7f-80a6387407fc}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {f6d72cdc-cf73-4f67-bca3-f8ab284a0ba9}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.49,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {9cbad46f-4861-4ef8-be70-d997643dad58}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {5cfee121-a550-4b87-9a05-b51319ed3a5c}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {331862d1-a65b-4ae8-9d4e-7cab30f0ff38}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {5106aacd-d2c4-4989-84c1-5d91220dd1a0}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {f0b9d01c-6a46-4377-83f4-9d75e184e498}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HCR_fn_T-Output, !- Name
+  {296a9284-3ef7-4ec0-bbc4-6b84bd918aa0}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.46,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.46,                                   !- Output Value 1 {BasedOnField A5}
+  0.58,                                   !- Output Value 2 {BasedOnField A5}
+  0.7,                                    !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.46,                                   !- Output Value 6 {BasedOnField A5}
+  0.58,                                   !- Output Value 7 {BasedOnField A5}
+  0.7,                                    !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.46,                                   !- Output Value 11 {BasedOnField A5}
+  0.58,                                   !- Output Value 12 {BasedOnField A5}
+  0.7,                                    !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.46,                                   !- Output Value 16 {BasedOnField A5}
+  0.58,                                   !- Output Value 17 {BasedOnField A5}
+  0.7,                                    !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.46,                                   !- Output Value 21 {BasedOnField A5}
+  0.58,                                   !- Output Value 22 {BasedOnField A5}
+  0.7,                                    !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {296a9284-3ef7-4ec0-bbc4-6b84bd918aa0}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HCR_fn_T-IV_List, !- Name
+  {573cde37-49a4-4564-87b3-85333eb1eb85}, !- Model Object 1
+  {024e27a0-9c80-4828-afe9-5b39e3796d66}; !- Model Object 2
+
+OS:Table:Lookup,
+  {99d4275c-4add-41d0-a527-b3e9173f18ba}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_T-Output, !- Name
+  {22481b23-0655-440d-a723-76a719efb2bc}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.59,                                   !- Minimum Output {BasedOnField A5}
+  1.15,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.75,                                   !- Output Value 1 {BasedOnField A5}
+  0.86,                                   !- Output Value 2 {BasedOnField A5}
+  0.95,                                   !- Output Value 3 {BasedOnField A5}
+  0.98,                                   !- Output Value 4 {BasedOnField A5}
+  1.07,                                   !- Output Value 5 {BasedOnField A5}
+  1.08,                                   !- Output Value 6 {BasedOnField A5}
+  1.11,                                   !- Output Value 7 {BasedOnField A5}
+  1.15,                                   !- Output Value 8 {BasedOnField A5}
+  1.03,                                   !- Output Value 9 {BasedOnField A5}
+  0.81,                                   !- Output Value 10 {BasedOnField A5}
+  0.94,                                   !- Output Value 11 {BasedOnField A5}
+  1.02,                                   !- Output Value 12 {BasedOnField A5}
+  1.05,                                   !- Output Value 13 {BasedOnField A5}
+  1.12,                                   !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.89,                                   !- Output Value 16 {BasedOnField A5}
+  0.81,                                   !- Output Value 17 {BasedOnField A5}
+  0.79,                                   !- Output Value 18 {BasedOnField A5}
+  0.86,                                   !- Output Value 19 {BasedOnField A5}
+  0.99,                                   !- Output Value 20 {BasedOnField A5}
+  1.06,                                   !- Output Value 21 {BasedOnField A5}
+  1.1,                                    !- Output Value 22 {BasedOnField A5}
+  0.77,                                   !- Output Value 23 {BasedOnField A5}
+  0.76,                                   !- Output Value 24 {BasedOnField A5}
+  0.71,                                   !- Output Value 25 {BasedOnField A5}
+  0.67,                                   !- Output Value 26 {BasedOnField A5}
+  0.66,                                   !- Output Value 27 {BasedOnField A5}
+  0.88,                                   !- Output Value 28 {BasedOnField A5}
+  1.02,                                   !- Output Value 29 {BasedOnField A5}
+  1.09,                                   !- Output Value 30 {BasedOnField A5}
+  0.94,                                   !- Output Value 31 {BasedOnField A5}
+  0.69,                                   !- Output Value 32 {BasedOnField A5}
+  0.68,                                   !- Output Value 33 {BasedOnField A5}
+  0.64,                                   !- Output Value 34 {BasedOnField A5}
+  0.6,                                    !- Output Value 35 {BasedOnField A5}
+  0.59;                                   !- Output Value 36 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {22481b23-0655-440d-a723-76a719efb2bc}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_T-IV_List, !- Name
+  {9e239493-3bc4-4951-808f-36044a7db2cf}, !- Model Object 1
+  {9476be35-8c68-407f-abe2-81b22631c8fb}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {573cde37-49a4-4564-87b3-85333eb1eb85}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  18,                                     !- Value 2
+  21.1,                                   !- Value 3
+  25,                                     !- Value 4
+  27;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {024e27a0-9c80-4828-afe9-5b39e3796d66}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -24.9,                                  !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -24.9,                                  !- Value 1
+  -19.9,                                  !- Value 2
+  -9.9,                                   !- Value 3
+  5,                                      !- Value 4
+  15;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {9e239493-3bc4-4951-808f-36044a7db2cf}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {9476be35-8c68-407f-abe2-81b22631c8fb}, !- Handle
+  Tbl Lookup PUHY-EP144TNU/YNU-A1_HEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15.1,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -20,                                    !- Value 2
+  -7.2,                                   !- Value 3
+  -3.4,                                   !- Value 4
+  5,                                      !- Value 5
+  6.1,                                    !- Value 6
+  9,                                      !- Value 7
+  12.8,                                   !- Value 8
+  15.1;                                   !- Value 9
+
+OS:ModelObjectList,
+  {76bc24db-a804-41f8-938e-c108f83c44cb}, !- Handle
+  {b5e27e9c-696b-4938-a5fe-a21f36df2335}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {7e79d9e3-bdc9-4f6c-9d82-0d68d305a010}, !- Handle
+  Mitsubishi PUHY-EP144TNU/YNU-A1 NONDUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  40400,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.18110236220472,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {f9cb4ee8-d750-40c4-8127-f0aec6ae9752}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {530ec717-69e9-4208-bbbb-be437d56b50d}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {6dd3d6c0-620f-419d-babb-792ce6aba791}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Cooling Part-Load Fraction Correlation Curve Name
+  44500,                                  !- Gross Rated Heating Capacity {W}
+  1.10148514851485,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.14338919925512,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {ae6c95af-6631-4ddb-b690-55d7e1b1cbe1}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {103b0dcf-ee58-4fcb-a5d7-005caf8cd1ed}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {70dc2d89-a4e8-433b-be05-5fca766d4cc9}, !- Heating Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {0c57e00c-c67e-429c-9605-51219e9864fb}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {d4be8f8f-dc68-4f95-89c0-546e1f866530}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {99e9e525-4a0a-4647-ae7f-80a6387407fc}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {f6d72cdc-cf73-4f67-bca3-f8ab284a0ba9}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.49,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {9cbad46f-4861-4ef8-be70-d997643dad58}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {5cfee121-a550-4b87-9a05-b51319ed3a5c}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {331862d1-a65b-4ae8-9d4e-7cab30f0ff38}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {5106aacd-d2c4-4989-84c1-5d91220dd1a0}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:ModelObjectList,
+  {0c57e00c-c67e-429c-9605-51219e9864fb}, !- Handle
+  {706727ab-fb46-44be-9eca-7bc67b76c476}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {7c8a0dc7-7be1-484c-86ba-89aec245804f}, !- Handle
+  Mitsubishi PUHY-EP144TNU/YNU-A1 NONDUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  40400,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.18110236220472,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {f9cb4ee8-d750-40c4-8127-f0aec6ae9752}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {530ec717-69e9-4208-bbbb-be437d56b50d}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {3de4ba19-1896-4566-a3b3-89524bd3afd4}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {6dd3d6c0-620f-419d-babb-792ce6aba791}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Cooling Part-Load Fraction Correlation Curve Name
+  44500,                                  !- Gross Rated Heating Capacity {W}
+  1.10148514851485,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.14338919925512,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {f0b9d01c-6a46-4377-83f4-9d75e184e498}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {99d4275c-4add-41d0-a527-b3e9173f18ba}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {c0b714ba-63b6-4456-a8cc-0b8457cc6dec}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {70dc2d89-a4e8-433b-be05-5fca766d4cc9}, !- Heating Combination Ratio Correction Factor Curve Name
+  {01fab3e3-5d87-4551-8b33-6f26e4653b82}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {0739061e-cb2a-4c8a-8b2a-1d2c2ef06943}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {d4be8f8f-dc68-4f95-89c0-546e1f866530}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {99e9e525-4a0a-4647-ae7f-80a6387407fc}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {f6d72cdc-cf73-4f67-bca3-f8ab284a0ba9}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.49,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {9cbad46f-4861-4ef8-be70-d997643dad58}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {5cfee121-a550-4b87-9a05-b51319ed3a5c}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {331862d1-a65b-4ae8-9d4e-7cab30f0ff38}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {5106aacd-d2c4-4989-84c1-5d91220dd1a0}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:ModelObjectList,
+  {0739061e-cb2a-4c8a-8b2a-1d2c2ef06943}, !- Handle
+  {0685e1ee-f272-4dc0-93fa-66169ef8bc4f}; !- Name
 

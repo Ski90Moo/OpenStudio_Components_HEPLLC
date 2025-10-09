@@ -1,0 +1,1645 @@
+
+OS:Version,
+  {8dc2650d-c355-4bfe-b6e5-1d3b078fd7da}, !- Handle
+  3.10.0;                                 !- Version Identifier
+
+OS:Site,
+  {dd2b8ffc-62bd-440d-a2cf-2f78f9cf842b}, !- Handle
+  Site 1,                                 !- Name
+  ,                                       !- Latitude {deg}
+  ,                                       !- Longitude {deg}
+  ,                                       !- Time Zone {hr}
+  ,                                       !- Elevation {m}
+  ;                                       !- Terrain
+
+OS:YearDescription,
+  {fcd74cb7-082d-47a2-a0f5-09712798f0bb}; !- Handle
+
+OS:ClimateZones,
+  {9a02a23b-a919-4556-907f-7b510143ea0b}, !- Handle
+  ASHRAE,                                 !- Climate Zone Institution Name 1
+  ANSI/ASHRAE Standard 169,               !- Climate Zone Document Name 1
+  2006,                                   !- Climate Zone Document Year 1
+  ,                                       !- Climate Zone Value 1
+  CEC,                                    !- Climate Zone Institution Name 2
+  California Climate Zone Descriptions,   !- Climate Zone Document Name 2
+  1995,                                   !- Climate Zone Document Year 2
+  ;                                       !- Climate Zone Value 2
+
+OS:Building,
+  {49f394f2-ad8f-47a5-98a3-6f071517af27}, !- Handle
+  VRF Library - Daikin,                   !- Name
+  ,                                       !- Building Sector Type
+  ,                                       !- North Axis {deg}
+  ,                                       !- Nominal Floor to Floor Height {m}
+  ,                                       !- Space Type Name
+  ,                                       !- Default Construction Set Name
+  ;                                       !- Default Schedule Set Name
+
+OS:Facility,
+  {128efd20-f716-4a06-a177-06a44a54c8fc}; !- Handle
+
+OS:SimulationControl,
+  {4e72e501-a025-4288-8d0e-41d573d88867}; !- Handle
+
+OS:Sizing:Parameters,
+  {38c91567-8108-4ebd-81d6-e8fb7b2e81c2}, !- Handle
+  1.25,                                   !- Heating Sizing Factor
+  1.15;                                   !- Cooling Sizing Factor
+
+OS:Timestep,
+  {ebeb2086-bb71-435f-9c8e-e3dddbe65ccf}, !- Handle
+  6;                                      !- Number of Timesteps per Hour
+
+OS:ShadowCalculation,
+  {e1026e38-8906-40d2-b315-1a40a2adaaf7}, !- Handle
+  PolygonClipping,                        !- Shading Calculation Method
+  ,                                       !- Shading Calculation Update Frequency Method
+  20,                                     !- Shading Calculation Update Frequency
+  15000,                                  !- Maximum Figures in Shadow Overlap Calculations
+  ,                                       !- Polygon Clipping Algorithm
+  512,                                    !- Pixel Counting Resolution
+  ,                                       !- Sky Diffuse Modeling Algorithm
+  No,                                     !- Output External Shading Calculation Results
+  No,                                     !- Disable Self-Shading Within Shading Zone Groups
+  No;                                     !- Disable Self-Shading From Shading Zone Groups to Other Zones
+
+OS:HeatBalanceAlgorithm,
+  {9245c642-bee7-4e94-92f2-bb1c3b1efb94}, !- Handle
+  ConductionTransferFunction,             !- Algorithm
+  200;                                    !- Surface Temperature Upper Limit {C}
+
+OS:RunPeriod,
+  {cc99fd0d-492a-49e2-86c1-6969d085eab5}, !- Handle
+  Run Period 1,                           !- Name
+  1,                                      !- Begin Month
+  1,                                      !- Begin Day of Month
+  12,                                     !- End Month
+  31,                                     !- End Day of Month
+  ,                                       !- Use Weather File Holidays and Special Days
+  ,                                       !- Use Weather File Daylight Saving Period
+  ,                                       !- Apply Weekend Holiday Rule
+  ,                                       !- Use Weather File Rain Indicators
+  ,                                       !- Use Weather File Snow Indicators
+  ;                                       !- Number of Times Runperiod to be Repeated
+
+OS:LifeCycleCost:Parameters,
+  {3ca82c2a-8d03-4697-9d21-8e05fe9bae91}, !- Handle
+  ,                                       !- Analysis Type
+  ,                                       !- Discounting Convention
+  ,                                       !- Inflation Approach
+  ,                                       !- Real Discount Rate
+  ,                                       !- Nominal Discount Rate
+  ,                                       !- Inflation
+  ,                                       !- Base Date Month
+  ,                                       !- Base Date Year
+  ,                                       !- Service Date Month
+  ,                                       !- Service Date Year
+  ;                                       !- Length of Study Period in Years
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {3a159599-9727-448f-9ff9-bc4879e4bce6}, !- Handle
+  Daikin RXYQ72AATJB/AAYDB NONDUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  21102,                                  !- Gross Rated Total Cooling Capacity {W}
+  4.46,                                   !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  50,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {228e4232-929d-482f-8459-650f18ac6434}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {1c2068fc-6208-402a-a3ed-3743985bfaf9}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {68fbf02d-8c87-4b7e-ad22-720c61cb3002}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {68fbf02d-8c87-4b7e-ad22-720c61cb3002}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {a3350158-1699-4914-81f8-f0b53dc26c67}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {ebe5d151-a107-46fb-a096-8ec47c2b1fac}, !- Cooling Part-Load Fraction Correlation Curve Name
+  23740,                                  !- Gross Rated Heating Capacity {W}
+  1.125,                                  !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.58,                                   !- Rated Heating COP {W/W}
+  -24.8,                                  !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.6,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {b232983c-73be-44d4-a5c7-376daaebec9e}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {4bf85a71-57c2-4c76-b929-20120b22717c}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {09f4ad77-6945-4e10-8b59-1e7e286e6fc3}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {09f4ad77-6945-4e10-8b59-1e7e286e6fc3}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {ec7b45cd-3e1f-4232-b105-82f7f58f79a5}, !- Heating Combination Ratio Correction Factor Curve Name
+  {ebe5d151-a107-46fb-a096-8ec47c2b1fac}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.08,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {f3ac72b1-3f83-4336-aaa2-69132d324c47}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {44d4dca9-2920-4bd2-b483-6cde2b2185ef}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {caa4a6c4-6bfb-43da-a7aa-1c7d80ee49d0}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {98847ca8-c15c-4620-84aa-c13860d4fadb}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6.94444444444444,                       !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.59,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {df1125a2-34a4-4ce5-9312-a093e7e3aba3}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {c06f57c0-e6a2-4577-8043-c6c723b819a3}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {991d84df-5f5b-4092-81e6-2f4d64e3f8a6}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {36715673-fabf-4b26-bcb3-54efccbcf6ca}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {b3e0402d-a9dd-44fe-b0e4-74590cb0b469}, !- Handle
+  Daikin RXYQ72AATJB/AAYDB DUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  21102,                                  !- Gross Rated Total Cooling Capacity {W}
+  4.46,                                   !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  50,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {228e4232-929d-482f-8459-650f18ac6434}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {1c2068fc-6208-402a-a3ed-3743985bfaf9}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {68fbf02d-8c87-4b7e-ad22-720c61cb3002}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {68fbf02d-8c87-4b7e-ad22-720c61cb3002}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {a3350158-1699-4914-81f8-f0b53dc26c67}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {ebe5d151-a107-46fb-a096-8ec47c2b1fac}, !- Cooling Part-Load Fraction Correlation Curve Name
+  23740,                                  !- Gross Rated Heating Capacity {W}
+  1.125,                                  !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.58,                                   !- Rated Heating COP {W/W}
+  -24.8,                                  !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.6,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {b232983c-73be-44d4-a5c7-376daaebec9e}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {4bf85a71-57c2-4c76-b929-20120b22717c}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {09f4ad77-6945-4e10-8b59-1e7e286e6fc3}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {09f4ad77-6945-4e10-8b59-1e7e286e6fc3}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {ec7b45cd-3e1f-4232-b105-82f7f58f79a5}, !- Heating Combination Ratio Correction Factor Curve Name
+  {ebe5d151-a107-46fb-a096-8ec47c2b1fac}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.08,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {f3ac72b1-3f83-4336-aaa2-69132d324c47}, !- Zone Terminal Unit List
+  No,                                     !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {44d4dca9-2920-4bd2-b483-6cde2b2185ef}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {caa4a6c4-6bfb-43da-a7aa-1c7d80ee49d0}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {98847ca8-c15c-4620-84aa-c13860d4fadb}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6.94444444444444,                       !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  -4.9,                                   !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  15.59,                                  !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {df1125a2-34a4-4ce5-9312-a093e7e3aba3}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {c06f57c0-e6a2-4577-8043-c6c723b819a3}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {991d84df-5f5b-4092-81e6-2f4d64e3f8a6}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {36715673-fabf-4b26-bcb3-54efccbcf6ca}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {228e4232-929d-482f-8459-650f18ac6434}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CCR_fn_T-Output, !- Name
+  {b7667eb8-76f5-4bf5-b149-7e3dea162a85}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.554,                                  !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  1,                                      !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  1,                                      !- Output Value 11 {BasedOnField A5}
+  1,                                      !- Output Value 12 {BasedOnField A5}
+  1,                                      !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  1,                                      !- Output Value 16 {BasedOnField A5}
+  1,                                      !- Output Value 17 {BasedOnField A5}
+  0.982,                                  !- Output Value 18 {BasedOnField A5}
+  0.964,                                  !- Output Value 19 {BasedOnField A5}
+  0.95,                                   !- Output Value 20 {BasedOnField A5}
+  0.922,                                  !- Output Value 21 {BasedOnField A5}
+  0.785,                                  !- Output Value 22 {BasedOnField A5}
+  0.686,                                  !- Output Value 23 {BasedOnField A5}
+  0.554,                                  !- Output Value 24 {BasedOnField A5}
+  1,                                      !- Output Value 25 {BasedOnField A5}
+  1,                                      !- Output Value 26 {BasedOnField A5}
+  1,                                      !- Output Value 27 {BasedOnField A5}
+  1,                                      !- Output Value 28 {BasedOnField A5}
+  1,                                      !- Output Value 29 {BasedOnField A5}
+  1,                                      !- Output Value 30 {BasedOnField A5}
+  1,                                      !- Output Value 31 {BasedOnField A5}
+  1,                                      !- Output Value 32 {BasedOnField A5}
+  1,                                      !- Output Value 33 {BasedOnField A5}
+  1,                                      !- Output Value 34 {BasedOnField A5}
+  1,                                      !- Output Value 35 {BasedOnField A5}
+  1,                                      !- Output Value 36 {BasedOnField A5}
+  1,                                      !- Output Value 37 {BasedOnField A5}
+  1,                                      !- Output Value 38 {BasedOnField A5}
+  1,                                      !- Output Value 39 {BasedOnField A5}
+  1,                                      !- Output Value 40 {BasedOnField A5}
+  1,                                      !- Output Value 41 {BasedOnField A5}
+  0.982,                                  !- Output Value 42 {BasedOnField A5}
+  0.964,                                  !- Output Value 43 {BasedOnField A5}
+  0.95,                                   !- Output Value 44 {BasedOnField A5}
+  0.922,                                  !- Output Value 45 {BasedOnField A5}
+  0.785,                                  !- Output Value 46 {BasedOnField A5}
+  0.686,                                  !- Output Value 47 {BasedOnField A5}
+  0.554,                                  !- Output Value 48 {BasedOnField A5}
+  1,                                      !- Output Value 49 {BasedOnField A5}
+  1,                                      !- Output Value 50 {BasedOnField A5}
+  1,                                      !- Output Value 51 {BasedOnField A5}
+  1,                                      !- Output Value 52 {BasedOnField A5}
+  1,                                      !- Output Value 53 {BasedOnField A5}
+  1,                                      !- Output Value 54 {BasedOnField A5}
+  1,                                      !- Output Value 55 {BasedOnField A5}
+  1,                                      !- Output Value 56 {BasedOnField A5}
+  1,                                      !- Output Value 57 {BasedOnField A5}
+  1,                                      !- Output Value 58 {BasedOnField A5}
+  1,                                      !- Output Value 59 {BasedOnField A5}
+  1,                                      !- Output Value 60 {BasedOnField A5}
+  1,                                      !- Output Value 61 {BasedOnField A5}
+  1,                                      !- Output Value 62 {BasedOnField A5}
+  1,                                      !- Output Value 63 {BasedOnField A5}
+  1,                                      !- Output Value 64 {BasedOnField A5}
+  1,                                      !- Output Value 65 {BasedOnField A5}
+  0.982,                                  !- Output Value 66 {BasedOnField A5}
+  0.964,                                  !- Output Value 67 {BasedOnField A5}
+  0.95,                                   !- Output Value 68 {BasedOnField A5}
+  0.922,                                  !- Output Value 69 {BasedOnField A5}
+  0.785,                                  !- Output Value 70 {BasedOnField A5}
+  0.686,                                  !- Output Value 71 {BasedOnField A5}
+  0.554,                                  !- Output Value 72 {BasedOnField A5}
+  1,                                      !- Output Value 73 {BasedOnField A5}
+  1,                                      !- Output Value 74 {BasedOnField A5}
+  1,                                      !- Output Value 75 {BasedOnField A5}
+  1,                                      !- Output Value 76 {BasedOnField A5}
+  1,                                      !- Output Value 77 {BasedOnField A5}
+  1,                                      !- Output Value 78 {BasedOnField A5}
+  1,                                      !- Output Value 79 {BasedOnField A5}
+  1,                                      !- Output Value 80 {BasedOnField A5}
+  1,                                      !- Output Value 81 {BasedOnField A5}
+  1,                                      !- Output Value 82 {BasedOnField A5}
+  1,                                      !- Output Value 83 {BasedOnField A5}
+  1,                                      !- Output Value 84 {BasedOnField A5}
+  1,                                      !- Output Value 85 {BasedOnField A5}
+  1,                                      !- Output Value 86 {BasedOnField A5}
+  1,                                      !- Output Value 87 {BasedOnField A5}
+  1,                                      !- Output Value 88 {BasedOnField A5}
+  1,                                      !- Output Value 89 {BasedOnField A5}
+  0.982,                                  !- Output Value 90 {BasedOnField A5}
+  0.964,                                  !- Output Value 91 {BasedOnField A5}
+  0.95,                                   !- Output Value 92 {BasedOnField A5}
+  0.922,                                  !- Output Value 93 {BasedOnField A5}
+  0.785,                                  !- Output Value 94 {BasedOnField A5}
+  0.686,                                  !- Output Value 95 {BasedOnField A5}
+  0.554,                                  !- Output Value 96 {BasedOnField A5}
+  1,                                      !- Output Value 97 {BasedOnField A5}
+  1,                                      !- Output Value 98 {BasedOnField A5}
+  1,                                      !- Output Value 99 {BasedOnField A5}
+  1,                                      !- Output Value 100 {BasedOnField A5}
+  1,                                      !- Output Value 101 {BasedOnField A5}
+  1,                                      !- Output Value 102 {BasedOnField A5}
+  1,                                      !- Output Value 103 {BasedOnField A5}
+  1,                                      !- Output Value 104 {BasedOnField A5}
+  1,                                      !- Output Value 105 {BasedOnField A5}
+  1,                                      !- Output Value 106 {BasedOnField A5}
+  1,                                      !- Output Value 107 {BasedOnField A5}
+  1,                                      !- Output Value 108 {BasedOnField A5}
+  1,                                      !- Output Value 109 {BasedOnField A5}
+  1,                                      !- Output Value 110 {BasedOnField A5}
+  1,                                      !- Output Value 111 {BasedOnField A5}
+  1,                                      !- Output Value 112 {BasedOnField A5}
+  1,                                      !- Output Value 113 {BasedOnField A5}
+  0.982,                                  !- Output Value 114 {BasedOnField A5}
+  0.964,                                  !- Output Value 115 {BasedOnField A5}
+  0.95,                                   !- Output Value 116 {BasedOnField A5}
+  0.922,                                  !- Output Value 117 {BasedOnField A5}
+  0.785,                                  !- Output Value 118 {BasedOnField A5}
+  0.686,                                  !- Output Value 119 {BasedOnField A5}
+  0.554,                                  !- Output Value 120 {BasedOnField A5}
+  1,                                      !- Output Value 121 {BasedOnField A5}
+  1,                                      !- Output Value 122 {BasedOnField A5}
+  1,                                      !- Output Value 123 {BasedOnField A5}
+  1,                                      !- Output Value 124 {BasedOnField A5}
+  1,                                      !- Output Value 125 {BasedOnField A5}
+  1,                                      !- Output Value 126 {BasedOnField A5}
+  1,                                      !- Output Value 127 {BasedOnField A5}
+  1,                                      !- Output Value 128 {BasedOnField A5}
+  1,                                      !- Output Value 129 {BasedOnField A5}
+  1,                                      !- Output Value 130 {BasedOnField A5}
+  1,                                      !- Output Value 131 {BasedOnField A5}
+  1,                                      !- Output Value 132 {BasedOnField A5}
+  1,                                      !- Output Value 133 {BasedOnField A5}
+  1,                                      !- Output Value 134 {BasedOnField A5}
+  1,                                      !- Output Value 135 {BasedOnField A5}
+  1,                                      !- Output Value 136 {BasedOnField A5}
+  1,                                      !- Output Value 137 {BasedOnField A5}
+  0.982,                                  !- Output Value 138 {BasedOnField A5}
+  0.964,                                  !- Output Value 139 {BasedOnField A5}
+  0.95,                                   !- Output Value 140 {BasedOnField A5}
+  0.922,                                  !- Output Value 141 {BasedOnField A5}
+  0.785,                                  !- Output Value 142 {BasedOnField A5}
+  0.686,                                  !- Output Value 143 {BasedOnField A5}
+  0.554;                                  !- Output Value 144 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {b7667eb8-76f5-4bf5-b149-7e3dea162a85}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CCR_fn_T-IV_List, !- Name
+  {11f9b217-c433-4252-8a03-4939bf8d298f}, !- Model Object 1
+  {29112c50-be5b-4102-8c6c-82842110cb82}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {11f9b217-c433-4252-8a03-4939bf8d298f}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  16.1,                                   !- Minimum Value {BasedOnField A5}
+  23.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  16.1,                                   !- Value 1
+  17.8,                                   !- Value 2
+  19.4,                                   !- Value 3
+  21.1,                                   !- Value 4
+  22.2,                                   !- Value 5
+  23.9;                                   !- Value 6
+
+OS:Table:IndependentVariable,
+  {29112c50-be5b-4102-8c6c-82842110cb82}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5,                                     !- Minimum Value {BasedOnField A5}
+  50,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  -1.1,                                   !- Value 2
+  4.4,                                    !- Value 3
+  10,                                     !- Value 4
+  12.2,                                   !- Value 5
+  14.4,                                   !- Value 6
+  16.7,                                   !- Value 7
+  18.9,                                   !- Value 8
+  21.1,                                   !- Value 9
+  22.2,                                   !- Value 10
+  23.9,                                   !- Value 11
+  26.1,                                   !- Value 12
+  28.3,                                   !- Value 13
+  30.6,                                   !- Value 14
+  32.8,                                   !- Value 15
+  33.9,                                   !- Value 16
+  35,                                     !- Value 17
+  37.2,                                   !- Value 18
+  39.4,                                   !- Value 19
+  41.1,                                   !- Value 20
+  43.3,                                   !- Value 21
+  46.1,                                   !- Value 22
+  47.8,                                   !- Value 23
+  50;                                     !- Value 24
+
+OS:Table:Lookup,
+  {1c2068fc-6208-402a-a3ed-3743985bfaf9}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_T-Output, !- Name
+  {1f7a36cb-bcb7-47d8-a5c6-f505cc234183}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.266384778012685,                      !- Minimum Output {BasedOnField A5}
+  1.82692307692308,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.266,                                  !- Output Value 1 {BasedOnField A5}
+  0.273,                                  !- Output Value 2 {BasedOnField A5}
+  0.285,                                  !- Output Value 3 {BasedOnField A5}
+  0.298,                                  !- Output Value 4 {BasedOnField A5}
+  0.302,                                  !- Output Value 5 {BasedOnField A5}
+  0.309,                                  !- Output Value 6 {BasedOnField A5}
+  0.315,                                  !- Output Value 7 {BasedOnField A5}
+  0.321,                                  !- Output Value 8 {BasedOnField A5}
+  0.328,                                  !- Output Value 9 {BasedOnField A5}
+  0.332,                                  !- Output Value 10 {BasedOnField A5}
+  0.336,                                  !- Output Value 11 {BasedOnField A5}
+  0.362,                                  !- Output Value 12 {BasedOnField A5}
+  0.387,                                  !- Output Value 13 {BasedOnField A5}
+  0.414,                                  !- Output Value 14 {BasedOnField A5}
+  0.444,                                  !- Output Value 15 {BasedOnField A5}
+  0.459,                                  !- Output Value 16 {BasedOnField A5}
+  0.474,                                  !- Output Value 17 {BasedOnField A5}
+  0.505,                                  !- Output Value 18 {BasedOnField A5}
+  0.539,                                  !- Output Value 19 {BasedOnField A5}
+  0.567,                                  !- Output Value 20 {BasedOnField A5}
+  0.607,                                  !- Output Value 21 {BasedOnField A5}
+  0.672,                                  !- Output Value 22 {BasedOnField A5}
+  0.715,                                  !- Output Value 23 {BasedOnField A5}
+  0.793,                                  !- Output Value 24 {BasedOnField A5}
+  0.519,                                  !- Output Value 25 {BasedOnField A5}
+  0.535,                                  !- Output Value 26 {BasedOnField A5}
+  0.561,                                  !- Output Value 27 {BasedOnField A5}
+  0.587,                                  !- Output Value 28 {BasedOnField A5}
+  0.599,                                  !- Output Value 29 {BasedOnField A5}
+  0.612,                                  !- Output Value 30 {BasedOnField A5}
+  0.625,                                  !- Output Value 31 {BasedOnField A5}
+  0.638,                                  !- Output Value 32 {BasedOnField A5}
+  0.651,                                  !- Output Value 33 {BasedOnField A5}
+  0.667,                                  !- Output Value 34 {BasedOnField A5}
+  0.702,                                  !- Output Value 35 {BasedOnField A5}
+  0.756,                                  !- Output Value 36 {BasedOnField A5}
+  0.811,                                  !- Output Value 37 {BasedOnField A5}
+  0.872,                                  !- Output Value 38 {BasedOnField A5}
+  0.933,                                  !- Output Value 39 {BasedOnField A5}
+  0.968,                                  !- Output Value 40 {BasedOnField A5}
+  1,                                      !- Output Value 41 {BasedOnField A5}
+  1.071,                                  !- Output Value 42 {BasedOnField A5}
+  1.147,                                  !- Output Value 43 {BasedOnField A5}
+  1.205,                                  !- Output Value 44 {BasedOnField A5}
+  1.295,                                  !- Output Value 45 {BasedOnField A5}
+  1.439,                                  !- Output Value 46 {BasedOnField A5}
+  1.554,                                  !- Output Value 47 {BasedOnField A5}
+  1.205,                                  !- Output Value 48 {BasedOnField A5}
+  0.612,                                  !- Output Value 49 {BasedOnField A5}
+  0.631,                                  !- Output Value 50 {BasedOnField A5}
+  0.663,                                  !- Output Value 51 {BasedOnField A5}
+  0.696,                                  !- Output Value 52 {BasedOnField A5}
+  0.712,                                  !- Output Value 53 {BasedOnField A5}
+  0.724,                                  !- Output Value 54 {BasedOnField A5}
+  0.74,                                   !- Output Value 55 {BasedOnField A5}
+  0.756,                                  !- Output Value 56 {BasedOnField A5}
+  0.788,                                  !- Output Value 57 {BasedOnField A5}
+  0.821,                                  !- Output Value 58 {BasedOnField A5}
+  0.869,                                  !- Output Value 59 {BasedOnField A5}
+  0.936,                                  !- Output Value 60 {BasedOnField A5}
+  1.006,                                  !- Output Value 61 {BasedOnField A5}
+  1.08,                                   !- Output Value 62 {BasedOnField A5}
+  1.16,                                   !- Output Value 63 {BasedOnField A5}
+  1.202,                                  !- Output Value 64 {BasedOnField A5}
+  1.244,                                  !- Output Value 65 {BasedOnField A5}
+  1.333,                                  !- Output Value 66 {BasedOnField A5}
+  1.429,                                  !- Output Value 67 {BasedOnField A5}
+  1.506,                                  !- Output Value 68 {BasedOnField A5}
+  1.619,                                  !- Output Value 69 {BasedOnField A5}
+  1.821,                                  !- Output Value 70 {BasedOnField A5}
+  1.558,                                  !- Output Value 71 {BasedOnField A5}
+  1.208,                                  !- Output Value 72 {BasedOnField A5}
+  0.712,                                  !- Output Value 73 {BasedOnField A5}
+  0.734,                                  !- Output Value 74 {BasedOnField A5}
+  0.769,                                  !- Output Value 75 {BasedOnField A5}
+  0.811,                                  !- Output Value 76 {BasedOnField A5}
+  0.827,                                  !- Output Value 77 {BasedOnField A5}
+  0.849,                                  !- Output Value 78 {BasedOnField A5}
+  0.878,                                  !- Output Value 79 {BasedOnField A5}
+  0.907,                                  !- Output Value 80 {BasedOnField A5}
+  0.955,                                  !- Output Value 81 {BasedOnField A5}
+  0.994,                                  !- Output Value 82 {BasedOnField A5}
+  1.051,                                  !- Output Value 83 {BasedOnField A5}
+  1.135,                                  !- Output Value 84 {BasedOnField A5}
+  1.221,                                  !- Output Value 85 {BasedOnField A5}
+  1.311,                                  !- Output Value 86 {BasedOnField A5}
+  1.41,                                   !- Output Value 87 {BasedOnField A5}
+  1.462,                                  !- Output Value 88 {BasedOnField A5}
+  1.516,                                  !- Output Value 89 {BasedOnField A5}
+  1.574,                                  !- Output Value 90 {BasedOnField A5}
+  1.635,                                  !- Output Value 91 {BasedOnField A5}
+  1.679,                                  !- Output Value 92 {BasedOnField A5}
+  1.737,                                  !- Output Value 93 {BasedOnField A5}
+  1.821,                                  !- Output Value 94 {BasedOnField A5}
+  1.558,                                  !- Output Value 95 {BasedOnField A5}
+  1.208,                                  !- Output Value 96 {BasedOnField A5}
+  0.814,                                  !- Output Value 97 {BasedOnField A5}
+  0.84,                                   !- Output Value 98 {BasedOnField A5}
+  0.881,                                  !- Output Value 99 {BasedOnField A5}
+  0.942,                                  !- Output Value 100 {BasedOnField A5}
+  0.974,                                  !- Output Value 101 {BasedOnField A5}
+  1.006,                                  !- Output Value 102 {BasedOnField A5}
+  1.042,                                  !- Output Value 103 {BasedOnField A5}
+  1.077,                                  !- Output Value 104 {BasedOnField A5}
+  1.138,                                  !- Output Value 105 {BasedOnField A5}
+  1.183,                                  !- Output Value 106 {BasedOnField A5}
+  1.231,                                  !- Output Value 107 {BasedOnField A5}
+  1.292,                                  !- Output Value 108 {BasedOnField A5}
+  1.349,                                  !- Output Value 109 {BasedOnField A5}
+  1.407,                                  !- Output Value 110 {BasedOnField A5}
+  1.468,                                  !- Output Value 111 {BasedOnField A5}
+  1.497,                                  !- Output Value 112 {BasedOnField A5}
+  1.529,                                  !- Output Value 113 {BasedOnField A5}
+  1.587,                                  !- Output Value 114 {BasedOnField A5}
+  1.647,                                  !- Output Value 115 {BasedOnField A5}
+  1.689,                                  !- Output Value 116 {BasedOnField A5}
+  1.737,                                  !- Output Value 117 {BasedOnField A5}
+  1.824,                                  !- Output Value 118 {BasedOnField A5}
+  1.561,                                  !- Output Value 119 {BasedOnField A5}
+  1.212,                                  !- Output Value 120 {BasedOnField A5}
+  0.885,                                  !- Output Value 121 {BasedOnField A5}
+  0.913,                                  !- Output Value 122 {BasedOnField A5}
+  0.968,                                  !- Output Value 123 {BasedOnField A5}
+  1.048,                                  !- Output Value 124 {BasedOnField A5}
+  1.083,                                  !- Output Value 125 {BasedOnField A5}
+  1.119,                                  !- Output Value 126 {BasedOnField A5}
+  1.128,                                  !- Output Value 127 {BasedOnField A5}
+  1.135,                                  !- Output Value 128 {BasedOnField A5}
+  1.163,                                  !- Output Value 129 {BasedOnField A5}
+  1.192,                                  !- Output Value 130 {BasedOnField A5}
+  1.237,                                  !- Output Value 131 {BasedOnField A5}
+  1.298,                                  !- Output Value 132 {BasedOnField A5}
+  1.356,                                  !- Output Value 133 {BasedOnField A5}
+  1.417,                                  !- Output Value 134 {BasedOnField A5}
+  1.474,                                  !- Output Value 135 {BasedOnField A5}
+  1.506,                                  !- Output Value 136 {BasedOnField A5}
+  1.535,                                  !- Output Value 137 {BasedOnField A5}
+  1.596,                                  !- Output Value 138 {BasedOnField A5}
+  1.654,                                  !- Output Value 139 {BasedOnField A5}
+  1.689,                                  !- Output Value 140 {BasedOnField A5}
+  1.737,                                  !- Output Value 141 {BasedOnField A5}
+  1.824,                                  !- Output Value 142 {BasedOnField A5}
+  1.561,                                  !- Output Value 143 {BasedOnField A5}
+  1.212,                                  !- Output Value 144 {BasedOnField A5}
+  0.99,                                   !- Output Value 145 {BasedOnField A5}
+  1.035,                                  !- Output Value 146 {BasedOnField A5}
+  1.09,                                   !- Output Value 147 {BasedOnField A5}
+  1.112,                                  !- Output Value 148 {BasedOnField A5}
+  1.119,                                  !- Output Value 149 {BasedOnField A5}
+  1.128,                                  !- Output Value 150 {BasedOnField A5}
+  1.135,                                  !- Output Value 151 {BasedOnField A5}
+  1.144,                                  !- Output Value 152 {BasedOnField A5}
+  1.173,                                  !- Output Value 153 {BasedOnField A5}
+  1.202,                                  !- Output Value 154 {BasedOnField A5}
+  1.247,                                  !- Output Value 155 {BasedOnField A5}
+  1.308,                                  !- Output Value 156 {BasedOnField A5}
+  1.365,                                  !- Output Value 157 {BasedOnField A5}
+  1.426,                                  !- Output Value 158 {BasedOnField A5}
+  1.487,                                  !- Output Value 159 {BasedOnField A5}
+  1.519,                                  !- Output Value 160 {BasedOnField A5}
+  1.548,                                  !- Output Value 161 {BasedOnField A5}
+  1.609,                                  !- Output Value 162 {BasedOnField A5}
+  1.654,                                  !- Output Value 163 {BasedOnField A5}
+  1.689,                                  !- Output Value 164 {BasedOnField A5}
+  1.737,                                  !- Output Value 165 {BasedOnField A5}
+  1.827,                                  !- Output Value 166 {BasedOnField A5}
+  1.564,                                  !- Output Value 167 {BasedOnField A5}
+  1.215;                                  !- Output Value 168 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {1f7a36cb-bcb7-47d8-a5c6-f505cc234183}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_T-IV_List, !- Name
+  {b203b79d-399e-4a78-be7d-db36c62b08f8}, !- Model Object 1
+  {161077af-9575-4f43-b7b6-911a1fd92609}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {b203b79d-399e-4a78-be7d-db36c62b08f8}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  13.8888888888889,                       !- Minimum Value {BasedOnField A5}
+  23.8888888888889,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  13.8888888888889,                       !- Value 1
+  16.1111111111111,                       !- Value 2
+  17.7777777777778,                       !- Value 3
+  19.4444444444444,                       !- Value 4
+  21.1111111111111,                       !- Value 5
+  22.2222222222222,                       !- Value 6
+  23.8888888888889;                       !- Value 7
+
+OS:Table:IndependentVariable,
+  {161077af-9575-4f43-b7b6-911a1fd92609}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5,                                     !- Minimum Value {BasedOnField A5}
+  50,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  -1.1,                                   !- Value 2
+  4.4,                                    !- Value 3
+  10,                                     !- Value 4
+  12.2,                                   !- Value 5
+  14.4,                                   !- Value 6
+  16.7,                                   !- Value 7
+  18.9,                                   !- Value 8
+  21.1,                                   !- Value 9
+  22.2,                                   !- Value 10
+  23.9,                                   !- Value 11
+  26.1,                                   !- Value 12
+  28.3,                                   !- Value 13
+  30.6,                                   !- Value 14
+  32.8,                                   !- Value 15
+  33.9,                                   !- Value 16
+  35,                                     !- Value 17
+  37.2,                                   !- Value 18
+  39.4,                                   !- Value 19
+  41.1,                                   !- Value 20
+  43.3,                                   !- Value 21
+  46.1,                                   !- Value 22
+  47.8,                                   !- Value 23
+  50;                                     !- Value 24
+
+OS:Table:Lookup,
+  {68fbf02d-8c87-4b7e-ad22-720c61cb3002}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_LPLR-Output, !- Name
+  {04b9afd8-fe27-4d75-9789-3687f1ee71b1}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.389006342494715,                      !- Minimum Output {BasedOnField A5}
+  1.01268498942918,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.389,                                  !- Output Value 1 {BasedOnField A5}
+  0.389,                                  !- Output Value 2 {BasedOnField A5}
+  0.486,                                  !- Output Value 3 {BasedOnField A5}
+  0.598,                                  !- Output Value 4 {BasedOnField A5}
+  0.719,                                  !- Output Value 5 {BasedOnField A5}
+  0.854,                                  !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  1.006,                                  !- Output Value 8 {BasedOnField A5}
+  1.013;                                  !- Output Value 9 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {04b9afd8-fe27-4d75-9789-3687f1ee71b1}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_LPLR-IV_List, !- Name
+  {961dd6d0-c2e6-4b4a-8c9a-446c4495653d}; !- Model Object 1
+
+OS:Table:IndependentVariable,
+  {961dd6d0-c2e6-4b4a-8c9a-446c4495653d}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_CEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.08,                                   !- Minimum Value {BasedOnField A5}
+  1.2,                                    !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.08,                                   !- Value 1
+  0.5,                                    !- Value 2
+  0.6,                                    !- Value 3
+  0.7,                                    !- Value 4
+  0.8,                                    !- Value 5
+  0.9,                                    !- Value 6
+  1,                                      !- Value 7
+  1.1,                                    !- Value 8
+  1.2;                                    !- Value 9
+
+OS:Curve:Linear,
+  {a3350158-1699-4914-81f8-f0b53dc26c67}, !- Handle
+  RXYQ72AATJB/AAYDB CC_fn_CR_Curve,       !- Name
+  0.815,                                  !- Coefficient1 Constant
+  0.185,                                  !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.3,                                    !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.056;                                  !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {ebe5d151-a107-46fb-a096-8ec47c2b1fac}, !- Handle
+  RXYQ72AATJB/AAYDB C_H_PLF_Cor_Curve,    !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:Lookup,
+  {b232983c-73be-44d4-a5c7-376daaebec9e}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HCR_fn_T-Output, !- Name
+  {4fc889c2-805d-4711-9d9e-311276c0a9dc}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.49,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.49,                                   !- Output Value 1 {BasedOnField A5}
+  0.55,                                   !- Output Value 2 {BasedOnField A5}
+  0.63,                                   !- Output Value 3 {BasedOnField A5}
+  0.66,                                   !- Output Value 4 {BasedOnField A5}
+  0.75,                                   !- Output Value 5 {BasedOnField A5}
+  0.75,                                   !- Output Value 6 {BasedOnField A5}
+  0.85,                                   !- Output Value 7 {BasedOnField A5}
+  0.88,                                   !- Output Value 8 {BasedOnField A5}
+  0.88,                                   !- Output Value 9 {BasedOnField A5}
+  0.9,                                    !- Output Value 10 {BasedOnField A5}
+  0.92,                                   !- Output Value 11 {BasedOnField A5}
+  0.99,                                   !- Output Value 12 {BasedOnField A5}
+  1,                                      !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  1,                                      !- Output Value 16 {BasedOnField A5}
+  1,                                      !- Output Value 17 {BasedOnField A5}
+  1,                                      !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  1,                                      !- Output Value 21 {BasedOnField A5}
+  0.49,                                   !- Output Value 22 {BasedOnField A5}
+  0.55,                                   !- Output Value 23 {BasedOnField A5}
+  0.63,                                   !- Output Value 24 {BasedOnField A5}
+  0.66,                                   !- Output Value 25 {BasedOnField A5}
+  0.75,                                   !- Output Value 26 {BasedOnField A5}
+  0.75,                                   !- Output Value 27 {BasedOnField A5}
+  0.85,                                   !- Output Value 28 {BasedOnField A5}
+  0.88,                                   !- Output Value 29 {BasedOnField A5}
+  0.88,                                   !- Output Value 30 {BasedOnField A5}
+  0.9,                                    !- Output Value 31 {BasedOnField A5}
+  0.92,                                   !- Output Value 32 {BasedOnField A5}
+  0.99,                                   !- Output Value 33 {BasedOnField A5}
+  1,                                      !- Output Value 34 {BasedOnField A5}
+  1,                                      !- Output Value 35 {BasedOnField A5}
+  1,                                      !- Output Value 36 {BasedOnField A5}
+  1,                                      !- Output Value 37 {BasedOnField A5}
+  1,                                      !- Output Value 38 {BasedOnField A5}
+  1,                                      !- Output Value 39 {BasedOnField A5}
+  1,                                      !- Output Value 40 {BasedOnField A5}
+  1,                                      !- Output Value 41 {BasedOnField A5}
+  1,                                      !- Output Value 42 {BasedOnField A5}
+  0.49,                                   !- Output Value 43 {BasedOnField A5}
+  0.55,                                   !- Output Value 44 {BasedOnField A5}
+  0.63,                                   !- Output Value 45 {BasedOnField A5}
+  0.66,                                   !- Output Value 46 {BasedOnField A5}
+  0.75,                                   !- Output Value 47 {BasedOnField A5}
+  0.75,                                   !- Output Value 48 {BasedOnField A5}
+  0.85,                                   !- Output Value 49 {BasedOnField A5}
+  0.88,                                   !- Output Value 50 {BasedOnField A5}
+  0.88,                                   !- Output Value 51 {BasedOnField A5}
+  0.9,                                    !- Output Value 52 {BasedOnField A5}
+  0.92,                                   !- Output Value 53 {BasedOnField A5}
+  0.99,                                   !- Output Value 54 {BasedOnField A5}
+  1,                                      !- Output Value 55 {BasedOnField A5}
+  1,                                      !- Output Value 56 {BasedOnField A5}
+  1,                                      !- Output Value 57 {BasedOnField A5}
+  1,                                      !- Output Value 58 {BasedOnField A5}
+  1,                                      !- Output Value 59 {BasedOnField A5}
+  1,                                      !- Output Value 60 {BasedOnField A5}
+  1,                                      !- Output Value 61 {BasedOnField A5}
+  1,                                      !- Output Value 62 {BasedOnField A5}
+  1,                                      !- Output Value 63 {BasedOnField A5}
+  0.49,                                   !- Output Value 64 {BasedOnField A5}
+  0.55,                                   !- Output Value 65 {BasedOnField A5}
+  0.63,                                   !- Output Value 66 {BasedOnField A5}
+  0.66,                                   !- Output Value 67 {BasedOnField A5}
+  0.75,                                   !- Output Value 68 {BasedOnField A5}
+  0.75,                                   !- Output Value 69 {BasedOnField A5}
+  0.85,                                   !- Output Value 70 {BasedOnField A5}
+  0.88,                                   !- Output Value 71 {BasedOnField A5}
+  0.88,                                   !- Output Value 72 {BasedOnField A5}
+  0.9,                                    !- Output Value 73 {BasedOnField A5}
+  0.92,                                   !- Output Value 74 {BasedOnField A5}
+  0.99,                                   !- Output Value 75 {BasedOnField A5}
+  1,                                      !- Output Value 76 {BasedOnField A5}
+  1,                                      !- Output Value 77 {BasedOnField A5}
+  1,                                      !- Output Value 78 {BasedOnField A5}
+  1,                                      !- Output Value 79 {BasedOnField A5}
+  1,                                      !- Output Value 80 {BasedOnField A5}
+  1,                                      !- Output Value 81 {BasedOnField A5}
+  1,                                      !- Output Value 82 {BasedOnField A5}
+  1,                                      !- Output Value 83 {BasedOnField A5}
+  1,                                      !- Output Value 84 {BasedOnField A5}
+  0.49,                                   !- Output Value 85 {BasedOnField A5}
+  0.55,                                   !- Output Value 86 {BasedOnField A5}
+  0.63,                                   !- Output Value 87 {BasedOnField A5}
+  0.66,                                   !- Output Value 88 {BasedOnField A5}
+  0.75,                                   !- Output Value 89 {BasedOnField A5}
+  0.75,                                   !- Output Value 90 {BasedOnField A5}
+  0.85,                                   !- Output Value 91 {BasedOnField A5}
+  0.88,                                   !- Output Value 92 {BasedOnField A5}
+  0.88,                                   !- Output Value 93 {BasedOnField A5}
+  0.9,                                    !- Output Value 94 {BasedOnField A5}
+  0.92,                                   !- Output Value 95 {BasedOnField A5}
+  0.99,                                   !- Output Value 96 {BasedOnField A5}
+  1,                                      !- Output Value 97 {BasedOnField A5}
+  1,                                      !- Output Value 98 {BasedOnField A5}
+  1,                                      !- Output Value 99 {BasedOnField A5}
+  1,                                      !- Output Value 100 {BasedOnField A5}
+  1,                                      !- Output Value 101 {BasedOnField A5}
+  1,                                      !- Output Value 102 {BasedOnField A5}
+  1,                                      !- Output Value 103 {BasedOnField A5}
+  1,                                      !- Output Value 104 {BasedOnField A5}
+  1;                                      !- Output Value 105 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {4fc889c2-805d-4711-9d9e-311276c0a9dc}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HCR_fn_T-IV_List, !- Name
+  {d337b65f-64cd-4b64-ae23-4a1c48ed570b}, !- Model Object 1
+  {4cd5d2a6-0d6c-418d-bcf8-439a869ec08a}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {d337b65f-64cd-4b64-ae23-4a1c48ed570b}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  16.67,                                  !- Minimum Value {BasedOnField A5}
+  22.22,                                  !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  16.67,                                  !- Value 1
+  18.33,                                  !- Value 2
+  20,                                     !- Value 3
+  21.11,                                  !- Value 4
+  22.22;                                  !- Value 5
+
+OS:Table:IndependentVariable,
+  {4cd5d2a6-0d6c-418d-bcf8-439a869ec08a}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  13.3,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -23,                                    !- Value 2
+  -20,                                    !- Value 3
+  -19,                                    !- Value 4
+  -15,                                    !- Value 5
+  -13.1,                                  !- Value 6
+  -11.1,                                  !- Value 7
+  -10,                                    !- Value 8
+  -9.2,                                   !- Value 9
+  -7.8,                                   !- Value 10
+  -6.7,                                   !- Value 11
+  -4.4,                                   !- Value 12
+  -2.2,                                   !- Value 13
+  0,                                      !- Value 14
+  2.2,                                    !- Value 15
+  4.4,                                    !- Value 16
+  6.1,                                    !- Value 17
+  8.3,                                    !- Value 18
+  10,                                     !- Value 19
+  11.7,                                   !- Value 20
+  13.3;                                   !- Value 21
+
+OS:Table:Lookup,
+  {4bf85a71-57c2-4c76-b929-20120b22717c}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_T-Output, !- Name
+  {af16a070-c56f-4d81-9ec1-43af8e6b7327}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.745173745173745,                      !- Minimum Output {BasedOnField A5}
+  1.26447876447876,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.75,                                   !- Output Value 1 {BasedOnField A5}
+  0.81,                                   !- Output Value 2 {BasedOnField A5}
+  0.89,                                   !- Output Value 3 {BasedOnField A5}
+  0.92,                                   !- Output Value 4 {BasedOnField A5}
+  1.02,                                   !- Output Value 5 {BasedOnField A5}
+  1.06,                                   !- Output Value 6 {BasedOnField A5}
+  1.1,                                    !- Output Value 7 {BasedOnField A5}
+  1.12,                                   !- Output Value 8 {BasedOnField A5}
+  1.13,                                   !- Output Value 9 {BasedOnField A5}
+  1.15,                                   !- Output Value 10 {BasedOnField A5}
+  1.16,                                   !- Output Value 11 {BasedOnField A5}
+  1.18,                                   !- Output Value 12 {BasedOnField A5}
+  1.21,                                   !- Output Value 13 {BasedOnField A5}
+  1.23,                                   !- Output Value 14 {BasedOnField A5}
+  1.24,                                   !- Output Value 15 {BasedOnField A5}
+  1.26,                                   !- Output Value 16 {BasedOnField A5}
+  1.25,                                   !- Output Value 17 {BasedOnField A5}
+  1.19,                                   !- Output Value 18 {BasedOnField A5}
+  1.15,                                   !- Output Value 19 {BasedOnField A5}
+  1.12,                                   !- Output Value 20 {BasedOnField A5}
+  1.08,                                   !- Output Value 21 {BasedOnField A5}
+  0.8,                                    !- Output Value 22 {BasedOnField A5}
+  0.86,                                   !- Output Value 23 {BasedOnField A5}
+  0.94,                                   !- Output Value 24 {BasedOnField A5}
+  0.97,                                   !- Output Value 25 {BasedOnField A5}
+  1.06,                                   !- Output Value 26 {BasedOnField A5}
+  1.1,                                    !- Output Value 27 {BasedOnField A5}
+  1.14,                                   !- Output Value 28 {BasedOnField A5}
+  1.16,                                   !- Output Value 29 {BasedOnField A5}
+  1.17,                                   !- Output Value 30 {BasedOnField A5}
+  1.19,                                   !- Output Value 31 {BasedOnField A5}
+  1.2,                                    !- Output Value 32 {BasedOnField A5}
+  1.22,                                   !- Output Value 33 {BasedOnField A5}
+  1.24,                                   !- Output Value 34 {BasedOnField A5}
+  1.26,                                   !- Output Value 35 {BasedOnField A5}
+  1.24,                                   !- Output Value 36 {BasedOnField A5}
+  1.18,                                   !- Output Value 37 {BasedOnField A5}
+  1.14,                                   !- Output Value 38 {BasedOnField A5}
+  1.09,                                   !- Output Value 39 {BasedOnField A5}
+  1.05,                                   !- Output Value 40 {BasedOnField A5}
+  1.02,                                   !- Output Value 41 {BasedOnField A5}
+  0.99,                                   !- Output Value 42 {BasedOnField A5}
+  0.84,                                   !- Output Value 43 {BasedOnField A5}
+  0.9,                                    !- Output Value 44 {BasedOnField A5}
+  0.98,                                   !- Output Value 45 {BasedOnField A5}
+  1,                                      !- Output Value 46 {BasedOnField A5}
+  1.09,                                   !- Output Value 47 {BasedOnField A5}
+  1.13,                                   !- Output Value 48 {BasedOnField A5}
+  1.17,                                   !- Output Value 49 {BasedOnField A5}
+  1.19,                                   !- Output Value 50 {BasedOnField A5}
+  1.2,                                    !- Output Value 51 {BasedOnField A5}
+  1.21,                                   !- Output Value 52 {BasedOnField A5}
+  1.22,                                   !- Output Value 53 {BasedOnField A5}
+  1.25,                                   !- Output Value 54 {BasedOnField A5}
+  1.26,                                   !- Output Value 55 {BasedOnField A5}
+  1.21,                                   !- Output Value 56 {BasedOnField A5}
+  1.15,                                   !- Output Value 57 {BasedOnField A5}
+  1.09,                                   !- Output Value 58 {BasedOnField A5}
+  1.05,                                   !- Output Value 59 {BasedOnField A5}
+  1.01,                                   !- Output Value 60 {BasedOnField A5}
+  0.97,                                   !- Output Value 61 {BasedOnField A5}
+  0.95,                                   !- Output Value 62 {BasedOnField A5}
+  0.92,                                   !- Output Value 63 {BasedOnField A5}
+  0.87,                                   !- Output Value 64 {BasedOnField A5}
+  0.93,                                   !- Output Value 65 {BasedOnField A5}
+  1,                                      !- Output Value 66 {BasedOnField A5}
+  1.03,                                   !- Output Value 67 {BasedOnField A5}
+  1.11,                                   !- Output Value 68 {BasedOnField A5}
+  1.15,                                   !- Output Value 69 {BasedOnField A5}
+  1.19,                                   !- Output Value 70 {BasedOnField A5}
+  1.21,                                   !- Output Value 71 {BasedOnField A5}
+  1.22,                                   !- Output Value 72 {BasedOnField A5}
+  1.23,                                   !- Output Value 73 {BasedOnField A5}
+  1.24,                                   !- Output Value 74 {BasedOnField A5}
+  1.26,                                   !- Output Value 75 {BasedOnField A5}
+  1.21,                                   !- Output Value 76 {BasedOnField A5}
+  1.14,                                   !- Output Value 77 {BasedOnField A5}
+  1.09,                                   !- Output Value 78 {BasedOnField A5}
+  1.04,                                   !- Output Value 79 {BasedOnField A5}
+  1,                                      !- Output Value 80 {BasedOnField A5}
+  0.96,                                   !- Output Value 81 {BasedOnField A5}
+  0.93,                                   !- Output Value 82 {BasedOnField A5}
+  0.9,                                    !- Output Value 83 {BasedOnField A5}
+  0.87,                                   !- Output Value 84 {BasedOnField A5}
+  0.9,                                    !- Output Value 85 {BasedOnField A5}
+  0.96,                                   !- Output Value 86 {BasedOnField A5}
+  1.03,                                   !- Output Value 87 {BasedOnField A5}
+  1.05,                                   !- Output Value 88 {BasedOnField A5}
+  1.14,                                   !- Output Value 89 {BasedOnField A5}
+  1.17,                                   !- Output Value 90 {BasedOnField A5}
+  1.21,                                   !- Output Value 91 {BasedOnField A5}
+  1.23,                                   !- Output Value 92 {BasedOnField A5}
+  1.24,                                   !- Output Value 93 {BasedOnField A5}
+  1.25,                                   !- Output Value 94 {BasedOnField A5}
+  1.26,                                   !- Output Value 95 {BasedOnField A5}
+  1.21,                                   !- Output Value 96 {BasedOnField A5}
+  1.14,                                   !- Output Value 97 {BasedOnField A5}
+  1.08,                                   !- Output Value 98 {BasedOnField A5}
+  1.03,                                   !- Output Value 99 {BasedOnField A5}
+  0.98,                                   !- Output Value 100 {BasedOnField A5}
+  0.95,                                   !- Output Value 101 {BasedOnField A5}
+  0.91,                                   !- Output Value 102 {BasedOnField A5}
+  0.88,                                   !- Output Value 103 {BasedOnField A5}
+  0.85,                                   !- Output Value 104 {BasedOnField A5}
+  0.83,                                   !- Output Value 105 {BasedOnField A5}
+  0.94,                                   !- Output Value 106 {BasedOnField A5}
+  0.99,                                   !- Output Value 107 {BasedOnField A5}
+  1.07,                                   !- Output Value 108 {BasedOnField A5}
+  1.09,                                   !- Output Value 109 {BasedOnField A5}
+  1.17,                                   !- Output Value 110 {BasedOnField A5}
+  1.2,                                    !- Output Value 111 {BasedOnField A5}
+  1.24,                                   !- Output Value 112 {BasedOnField A5}
+  1.26,                                   !- Output Value 113 {BasedOnField A5}
+  1.26,                                   !- Output Value 114 {BasedOnField A5}
+  1.21,                                   !- Output Value 115 {BasedOnField A5}
+  1.17,                                   !- Output Value 116 {BasedOnField A5}
+  1.11,                                   !- Output Value 117 {BasedOnField A5}
+  1.05,                                   !- Output Value 118 {BasedOnField A5}
+  0.99,                                   !- Output Value 119 {BasedOnField A5}
+  0.94,                                   !- Output Value 120 {BasedOnField A5}
+  0.9,                                    !- Output Value 121 {BasedOnField A5}
+  0.87,                                   !- Output Value 122 {BasedOnField A5}
+  0.83,                                   !- Output Value 123 {BasedOnField A5}
+  0.81,                                   !- Output Value 124 {BasedOnField A5}
+  0.78,                                   !- Output Value 125 {BasedOnField A5}
+  0.76;                                   !- Output Value 126 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {af16a070-c56f-4d81-9ec1-43af8e6b7327}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_T-IV_List, !- Name
+  {da5c24f3-4f5d-41b4-b200-d5766549288d}, !- Model Object 1
+  {138b9f60-70fd-4ae9-bbb5-8fe5212345fd}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {da5c24f3-4f5d-41b4-b200-d5766549288d}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  16.1,                                   !- Minimum Value {BasedOnField A5}
+  23.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  16.1,                                   !- Value 1
+  18.3,                                   !- Value 2
+  20,                                     !- Value 3
+  21.1,                                   !- Value 4
+  22.2,                                   !- Value 5
+  23.9;                                   !- Value 6
+
+OS:Table:IndependentVariable,
+  {138b9f60-70fd-4ae9-bbb5-8fe5212345fd}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  13.3,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -23,                                    !- Value 2
+  -20,                                    !- Value 3
+  -19,                                    !- Value 4
+  -15,                                    !- Value 5
+  -13.1,                                  !- Value 6
+  -11.1,                                  !- Value 7
+  -10,                                    !- Value 8
+  -9.2,                                   !- Value 9
+  -7.8,                                   !- Value 10
+  -6.7,                                   !- Value 11
+  -4.4,                                   !- Value 12
+  -2.2,                                   !- Value 13
+  0,                                      !- Value 14
+  2.2,                                    !- Value 15
+  4.4,                                    !- Value 16
+  6.1,                                    !- Value 17
+  8.3,                                    !- Value 18
+  10,                                     !- Value 19
+  11.7,                                   !- Value 20
+  13.3;                                   !- Value 21
+
+OS:Table:Lookup,
+  {09f4ad77-6945-4e10-8b59-1e7e286e6fc3}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_LPLR-Output, !- Name
+  {eb71727f-6bab-4f10-abbc-d9c64766b2a1}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.47,                                   !- Minimum Output {BasedOnField A5}
+  1.25,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.47,                                   !- Output Value 1 {BasedOnField A5}
+  0.47,                                   !- Output Value 2 {BasedOnField A5}
+  0.56,                                   !- Output Value 3 {BasedOnField A5}
+  0.67,                                   !- Output Value 4 {BasedOnField A5}
+  0.77,                                   !- Output Value 5 {BasedOnField A5}
+  0.88,                                   !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  1.12,                                   !- Output Value 8 {BasedOnField A5}
+  1.25,                                   !- Output Value 9 {BasedOnField A5}
+  1.24;                                   !- Output Value 10 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {eb71727f-6bab-4f10-abbc-d9c64766b2a1}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_LPLR-IV_List, !- Name
+  {b7cd0b31-2099-470d-b1c9-e17729728c31}; !- Model Object 1
+
+OS:Table:IndependentVariable,
+  {b7cd0b31-2099-470d-b1c9-e17729728c31}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.08,                                   !- Minimum Value {BasedOnField A5}
+  1.22,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.08,                                   !- Value 1
+  0.5,                                    !- Value 2
+  0.6,                                    !- Value 3
+  0.7,                                    !- Value 4
+  0.8,                                    !- Value 5
+  0.9,                                    !- Value 6
+  1,                                      !- Value 7
+  1.1,                                    !- Value 8
+  1.2,                                    !- Value 9
+  1.22;                                   !- Value 10
+
+OS:Table:Lookup,
+  {ec7b45cd-3e1f-4232-b105-82f7f58f79a5}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HC_fn_CR-Output, !- Name
+  {f245d5c5-d390-4eda-bee2-978352df5ba3}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.5,                                    !- Minimum Output {BasedOnField A5}
+  1.21604938271605,                       !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.5,                                    !- Output Value 1 {BasedOnField A5}
+  0.6,                                    !- Output Value 2 {BasedOnField A5}
+  0.7,                                    !- Output Value 3 {BasedOnField A5}
+  0.8,                                    !- Output Value 4 {BasedOnField A5}
+  0.9,                                    !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  1.1,                                    !- Output Value 7 {BasedOnField A5}
+  1.2,                                    !- Output Value 8 {BasedOnField A5}
+  1.216;                                  !- Output Value 9 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {f245d5c5-d390-4eda-bee2-978352df5ba3}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HC_fn_CR-IV_List, !- Name
+  {30c29390-c2dd-4f84-97c4-e2ef512022f2}; !- Model Object 1
+
+OS:Table:IndependentVariable,
+  {30c29390-c2dd-4f84-97c4-e2ef512022f2}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_HC_fn_CR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.5,                                    !- Minimum Value {BasedOnField A5}
+  1.3,                                    !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.5,                                    !- Value 1
+  0.6,                                    !- Value 2
+  0.7,                                    !- Value 3
+  0.8,                                    !- Value 4
+  0.9,                                    !- Value 5
+  1,                                      !- Value 6
+  1.1,                                    !- Value 7
+  1.2,                                    !- Value 8
+  1.3;                                    !- Value 9
+
+OS:ModelObjectList,
+  {f3ac72b1-3f83-4336-aaa2-69132d324c47}, !- Handle
+  Model Object List 1,                    !- Name
+  ;                                       !- Model Object 1
+
+OS:Table:Lookup,
+  {44d4dca9-2920-4bd2-b483-6cde2b2185ef}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFC_fn_L_CR-Output, !- Name
+  {cdab0491-4412-4f74-bb09-52eb656b095f}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.592224750621602,                      !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  0.98,                                   !- Output Value 7 {BasedOnField A5}
+  0.98,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.95,                                   !- Output Value 11 {BasedOnField A5}
+  0.94,                                   !- Output Value 12 {BasedOnField A5}
+  1,                                      !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  0.92,                                   !- Output Value 15 {BasedOnField A5}
+  0.91,                                   !- Output Value 16 {BasedOnField A5}
+  1,                                      !- Output Value 17 {BasedOnField A5}
+  1,                                      !- Output Value 18 {BasedOnField A5}
+  0.88,                                   !- Output Value 19 {BasedOnField A5}
+  0.88,                                   !- Output Value 20 {BasedOnField A5}
+  1,                                      !- Output Value 21 {BasedOnField A5}
+  1,                                      !- Output Value 22 {BasedOnField A5}
+  0.85,                                   !- Output Value 23 {BasedOnField A5}
+  0.84,                                   !- Output Value 24 {BasedOnField A5}
+  1,                                      !- Output Value 25 {BasedOnField A5}
+  1,                                      !- Output Value 26 {BasedOnField A5}
+  0.83,                                   !- Output Value 27 {BasedOnField A5}
+  0.82,                                   !- Output Value 28 {BasedOnField A5}
+  1,                                      !- Output Value 29 {BasedOnField A5}
+  1,                                      !- Output Value 30 {BasedOnField A5}
+  0.8,                                    !- Output Value 31 {BasedOnField A5}
+  0.79,                                   !- Output Value 32 {BasedOnField A5}
+  1,                                      !- Output Value 33 {BasedOnField A5}
+  0.97,                                   !- Output Value 34 {BasedOnField A5}
+  0.77,                                   !- Output Value 35 {BasedOnField A5}
+  0.76,                                   !- Output Value 36 {BasedOnField A5}
+  1,                                      !- Output Value 37 {BasedOnField A5}
+  0.95,                                   !- Output Value 38 {BasedOnField A5}
+  0.75,                                   !- Output Value 39 {BasedOnField A5}
+  0.74,                                   !- Output Value 40 {BasedOnField A5}
+  1,                                      !- Output Value 41 {BasedOnField A5}
+  0.93,                                   !- Output Value 42 {BasedOnField A5}
+  0.74,                                   !- Output Value 43 {BasedOnField A5}
+  0.72,                                   !- Output Value 44 {BasedOnField A5}
+  1,                                      !- Output Value 45 {BasedOnField A5}
+  0.92,                                   !- Output Value 46 {BasedOnField A5}
+  0.72,                                   !- Output Value 47 {BasedOnField A5}
+  0.7,                                    !- Output Value 48 {BasedOnField A5}
+  1,                                      !- Output Value 49 {BasedOnField A5}
+  0.9,                                    !- Output Value 50 {BasedOnField A5}
+  0.7,                                    !- Output Value 51 {BasedOnField A5}
+  0.68,                                   !- Output Value 52 {BasedOnField A5}
+  1,                                      !- Output Value 53 {BasedOnField A5}
+  0.88,                                   !- Output Value 54 {BasedOnField A5}
+  0.68,                                   !- Output Value 55 {BasedOnField A5}
+  0.66,                                   !- Output Value 56 {BasedOnField A5}
+  1,                                      !- Output Value 57 {BasedOnField A5}
+  0.86,                                   !- Output Value 58 {BasedOnField A5}
+  0.67,                                   !- Output Value 59 {BasedOnField A5}
+  0.64,                                   !- Output Value 60 {BasedOnField A5}
+  1,                                      !- Output Value 61 {BasedOnField A5}
+  0.85,                                   !- Output Value 62 {BasedOnField A5}
+  0.65,                                   !- Output Value 63 {BasedOnField A5}
+  0.63,                                   !- Output Value 64 {BasedOnField A5}
+  1,                                      !- Output Value 65 {BasedOnField A5}
+  0.84,                                   !- Output Value 66 {BasedOnField A5}
+  0.64,                                   !- Output Value 67 {BasedOnField A5}
+  0.62,                                   !- Output Value 68 {BasedOnField A5}
+  1,                                      !- Output Value 69 {BasedOnField A5}
+  0.83,                                   !- Output Value 70 {BasedOnField A5}
+  0.63,                                   !- Output Value 71 {BasedOnField A5}
+  0.61,                                   !- Output Value 72 {BasedOnField A5}
+  1,                                      !- Output Value 73 {BasedOnField A5}
+  0.82,                                   !- Output Value 74 {BasedOnField A5}
+  0.62,                                   !- Output Value 75 {BasedOnField A5}
+  0.59;                                   !- Output Value 76 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {cdab0491-4412-4f74-bb09-52eb656b095f}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFC_fn_L_CR-IV_List, !- Name
+  {cf153b76-5732-4344-b77f-89e2f3d86b88}, !- Model Object 1
+  {cac84522-d49c-411d-b83d-a08dfaeac2e8}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {cf153b76-5732-4344-b77f-89e2f3d86b88}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFC_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  7.62,                                   !- Minimum Value {BasedOnField A5}
+  189.8904,                               !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  8,                                      !- Value 1
+  20,                                     !- Value 2
+  30,                                     !- Value 3
+  40,                                     !- Value 4
+  50,                                     !- Value 5
+  60,                                     !- Value 6
+  70,                                     !- Value 7
+  80,                                     !- Value 8
+  90,                                     !- Value 9
+  100,                                    !- Value 10
+  110,                                    !- Value 11
+  120,                                    !- Value 12
+  130,                                    !- Value 13
+  140,                                    !- Value 14
+  150,                                    !- Value 15
+  160,                                    !- Value 16
+  170,                                    !- Value 17
+  180,                                    !- Value 18
+  190;                                    !- Value 19
+
+OS:Table:IndependentVariable,
+  {cac84522-d49c-411d-b83d-a08dfaeac2e8}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFC_fn_CR-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.5,                                    !- Minimum Value {BasedOnField A5}
+  1.3,                                    !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.5,                                    !- Value 1
+  0.8,                                    !- Value 2
+  1,                                      !- Value 3
+  1.3;                                    !- Value 4
+
+OS:Table:Lookup,
+  {caa4a6c4-6bfb-43da-a7aa-1c7d80ee49d0}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFH_fn_L-Output, !- Name
+  {3e339486-47ff-4000-8ddb-3162f97330d3}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.59,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  0.94,                                   !- Output Value 2 {BasedOnField A5}
+  0.89,                                   !- Output Value 3 {BasedOnField A5}
+  0.85,                                   !- Output Value 4 {BasedOnField A5}
+  0.82,                                   !- Output Value 5 {BasedOnField A5}
+  0.78,                                   !- Output Value 6 {BasedOnField A5}
+  0.75,                                   !- Output Value 7 {BasedOnField A5}
+  0.72,                                   !- Output Value 8 {BasedOnField A5}
+  0.7,                                    !- Output Value 9 {BasedOnField A5}
+  0.67,                                   !- Output Value 10 {BasedOnField A5}
+  0.65,                                   !- Output Value 11 {BasedOnField A5}
+  0.63,                                   !- Output Value 12 {BasedOnField A5}
+  0.61,                                   !- Output Value 13 {BasedOnField A5}
+  0.59;                                   !- Output Value 14 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {3e339486-47ff-4000-8ddb-3162f97330d3}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFH_fn_L-IV_List, !- Name
+  {23f350ad-3557-4875-9621-c861c9041151}; !- Model Object 1
+
+OS:Table:IndependentVariable,
+  {23f350ad-3557-4875-9621-c861c9041151}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_PCFH_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  7.6,                                    !- Minimum Value {BasedOnField A5}
+  140.2,                                  !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  7.6,                                    !- Value 1
+  20.1,                                   !- Value 2
+  29.9,                                   !- Value 3
+  39.9,                                   !- Value 4
+  50,                                     !- Value 5
+  60,                                     !- Value 6
+  70.1,                                   !- Value 7
+  79.9,                                   !- Value 8
+  89.9,                                   !- Value 9
+  100,                                    !- Value 10
+  110,                                    !- Value 11
+  120.1,                                  !- Value 12
+  130.1,                                  !- Value 13
+  140.2;                                  !- Value 14
+
+OS:Table:Lookup,
+  {98847ca8-c15c-4620-84aa-c13860d4fadb}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_DEF_EIRM_fn_T-Output, !- Name
+  {6ce465cc-950d-4d6b-aa34-0ad8f401a3ca}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.86,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.97,                                   !- Output Value 1 {BasedOnField A5}
+  0.95,                                   !- Output Value 2 {BasedOnField A5}
+  0.9,                                    !- Output Value 3 {BasedOnField A5}
+  0.86,                                   !- Output Value 4 {BasedOnField A5}
+  0.87,                                   !- Output Value 5 {BasedOnField A5}
+  0.92,                                   !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  0.97,                                   !- Output Value 8 {BasedOnField A5}
+  0.95,                                   !- Output Value 9 {BasedOnField A5}
+  0.9,                                    !- Output Value 10 {BasedOnField A5}
+  0.86,                                   !- Output Value 11 {BasedOnField A5}
+  0.87,                                   !- Output Value 12 {BasedOnField A5}
+  0.92,                                   !- Output Value 13 {BasedOnField A5}
+  1;                                      !- Output Value 14 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {6ce465cc-950d-4d6b-aa34-0ad8f401a3ca}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_DEF_EIRM_fn_T-IV_List, !- Name
+  {35ef65c7-4f15-4339-af06-47eddc1acc6b}, !- Model Object 1
+  {5b215cfb-a449-4d6b-90c2-630d18f7930d}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {35ef65c7-4f15-4339-af06-47eddc1acc6b}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_DEF_EIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  6,                                      !- Minimum Value {BasedOnField A5}
+  20.5,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  6,                                      !- Value 1
+  20.5;                                   !- Value 2
+
+OS:Table:IndependentVariable,
+  {5b215cfb-a449-4d6b-90c2-630d18f7930d}, !- Handle
+  Tbl Lookup RXYQ72AATJB/AAYDB_DEF_EIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -6.94444444444444,                      !- Minimum Value {BasedOnField A5}
+  6.94444444444444,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -6.94,                                  !- Value 1
+  -5,                                     !- Value 2
+  -3.06,                                  !- Value 3
+  0,                                      !- Value 4
+  3.06,                                   !- Value 5
+  5,                                      !- Value 6
+  6.94;                                   !- Value 7
+
+OS:Curve:Biquadratic,
+  {df1125a2-34a4-4ce5-9312-a093e7e3aba3}, !- Handle
+  RXYQ72AATJB/AAYDB_HRCCR_fn_T_Curve,     !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {c06f57c0-e6a2-4577-8043-c6c723b819a3}, !- Handle
+  RXYQ72AATJB/AAYDB_HRCEIRM_fn_T_Curve,   !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {991d84df-5f5b-4092-81e6-2f4d64e3f8a6}, !- Handle
+  RXYQ72AATJB/AAYDB_HRHCR_fn_T_Curve,     !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {36715673-fabf-4b26-bcb3-54efccbcf6ca}, !- Handle
+  RXYQ72AATJB/AAYDB_HRHCR_fn_T_Curve 1,   !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  0,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  0,                                      !- Minimum Value of y
+  1,                                      !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+! Always On Discrete
+OS:Schedule:Constant,
+  {daa43977-fdc6-4078-8925-676b425434b3}, !- Handle
+  Always On Discrete hvac_library,        !- Name
+  {0fe30cdc-640a-431a-b12c-5ea15872d138}, !- Schedule Type Limits Name
+  1;                                      !- Value
+
+! Always OnOff Discrete Schedule Type Limits
+OS:ScheduleTypeLimits,
+  {0fe30cdc-640a-431a-b12c-5ea15872d138}, !- Handle
+  OnOff hvac_library,                     !- Name
+  0,                                      !- Lower Limit Value
+  1,                                      !- Upper Limit Value
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+

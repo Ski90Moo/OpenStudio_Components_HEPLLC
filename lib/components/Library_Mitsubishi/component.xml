@@ -25,12 +25,12 @@
 </attribute>
 <attribute>
 <name>Manufacturer</name>
-<value>LG Electronics USA</value>
+<value>Mitsubishi</value>
 <datatype>string</datatype>
 </attribute>
 <attribute>
 <name>Model Number</name>
-<value>ARNU053TRC2</value>
+<value>PUHY_PURY_PKFY_PLFY_PEFY</value>
 <datatype>string</datatype>
 </attribute>
 <attribute>
@@ -78,7 +78,7 @@
   <file>
    <version>
     <software_program>OpenStudio</software_program>
-    <identifier>3.8.0</identifier>
+    <identifier>3.10.0</identifier>
    </version>
    <filename>Library_Mitsubishi_VRF.osm</filename>
    <filetype>osm</filetype>

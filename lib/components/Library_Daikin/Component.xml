@@ -25,12 +25,12 @@
 </attribute>
 <attribute>
 <name>Manufacturer</name>
-<value>LG Electronics USA</value>
+<value>Daikin Comfort Technologies North America, Inc.</value>
 <datatype>string</datatype>
 </attribute>
 <attribute>
 <name>Model Number</name>
-<value>ARNU053TRC2</value>
+<value>RXYQ</value>
 <datatype>string</datatype>
 </attribute>
 <attribute>
@@ -45,7 +45,7 @@
 </attribute>
 <attribute>
 <name>Product Line/Family Name</name>
-<value>VRF</value>
+<value>VRV</value>
 <datatype>string</datatype>
 </attribute>
 <attribute>

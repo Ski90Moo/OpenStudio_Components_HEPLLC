@@ -6,7 +6,7 @@
  <xml_checksum/>
  <display_name>Library Daikin</display_name>
  <description>Library of objects for various Daikin Equipment.  Currently holds RXYQ-Series VRF equipment, but additional equipment is planned. This information was compiled from data available on Daikin (https://www.myvrvdrive.com/)</description>
- <modeler_description/> See notes to the energy modeler PDF <modeler_description/>
+ <modeler_description> See notes to the energy modeler PDF </modeler_description>
 <source>
 <manufacturer/>
 <model/>

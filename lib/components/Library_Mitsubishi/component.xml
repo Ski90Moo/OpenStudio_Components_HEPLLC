@@ -6,7 +6,7 @@
  <xml_checksum/>
  <display_name>Library Mitsubishi</display_name>
  <description>Library of objects for various Mitsubishi Equipment.  Currently holds P-Series VRF equipment, but additional equipment is planned. This information was compiled from data available on Mitsubishi USA (mylinkdrive.com/USA)</description>
- <modeler_description/> See notes to the energy modeler PDF <modeler_description/>
+ <modeler_description> See notes to the energy modeler PDF </modeler_description>
 <source>
 <manufacturer/>
 <model/>

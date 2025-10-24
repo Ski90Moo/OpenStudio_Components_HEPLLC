@@ -8,7 +8,7 @@
 <description> Library of objects for various Daikin Equipment. Currently holds RXYQ-Series VRF equipment, but additional equipment is planned. This information was compiled from data available on Daikin (https://www.myvrvdrive.com/) </description>
 <modeler_description> See notes to the energy modeler PDF </modeler_description>
 <tags>
-<tag>Ductless Heat Pump</tag>
+<tag>HVAC.Ductless Heat Pump</tag>
 </tags>
 <attributes>
 <attribute>

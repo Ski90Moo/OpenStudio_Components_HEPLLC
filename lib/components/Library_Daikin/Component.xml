@@ -1,90 +1,70 @@
-<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="component.xsd">
-<schema_version>3.0</schema_version>
-<name>Library_Daikin</name>
-<uid>439354f7-7ed8-422d-b0ad-83f0857e11fe</uid>
-<version_id>3cfb0c59-6df2-486a-afd4-63bff82ae35b</version_id>
-<xml_checksum>24C99FAFACCC262D9FF89852DF5B448F</xml_checksum>
-<display_name>Library Daikin</display_name>
-<description> Library of objects for various Daikin Equipment. Currently holds RXYQ-Series VRF equipment, but additional equipment is planned. This information was compiled from data available on Daikin (https://www.myvrvdrive.com/) </description>
-<modeler_description> See notes to the energy modeler PDF </modeler_description>
-<tags>
-<tag>HVAC.Ductless Heat Pump</tag>
-</tags>
-<attributes>
-<attribute>
-<name>TPE uuid</name>
-<value>7ce46229-2872-4825-ba7b-0c4423a2cab3</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Manufacturer</name>
-<value>Daikin Comfort Technologies North America, Inc.</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Model Number</name>
-<value>RXYQ</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Brand</name>
-<value>Daikin</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>OpenStudio Type</name>
-<value>OS:ZoneHVAC:TerminalUnit:VariableRefrigerantFlow</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Product Line/Family Name</name>
-<value>VRV</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Rated Cooling Capacity</name>
-<value>VARIOUS</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Rated Heating Capacity</name>
-<value>VARIOUS</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Rated Cooling Air Flow Rate</name>
-<value>VARIOUS</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Rated Heating Air Flow Rate</name>
-<value>VARIOUS</value>
-<datatype>string</datatype>
-</attribute>
-<attribute>
-<name>Working Refrigerant</name>
-<value>VARIOUS</value>
-<datatype>string</datatype>
-</attribute>
-</attributes>
-<source>
-<manufacturer/>
-<model/>
-<serial_no/>
-<year/>
-<url>https://www.helix-engineers.net/</url>
-</source>
-<files>
-<file>
-<version>
-<software_program>OpenStudio</software_program>
-<identifier>3.10.0</identifier>
-</version>
-<filename>Library_Daikin_VRF.osm</filename>
-<filetype>osm</filetype>
-<usage_type>resource</usage_type>
-<checksum>4ED5EB18</checksum>
-</file>
-</files>
-<costs/>
+<component xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='component.xsd'>
+  <schema_version>3.0</schema_version>
+  <name>Library_Daikin</name>
+  <uid>439354f7-7ed8-422d-b0ad-83f0857e11fe</uid>
+  <version_id>3cfb0c59-6df2-486a-afd4-63bff82ae35b</version_id>
+  <xml_checksum>2A1980BC307C2DEE3A8FD5075C776F02</xml_checksum>
+  <display_name>Library Daikin</display_name>
+  <description>
+     Library of objects for various Daikin Equipment. Currently holds
+    RXYQ-Series VRF equipment, but additional equipment is planned. This
+    information was compiled from data available on Daikin
+    (https://www.myvrvdrive.com/) 
+  </description>
+  <modeler_description> See notes to the energy modeler PDF </modeler_description>
+  <tags>
+    <tag>HVAC.Ductless Heat Pump</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>TPE uuid</name>
+      <value>7ce46229-2872-4825-ba7b-0c4423a2cab3</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Manufacturer</name>
+      <value>Daikin Comfort Technologies North America, Inc.</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Model Number</name>
+      <value>RXYQ</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Brand</name>
+      <value>Daikin</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>OpenStudio Type</name>
+      <value>OS:ZoneHVAC:TerminalUnit:VariableRefrigerantFlow</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Product Line/Family Name</name>
+      <value>VRV</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <source>
+    <manufacturer/>
+    <model/>
+    <serial_no/>
+    <year/>
+    <url>https://www.helix-engineers.net/</url>
+  </source>
+  <files>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.10.0</identifier>
+      </version>
+      <filename>Library_Daikin_VRF.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>4ED5EB18</checksum>
+    </file>
+  </files>
+  <costs/>
 </component>

@@ -3,13 +3,13 @@
   <name>Library_Mitsubishi</name>
   <uid>810c7754-2057-4706-8e0f-b1fff5e2e3ef</uid>
   <version_id>fde78ae4-bb0d-48bb-86ad-bf3399ec9688</version_id>
-  <xml_checksum>F5202D5A5B2C9A3780C040163AC48867</xml_checksum>
+  <xml_checksum>BA15249784736E25036A038BD06F68F8</xml_checksum>
   <display_name>Library Mitsubishi</display_name>
   <description>
-    Library of objects for various Mitsubishi Equipment. Currently holds
+     Library of objects for various Mitsubishi Equipment. Currently holds
     P-Series VRF equipment, but additional equipment is planned. This
     information was compiled from data available on Mitsubishi USA
-    (mylinkdrive.com/USA)
+    (mylinkdrive.com/USA) 
   </description>
   <modeler_description> See notes to the energy modeler PDF </modeler_description>
   <tags>
@@ -44,31 +44,6 @@
     <attribute>
       <name>Product Line/Family Name</name>
       <value>VRF</value>
-      <datatype>string</datatype>
-    </attribute>
-    <attribute>
-      <name>Rated Cooling Capacity</name>
-      <value>VARIOUS</value>
-      <datatype>string</datatype>
-    </attribute>
-    <attribute>
-      <name>Rated Heating Capacity</name>
-      <value>VARIOUS</value>
-      <datatype>string</datatype>
-    </attribute>
-    <attribute>
-      <name>Rated Cooling Air Flow Rate</name>
-      <value>VARIOUS</value>
-      <datatype>string</datatype>
-    </attribute>
-    <attribute>
-      <name>Rated Heating Air Flow Rate</name>
-      <value>VARIOUS</value>
-      <datatype>string</datatype>
-    </attribute>
-    <attribute>
-      <name>Working Refrigerant</name>
-      <value>VARIOUS</value>
       <datatype>string</datatype>
     </attribute>
   </attributes>

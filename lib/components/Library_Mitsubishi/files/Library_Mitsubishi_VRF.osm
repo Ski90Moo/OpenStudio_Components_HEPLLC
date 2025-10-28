@@ -13215,3 +13215,2402 @@ OS:ModelObjectList,
   {bbf5f4aa-b753-4e59-a70f-2d08285667f4}, !- Handle
   {c6d12eaa-44a1-4a2c-8ff0-fe74f2318d1d}; !- Name
 
+OS:AirConditioner:VariableRefrigerantFlow,
+  {95a9d55e-4025-40b4-964b-05d7f0194fef}, !- Handle
+  Mitsubishi PURY-EP120TNU/YNU-A1 DUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  33700,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.22488038277512,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {b4e4b980-5dad-4899-ac7e-f947e76d9819}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {ef962297-862e-4fbe-8588-4240f79ec05c}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {0a979d4f-e865-4aa6-9911-1e1408beb7c4}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Cooling Part-Load Fraction Correlation Curve Name
+  37800,                                  !- Gross Rated Heating Capacity {W}
+  1.12166172106825,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.0997830802603,                        !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {70fe2f59-b1d4-4e24-bfc2-7c5e98547cee}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {4694cdb3-d675-4c4f-95bb-166436679e77}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {5b9b065f-7aae-4644-95a5-86ec8eb6af90}, !- Heating Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {d2b35d75-fcb9-4c4b-ad6a-9585f955ce10}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {c85a8de3-55e1-4acc-a79f-9cadd8d9fd9d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {97d745ca-62bd-4449-a5a0-d30d0d39f3b8}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {97846447-d1b2-4174-9e1a-b4255ec85b6e}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {4a8838bd-6198-4890-8ef7-dccca0573d2f}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {113a5866-0dd1-4f4c-8b1c-271e96b8492d}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {263ebe66-f6ed-48af-a2ea-34307d534fcb}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {a1212aeb-913c-46a1-adce-e52d75ad52fc}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {b4e4b980-5dad-4899-ac7e-f947e76d9819}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CCR_fn_T-Output, !- Name
+  {18e79c4d-11c0-4fa1-8136-911c2cc75077}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.401,                                  !- Minimum Output {BasedOnField A5}
+  1.129,                                  !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.125,                                  !- Output Value 1 {BasedOnField A5}
+  1.129,                                  !- Output Value 2 {BasedOnField A5}
+  0.908,                                  !- Output Value 3 {BasedOnField A5}
+  0.401,                                  !- Output Value 4 {BasedOnField A5}
+  1.125,                                  !- Output Value 5 {BasedOnField A5}
+  1.129,                                  !- Output Value 6 {BasedOnField A5}
+  0.908,                                  !- Output Value 7 {BasedOnField A5}
+  0.401,                                  !- Output Value 8 {BasedOnField A5}
+  1.125,                                  !- Output Value 9 {BasedOnField A5}
+  1.129,                                  !- Output Value 10 {BasedOnField A5}
+  0.908,                                  !- Output Value 11 {BasedOnField A5}
+  0.401,                                  !- Output Value 12 {BasedOnField A5}
+  1.125,                                  !- Output Value 13 {BasedOnField A5}
+  1.129,                                  !- Output Value 14 {BasedOnField A5}
+  0.908,                                  !- Output Value 15 {BasedOnField A5}
+  0.401,                                  !- Output Value 16 {BasedOnField A5}
+  1.125,                                  !- Output Value 17 {BasedOnField A5}
+  1.129,                                  !- Output Value 18 {BasedOnField A5}
+  0.908,                                  !- Output Value 19 {BasedOnField A5}
+  0.401;                                  !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {18e79c4d-11c0-4fa1-8136-911c2cc75077}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CCR_fn_T-IV_List, !- Name
+  {b4dc5d16-2ea5-4484-93a6-f97acd65a626}, !- Model Object 1
+  {80fd4cde-70bf-4dfa-8142-03fb8e239a93}; !- Model Object 2
+
+OS:Table:Lookup,
+  {ef962297-862e-4fbe-8588-4240f79ec05c}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_T-Output, !- Name
+  {f9b466a9-9e7c-4a7f-b7be-7fe8188bb537}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.2455,                                 !- Minimum Output {BasedOnField A5}
+  1.21569,                                !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.549,                                  !- Output Value 1 {BasedOnField A5}
+  0.631,                                  !- Output Value 2 {BasedOnField A5}
+  0.636,                                  !- Output Value 3 {BasedOnField A5}
+  0.642,                                  !- Output Value 4 {BasedOnField A5}
+  0.642,                                  !- Output Value 5 {BasedOnField A5}
+  0.644,                                  !- Output Value 6 {BasedOnField A5}
+  0.648,                                  !- Output Value 7 {BasedOnField A5}
+  0.651,                                  !- Output Value 8 {BasedOnField A5}
+  1.063,                                  !- Output Value 9 {BasedOnField A5}
+  0.246,                                  !- Output Value 10 {BasedOnField A5}
+  0.6,                                    !- Output Value 11 {BasedOnField A5}
+  0.68,                                   !- Output Value 12 {BasedOnField A5}
+  0.687,                                  !- Output Value 13 {BasedOnField A5}
+  0.691,                                  !- Output Value 14 {BasedOnField A5}
+  0.694,                                  !- Output Value 15 {BasedOnField A5}
+  0.695,                                  !- Output Value 16 {BasedOnField A5}
+  0.7,                                    !- Output Value 17 {BasedOnField A5}
+  0.709,                                  !- Output Value 18 {BasedOnField A5}
+  1.107,                                  !- Output Value 19 {BasedOnField A5}
+  0.296,                                  !- Output Value 20 {BasedOnField A5}
+  0.659,                                  !- Output Value 21 {BasedOnField A5}
+  0.739,                                  !- Output Value 22 {BasedOnField A5}
+  0.743,                                  !- Output Value 23 {BasedOnField A5}
+  0.749,                                  !- Output Value 24 {BasedOnField A5}
+  0.75,                                   !- Output Value 25 {BasedOnField A5}
+  0.753,                                  !- Output Value 26 {BasedOnField A5}
+  0.77,                                   !- Output Value 27 {BasedOnField A5}
+  0.779,                                  !- Output Value 28 {BasedOnField A5}
+  1.166,                                  !- Output Value 29 {BasedOnField A5}
+  0.355,                                  !- Output Value 30 {BasedOnField A5}
+  0.666,                                  !- Output Value 31 {BasedOnField A5}
+  0.743,                                  !- Output Value 32 {BasedOnField A5}
+  0.749,                                  !- Output Value 33 {BasedOnField A5}
+  0.755,                                  !- Output Value 34 {BasedOnField A5}
+  0.757,                                  !- Output Value 35 {BasedOnField A5}
+  0.765,                                  !- Output Value 36 {BasedOnField A5}
+  0.785,                                  !- Output Value 37 {BasedOnField A5}
+  0.791,                                  !- Output Value 38 {BasedOnField A5}
+  1.177,                                  !- Output Value 39 {BasedOnField A5}
+  0.37,                                   !- Output Value 40 {BasedOnField A5}
+  0.67,                                   !- Output Value 41 {BasedOnField A5}
+  0.747,                                  !- Output Value 42 {BasedOnField A5}
+  0.754,                                  !- Output Value 43 {BasedOnField A5}
+  0.759,                                  !- Output Value 44 {BasedOnField A5}
+  0.767,                                  !- Output Value 45 {BasedOnField A5}
+  0.775,                                  !- Output Value 46 {BasedOnField A5}
+  0.794,                                  !- Output Value 47 {BasedOnField A5}
+  0.801,                                  !- Output Value 48 {BasedOnField A5}
+  1.188,                                  !- Output Value 49 {BasedOnField A5}
+  0.385,                                  !- Output Value 50 {BasedOnField A5}
+  0.684,                                  !- Output Value 51 {BasedOnField A5}
+  0.758,                                  !- Output Value 52 {BasedOnField A5}
+  0.763,                                  !- Output Value 53 {BasedOnField A5}
+  0.783,                                  !- Output Value 54 {BasedOnField A5}
+  0.791,                                  !- Output Value 55 {BasedOnField A5}
+  0.801,                                  !- Output Value 56 {BasedOnField A5}
+  0.817,                                  !- Output Value 57 {BasedOnField A5}
+  0.825,                                  !- Output Value 58 {BasedOnField A5}
+  1.204,                                  !- Output Value 59 {BasedOnField A5}
+  0.397,                                  !- Output Value 60 {BasedOnField A5}
+  0.696,                                  !- Output Value 61 {BasedOnField A5}
+  0.773,                                  !- Output Value 62 {BasedOnField A5}
+  0.791,                                  !- Output Value 63 {BasedOnField A5}
+  0.81,                                   !- Output Value 64 {BasedOnField A5}
+  0.817,                                  !- Output Value 65 {BasedOnField A5}
+  0.826,                                  !- Output Value 66 {BasedOnField A5}
+  0.842,                                  !- Output Value 67 {BasedOnField A5}
+  0.85,                                   !- Output Value 68 {BasedOnField A5}
+  1.216,                                  !- Output Value 69 {BasedOnField A5}
+  0.409;                                  !- Output Value 70 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {f9b466a9-9e7c-4a7f-b7be-7fe8188bb537}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_T-IV_List, !- Name
+  {d4683308-b9a2-4057-831b-31686457d93b}, !- Model Object 1
+  {f98ed10d-891f-447e-8049-95677e2c4966}; !- Model Object 2
+
+OS:Table:Lookup,
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_LPLR-Output, !- Name
+  {179dd408-182c-42ff-83b4-a8f2fe1ed0e4}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.46929,                                !- Minimum Output {BasedOnField A5}
+  1.0126,                                 !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.469,                                  !- Output Value 1 {BasedOnField A5}
+  0.469,                                  !- Output Value 2 {BasedOnField A5}
+  0.606,                                  !- Output Value 3 {BasedOnField A5}
+  0.784,                                  !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  1.009,                                  !- Output Value 6 {BasedOnField A5}
+  1.013;                                  !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {179dd408-182c-42ff-83b4-a8f2fe1ed0e4}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_LPLR-IV_List, !- Name
+  {924f9d00-0925-4537-9d4a-5d3ef0e5ad6e}; !- Model Object 1
+
+OS:Curve:Linear,
+  {0a979d4f-e865-4aa6-9911-1e1408beb7c4}, !- Handle
+  PURY-EP120TNU/YNU-A1 CC_fn_CR_Curve,    !- Name
+  0.770203586283588,                      !- Coefficient1 Constant
+  0.229796413716412,                      !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.49878933333333,                       !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.11462;                                !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Handle
+  PURY-EP120TNU/YNU-A1 C_H_PLF_Cor_Curve, !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:Lookup,
+  {70fe2f59-b1d4-4e24-bfc2-7c5e98547cee}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HCR_fn_T-Output, !- Name
+  {89ea5157-85f9-4c87-9793-dafaf75f17f8}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.68,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.68,                                   !- Output Value 1 {BasedOnField A5}
+  0.78,                                   !- Output Value 2 {BasedOnField A5}
+  0.89,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.68,                                   !- Output Value 6 {BasedOnField A5}
+  0.78,                                   !- Output Value 7 {BasedOnField A5}
+  0.89,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.68,                                   !- Output Value 11 {BasedOnField A5}
+  0.78,                                   !- Output Value 12 {BasedOnField A5}
+  0.89,                                   !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.68,                                   !- Output Value 16 {BasedOnField A5}
+  0.78,                                   !- Output Value 17 {BasedOnField A5}
+  0.89,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.68,                                   !- Output Value 21 {BasedOnField A5}
+  0.78,                                   !- Output Value 22 {BasedOnField A5}
+  0.89,                                   !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {89ea5157-85f9-4c87-9793-dafaf75f17f8}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HCR_fn_T-IV_List, !- Name
+  {34b43c4a-d28f-4847-a6e3-81614ce63f22}, !- Model Object 1
+  {8b3e18a8-fc6e-4847-84f2-049fdf8ceff0}; !- Model Object 2
+
+OS:Table:Lookup,
+  {4694cdb3-d675-4c4f-95bb-166436679e77}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HEIRM_fn_T-Output, !- Name
+  {e0ddffa0-9c07-423a-a574-62435852d2f5}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.43,                                   !- Minimum Output {BasedOnField A5}
+  1.82,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.59,                                   !- Output Value 1 {BasedOnField A5}
+  1.62,                                   !- Output Value 2 {BasedOnField A5}
+  1.65,                                   !- Output Value 3 {BasedOnField A5}
+  1.7,                                    !- Output Value 4 {BasedOnField A5}
+  1.74,                                   !- Output Value 5 {BasedOnField A5}
+  1.47,                                   !- Output Value 6 {BasedOnField A5}
+  1.18,                                   !- Output Value 7 {BasedOnField A5}
+  1.09,                                   !- Output Value 8 {BasedOnField A5}
+  0.93,                                   !- Output Value 9 {BasedOnField A5}
+  0.75,                                   !- Output Value 10 {BasedOnField A5}
+  1.65,                                   !- Output Value 11 {BasedOnField A5}
+  1.69,                                   !- Output Value 12 {BasedOnField A5}
+  1.74,                                   !- Output Value 13 {BasedOnField A5}
+  1.82,                                   !- Output Value 14 {BasedOnField A5}
+  1.65,                                   !- Output Value 15 {BasedOnField A5}
+  1.39,                                   !- Output Value 16 {BasedOnField A5}
+  1.09,                                   !- Output Value 17 {BasedOnField A5}
+  1,                                      !- Output Value 18 {BasedOnField A5}
+  0.83,                                   !- Output Value 19 {BasedOnField A5}
+  0.69,                                   !- Output Value 20 {BasedOnField A5}
+  1.73,                                   !- Output Value 21 {BasedOnField A5}
+  1.82,                                   !- Output Value 22 {BasedOnField A5}
+  1.6,                                    !- Output Value 23 {BasedOnField A5}
+  1.34,                                   !- Output Value 24 {BasedOnField A5}
+  1.19,                                   !- Output Value 25 {BasedOnField A5}
+  0.95,                                   !- Output Value 26 {BasedOnField A5}
+  0.72,                                   !- Output Value 27 {BasedOnField A5}
+  0.66,                                   !- Output Value 28 {BasedOnField A5}
+  0.58,                                   !- Output Value 29 {BasedOnField A5}
+  0.51,                                   !- Output Value 30 {BasedOnField A5}
+  1.82,                                   !- Output Value 31 {BasedOnField A5}
+  1.67,                                   !- Output Value 32 {BasedOnField A5}
+  1.4,                                    !- Output Value 33 {BasedOnField A5}
+  1.08,                                   !- Output Value 34 {BasedOnField A5}
+  0.94,                                   !- Output Value 35 {BasedOnField A5}
+  0.75,                                   !- Output Value 36 {BasedOnField A5}
+  0.58,                                   !- Output Value 37 {BasedOnField A5}
+  0.54,                                   !- Output Value 38 {BasedOnField A5}
+  0.49,                                   !- Output Value 39 {BasedOnField A5}
+  0.43;                                   !- Output Value 40 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {e0ddffa0-9c07-423a-a574-62435852d2f5}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HEIRM_fn_T-IV_List, !- Name
+  {c4cde93b-f7ab-4bdf-a79d-1ad19bd9cbff}, !- Model Object 1
+  {b723c787-2041-494d-a464-23d0d4b1972b}; !- Model Object 2
+
+OS:Table:Lookup,
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_LPLR-Output, !- Name
+  {05d522e7-feb9-46e4-be9f-4e61b988b9ab}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.47,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.47,                                   !- Output Value 1 {BasedOnField A5}
+  0.47,                                   !- Output Value 2 {BasedOnField A5}
+  0.62,                                   !- Output Value 3 {BasedOnField A5}
+  0.8,                                    !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.92,                                   !- Output Value 6 {BasedOnField A5}
+  0.88;                                   !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {05d522e7-feb9-46e4-be9f-4e61b988b9ab}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_LPLR-IV_List, !- Name
+  {27febe47-2da6-4d14-a595-f47d13a17264}; !- Model Object 1
+
+OS:Curve:Linear,
+  {5b9b065f-7aae-4644-95a5-86ec8eb6af90}, !- Handle
+  PURY-EP120TNU/YNU-A1 HC_fn_CR_Curve,    !- Name
+  0.964,                                  !- Coefficient1 Constant
+  0.036,                                  !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.33333333333333,                       !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.012;                                  !- Maximum Curve Output
+
+OS:Table:Lookup,
+  {c85a8de3-55e1-4acc-a79f-9cadd8d9fd9d}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFC_fn_L_CR-Output, !- Name
+  {c758173e-be27-4636-a4fc-117ce622ede0}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.669,                                  !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  1,                                      !- Output Value 7 {BasedOnField A5}
+  1,                                      !- Output Value 8 {BasedOnField A5}
+  0.9996,                                 !- Output Value 9 {BasedOnField A5}
+  0.9996,                                 !- Output Value 10 {BasedOnField A5}
+  0.89864,                                !- Output Value 11 {BasedOnField A5}
+  0.89033,                                !- Output Value 12 {BasedOnField A5}
+  0.9996,                                 !- Output Value 13 {BasedOnField A5}
+  0.87014,                                !- Output Value 14 {BasedOnField A5}
+  0.77432,                                !- Output Value 15 {BasedOnField A5}
+  0.75888,                                !- Output Value 16 {BasedOnField A5}
+  0.9996,                                 !- Output Value 17 {BasedOnField A5}
+  0.77155,                                !- Output Value 18 {BasedOnField A5}
+  0.68484,                                !- Output Value 19 {BasedOnField A5}
+  0.669;                                  !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {c758173e-be27-4636-a4fc-117ce622ede0}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFC_fn_L_CR-IV_List, !- Name
+  {355922be-d8be-421d-9349-5f6a11f883f9}, !- Model Object 1
+  {1c5ce337-b724-4d43-ab87-fdce1d14d775}; !- Model Object 2
+
+OS:Table:Lookup,
+  {97d745ca-62bd-4449-a5a0-d30d0d39f3b8}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFH_fn_L-Output, !- Name
+  {d54d66d1-acce-4325-977a-4ce045b1a064}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.9,                                    !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  0.98,                                   !- Output Value 3 {BasedOnField A5}
+  0.96,                                   !- Output Value 4 {BasedOnField A5}
+  0.94,                                   !- Output Value 5 {BasedOnField A5}
+  0.93,                                   !- Output Value 6 {BasedOnField A5}
+  0.91,                                   !- Output Value 7 {BasedOnField A5}
+  0.9;                                    !- Output Value 8 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {d54d66d1-acce-4325-977a-4ce045b1a064}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFH_fn_L-IV_List, !- Name
+  {d70e0b50-e657-44f4-9bbd-ab1a42ccf51d}; !- Model Object 1
+
+OS:Table:Lookup,
+  {97846447-d1b2-4174-9e1a-b4255ec85b6e}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_DEF_EIRM_fn_T-Output, !- Name
+  {167efb29-277f-4565-bf86-e77816f3f1fc}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.8,                                    !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.95,                                   !- Output Value 1 {BasedOnField A5}
+  0.95,                                   !- Output Value 2 {BasedOnField A5}
+  0.95,                                   !- Output Value 3 {BasedOnField A5}
+  0.9,                                    !- Output Value 4 {BasedOnField A5}
+  0.9,                                    !- Output Value 5 {BasedOnField A5}
+  0.86,                                   !- Output Value 6 {BasedOnField A5}
+  0.82,                                   !- Output Value 7 {BasedOnField A5}
+  0.8,                                    !- Output Value 8 {BasedOnField A5}
+  0.82,                                   !- Output Value 9 {BasedOnField A5}
+  0.93,                                   !- Output Value 10 {BasedOnField A5}
+  1,                                      !- Output Value 11 {BasedOnField A5}
+  0.95,                                   !- Output Value 12 {BasedOnField A5}
+  0.95,                                   !- Output Value 13 {BasedOnField A5}
+  0.95,                                   !- Output Value 14 {BasedOnField A5}
+  0.9,                                    !- Output Value 15 {BasedOnField A5}
+  0.9,                                    !- Output Value 16 {BasedOnField A5}
+  0.86,                                   !- Output Value 17 {BasedOnField A5}
+  0.82,                                   !- Output Value 18 {BasedOnField A5}
+  0.8,                                    !- Output Value 19 {BasedOnField A5}
+  0.82,                                   !- Output Value 20 {BasedOnField A5}
+  0.93,                                   !- Output Value 21 {BasedOnField A5}
+  1;                                      !- Output Value 22 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {167efb29-277f-4565-bf86-e77816f3f1fc}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_DEF_EIRM_fn_T-IV_List, !- Name
+  {77da5716-9fc0-4b00-8a19-7b53fd82d792}, !- Model Object 1
+  {251eed7a-95e0-4772-aafd-32fe1b91ba7e}; !- Model Object 2
+
+OS:Curve:Biquadratic,
+  {4a8838bd-6198-4890-8ef7-dccca0573d2f}, !- Handle
+  PURY-EP120TNU/YNU-A1_HRCCR_fn_T_Curve,  !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  24,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  24,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {113a5866-0dd1-4f4c-8b1c-271e96b8492d}, !- Handle
+  PURY-EP120TNU/YNU-A1_HRCEIRM_fn_T_Curve, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  24,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {263ebe66-f6ed-48af-a2ea-34307d534fcb}, !- Handle
+  PURY-EP120TNU/YNU-A1_HRHCR_fn_T_Curve,  !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  27,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  27,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {a1212aeb-913c-46a1-adce-e52d75ad52fc}, !- Handle
+  PURY-EP120TNU/YNU-A1_HRHCR_fn_T_Curve 1, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  27,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  27,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:IndependentVariable,
+  {b4dc5d16-2ea5-4484-93a6-f97acd65a626}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  24,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  16.1,                                   !- Value 2
+  17.8,                                   !- Value 3
+  19.4,                                   !- Value 4
+  24;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {80fd4cde-70bf-4dfa-8142-03fb8e239a93}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5,                                     !- Minimum Value {BasedOnField A5}
+  52.04651,                               !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  20,                                     !- Value 2
+  46,                                     !- Value 3
+  52;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {d4683308-b9a2-4057-831b-31686457d93b}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  23.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  16.1,                                   !- Value 2
+  17.8,                                   !- Value 3
+  19.4,                                   !- Value 4
+  20,                                     !- Value 5
+  22.2,                                   !- Value 6
+  23.9;                                   !- Value 7
+
+OS:Table:IndependentVariable,
+  {f98ed10d-891f-447e-8049-95677e2c4966}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -5.04026,                               !- Minimum Value {BasedOnField A5}
+  52.01317,                               !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -5,                                     !- Value 1
+  16.7,                                   !- Value 2
+  18.2,                                   !- Value 3
+  19.4,                                   !- Value 4
+  19.9,                                   !- Value 5
+  20.5,                                   !- Value 6
+  21.6,                                   !- Value 7
+  22.1,                                   !- Value 8
+  45.9,                                   !- Value 9
+  52;                                     !- Value 10
+
+OS:Table:IndependentVariable,
+  {924f9d00-0925-4537-9d4a-5d3ef0e5ad6e}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_CEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.15,                                   !- Minimum Value {BasedOnField A5}
+  1.49878933333333,                       !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.15,                                   !- Value 1
+  0.5,                                    !- Value 2
+  0.67,                                   !- Value 3
+  0.83,                                   !- Value 4
+  1,                                      !- Value 5
+  1.27,                                   !- Value 6
+  1.5;                                    !- Value 7
+
+OS:Table:IndependentVariable,
+  {34b43c4a-d28f-4847-a6e3-81614ce63f22}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  18,                                     !- Value 2
+  21.1,                                   !- Value 3
+  25,                                     !- Value 4
+  27;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {8b3e18a8-fc6e-4847-84f2-049fdf8ceff0}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -20,                                    !- Value 2
+  -15,                                    !- Value 3
+  -10,                                    !- Value 4
+  15;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {c4cde93b-f7ab-4bdf-a79d-1ad19bd9cbff}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {b723c787-2041-494d-a464-23d0d4b1972b}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HH_HEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  14.9,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -21.7,                                  !- Value 2
+  -15.9,                                  !- Value 3
+  -10,                                    !- Value 4
+  -7,                                     !- Value 5
+  -2,                                     !- Value 6
+  4,                                      !- Value 7
+  6,                                      !- Value 8
+  10,                                     !- Value 9
+  14.9;                                   !- Value 10
+
+OS:Table:IndependentVariable,
+  {27febe47-2da6-4d14-a595-f47d13a17264}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_LPLR-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.15,                                   !- Minimum Value {BasedOnField A5}
+  1.33,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.15,                                   !- Value 1
+  0.45,                                   !- Value 2
+  0.59,                                   !- Value 3
+  0.74,                                   !- Value 4
+  0.89,                                   !- Value 5
+  1.12,                                   !- Value 6
+  1.33;                                   !- Value 7
+
+OS:Table:IndependentVariable,
+  {355922be-d8be-421d-9349-5f6a11f883f9}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFC_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0,                                      !- Minimum Value {BasedOnField A5}
+  183.12754,                              !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0,                                      !- Value 1
+  7.90662,                                !- Value 2
+  51.90314,                               !- Value 3
+  118.08921,                              !- Value 4
+  183.12754;                              !- Value 5
+
+OS:Table:IndependentVariable,
+  {1c5ce337-b724-4d43-ab87-fdce1d14d775}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFC_fn_CR-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  0.5,                                    !- Minimum Value {BasedOnField A5}
+  1.5,                                    !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.5,                                    !- Value 1
+  0.75,                                   !- Value 2
+  1,                                      !- Value 3
+  1.5;                                    !- Value 4
+
+OS:Table:IndependentVariable,
+  {d70e0b50-e657-44f4-9bbd-ab1a42ccf51d}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_PCFH_fn_L-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -0.3,                                   !- Minimum Value {BasedOnField A5}
+  182.9,                                  !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Dimensionless,                          !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -0.3,                                   !- Value 1
+  7.2,                                    !- Value 2
+  37.8,                                   !- Value 3
+  68.9,                                   !- Value 4
+  99,                                     !- Value 5
+  129.8,                                  !- Value 6
+  157.5,                                  !- Value 7
+  182.9;                                  !- Value 8
+
+OS:Table:IndependentVariable,
+  {77da5716-9fc0-4b00-8a19-7b53fd82d792}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_DEF_EIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  6,                                      !- Minimum Value {BasedOnField A5}
+  20.5,                                   !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  6,                                      !- Value 1
+  20.5;                                   !- Value 2
+
+OS:Table:IndependentVariable,
+  {251eed7a-95e0-4772-aafd-32fe1b91ba7e}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_DEF_EIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -20,                                    !- Minimum Value {BasedOnField A5}
+  6,                                      !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -20,                                    !- Value 1
+  -10,                                    !- Value 2
+  -8,                                     !- Value 3
+  -6,                                     !- Value 4
+  -4,                                     !- Value 5
+  -2,                                     !- Value 6
+  0,                                      !- Value 7
+  1,                                      !- Value 8
+  2,                                      !- Value 9
+  4,                                      !- Value 10
+  6;                                      !- Value 11
+
+OS:ModelObjectList,
+  {d2b35d75-fcb9-4c4b-ad6a-9585f955ce10}, !- Handle
+  {70ec8df2-a61a-42c8-9b7a-d72045783c01}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {7f8bc4a3-6e13-48a3-b805-f4a746d0911c}, !- Handle
+  Mitsubishi PURY-EP120TNU/YNU-A1 DUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  33700,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.22488038277512,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {b4e4b980-5dad-4899-ac7e-f947e76d9819}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {ef962297-862e-4fbe-8588-4240f79ec05c}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {0a979d4f-e865-4aa6-9911-1e1408beb7c4}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Cooling Part-Load Fraction Correlation Curve Name
+  37800,                                  !- Gross Rated Heating Capacity {W}
+  1.12166172106825,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.0997830802603,                        !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {f90b61c6-f823-492e-927f-735a8cc02335}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {76c45110-05b0-40fe-b301-7fe8e77ce7a8}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {5b9b065f-7aae-4644-95a5-86ec8eb6af90}, !- Heating Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {4f112ea5-939a-42ac-8668-e36a57f864d8}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {c85a8de3-55e1-4acc-a79f-9cadd8d9fd9d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {97d745ca-62bd-4449-a5a0-d30d0d39f3b8}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {97846447-d1b2-4174-9e1a-b4255ec85b6e}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {4a8838bd-6198-4890-8ef7-dccca0573d2f}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {113a5866-0dd1-4f4c-8b1c-271e96b8492d}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {263ebe66-f6ed-48af-a2ea-34307d534fcb}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {a1212aeb-913c-46a1-adce-e52d75ad52fc}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {f90b61c6-f823-492e-927f-735a8cc02335}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HCR_fn_T-Output, !- Name
+  {71bc2dde-e388-458b-8bfb-83df92799bf7}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.47,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.47,                                   !- Output Value 1 {BasedOnField A5}
+  0.58,                                   !- Output Value 2 {BasedOnField A5}
+  0.69,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.47,                                   !- Output Value 6 {BasedOnField A5}
+  0.58,                                   !- Output Value 7 {BasedOnField A5}
+  0.69,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.47,                                   !- Output Value 11 {BasedOnField A5}
+  0.58,                                   !- Output Value 12 {BasedOnField A5}
+  0.69,                                   !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.47,                                   !- Output Value 16 {BasedOnField A5}
+  0.58,                                   !- Output Value 17 {BasedOnField A5}
+  0.69,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.47,                                   !- Output Value 21 {BasedOnField A5}
+  0.58,                                   !- Output Value 22 {BasedOnField A5}
+  0.69,                                   !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {71bc2dde-e388-458b-8bfb-83df92799bf7}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HCR_fn_T-IV_List, !- Name
+  {0bef0f47-7c19-4ad9-80c5-1c9a98a1c5c3}, !- Model Object 1
+  {b041652f-1be3-4939-8a60-dc8f43e67bb8}; !- Model Object 2
+
+OS:Table:Lookup,
+  {76c45110-05b0-40fe-b301-7fe8e77ce7a8}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_T-Output, !- Name
+  {d3404c01-fa36-483d-bb2d-08bfb77d88f6}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.43,                                   !- Minimum Output {BasedOnField A5}
+  1.19,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.84,                                   !- Output Value 1 {BasedOnField A5}
+  0.96,                                   !- Output Value 2 {BasedOnField A5}
+  0.97,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1.08,                                   !- Output Value 5 {BasedOnField A5}
+  1.09,                                   !- Output Value 6 {BasedOnField A5}
+  1.12,                                   !- Output Value 7 {BasedOnField A5}
+  1.15,                                   !- Output Value 8 {BasedOnField A5}
+  0.91,                                   !- Output Value 9 {BasedOnField A5}
+  0.93,                                   !- Output Value 10 {BasedOnField A5}
+  1.05,                                   !- Output Value 11 {BasedOnField A5}
+  1.07,                                   !- Output Value 12 {BasedOnField A5}
+  1.08,                                   !- Output Value 13 {BasedOnField A5}
+  1.13,                                   !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.87,                                   !- Output Value 16 {BasedOnField A5}
+  0.76,                                   !- Output Value 17 {BasedOnField A5}
+  0.69,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1.13,                                   !- Output Value 20 {BasedOnField A5}
+  1.15,                                   !- Output Value 21 {BasedOnField A5}
+  1.17,                                   !- Output Value 22 {BasedOnField A5}
+  0.69,                                   !- Output Value 23 {BasedOnField A5}
+  0.66,                                   !- Output Value 24 {BasedOnField A5}
+  0.6,                                    !- Output Value 25 {BasedOnField A5}
+  0.54,                                   !- Output Value 26 {BasedOnField A5}
+  0.51,                                   !- Output Value 27 {BasedOnField A5}
+  1.04,                                   !- Output Value 28 {BasedOnField A5}
+  1.17,                                   !- Output Value 29 {BasedOnField A5}
+  1.19,                                   !- Output Value 30 {BasedOnField A5}
+  0.93,                                   !- Output Value 31 {BasedOnField A5}
+  0.56,                                   !- Output Value 32 {BasedOnField A5}
+  0.53,                                   !- Output Value 33 {BasedOnField A5}
+  0.5,                                    !- Output Value 34 {BasedOnField A5}
+  0.46,                                   !- Output Value 35 {BasedOnField A5}
+  0.43;                                   !- Output Value 36 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {d3404c01-fa36-483d-bb2d-08bfb77d88f6}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_T-IV_List, !- Name
+  {3148b070-0419-4c3d-8a82-569e91dac88e}, !- Model Object 1
+  {1b551b71-f248-45f6-a0aa-fc0e6ebef09b}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {0bef0f47-7c19-4ad9-80c5-1c9a98a1c5c3}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HCR_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  18,                                     !- Value 2
+  21.1,                                   !- Value 3
+  25,                                     !- Value 4
+  27;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {b041652f-1be3-4939-8a60-dc8f43e67bb8}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HCR_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -20,                                    !- Value 2
+  -10,                                    !- Value 3
+  4.7,                                    !- Value 4
+  15;                                     !- Value 5
+
+OS:Table:IndependentVariable,
+  {3148b070-0419-4c3d-8a82-569e91dac88e}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_T-Input_0, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {1b551b71-f248-45f6-a0aa-fc0e6ebef09b}, !- Handle
+  Tbl Lookup PURY-EP120TNU/YNU-A1_HEIRM_fn_T-Input_1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -20,                                    !- Value 2
+  -12.2,                                  !- Value 3
+  -6.7,                                   !- Value 4
+  4.8,                                    !- Value 5
+  6.1,                                    !- Value 6
+  9,                                      !- Value 7
+  12.2,                                   !- Value 8
+  15;                                     !- Value 9
+
+OS:ModelObjectList,
+  {4f112ea5-939a-42ac-8668-e36a57f864d8}, !- Handle
+  {27d56523-7e59-4639-9d07-a328bd8bb191}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {cc045083-a1b3-4ad6-b8de-0fff95eace32}, !- Handle
+  Mitsubishi PURY-EP120TNU/YNU-A1 NONDUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  33700,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.19431279620853,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {b4e4b980-5dad-4899-ac7e-f947e76d9819}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {ef962297-862e-4fbe-8588-4240f79ec05c}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {0a979d4f-e865-4aa6-9911-1e1408beb7c4}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Cooling Part-Load Fraction Correlation Curve Name
+  37800,                                  !- Gross Rated Heating Capacity {W}
+  1.12166172106825,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.22346368715084,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {70fe2f59-b1d4-4e24-bfc2-7c5e98547cee}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {4694cdb3-d675-4c4f-95bb-166436679e77}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {5b9b065f-7aae-4644-95a5-86ec8eb6af90}, !- Heating Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {a3027675-104f-44bd-991e-6817e403e908}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {c85a8de3-55e1-4acc-a79f-9cadd8d9fd9d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {97d745ca-62bd-4449-a5a0-d30d0d39f3b8}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {97846447-d1b2-4174-9e1a-b4255ec85b6e}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {4a8838bd-6198-4890-8ef7-dccca0573d2f}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {113a5866-0dd1-4f4c-8b1c-271e96b8492d}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {263ebe66-f6ed-48af-a2ea-34307d534fcb}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {a1212aeb-913c-46a1-adce-e52d75ad52fc}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:ModelObjectList,
+  {a3027675-104f-44bd-991e-6817e403e908}, !- Handle
+  {75ce0ed0-47fe-4c9b-a1de-0208a1fa8695}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {22c5c5ea-15ce-4109-a49f-63865b05354c}, !- Handle
+  Mitsubishi PURY-EP120TNU/YNU-A1 NONDUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  33700,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.19431279620853,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {b4e4b980-5dad-4899-ac7e-f947e76d9819}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {ef962297-862e-4fbe-8588-4240f79ec05c}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ab1a38c9-8c81-44d6-baf1-4e9553c65728}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {0a979d4f-e865-4aa6-9911-1e1408beb7c4}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Cooling Part-Load Fraction Correlation Curve Name
+  37800,                                  !- Gross Rated Heating Capacity {W}
+  1.12166172106825,                       !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.22346368715084,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {f90b61c6-f823-492e-927f-735a8cc02335}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {76c45110-05b0-40fe-b301-7fe8e77ce7a8}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {ed3ca883-e240-4753-9ae4-26843d473ccd}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {5b9b065f-7aae-4644-95a5-86ec8eb6af90}, !- Heating Combination Ratio Correction Factor Curve Name
+  {9ecd7f0e-de93-4627-b919-de34b6af1220}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {d922f41d-9ed3-4e1d-8d8c-9d9f076012ff}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {c85a8de3-55e1-4acc-a79f-9cadd8d9fd9d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {97d745ca-62bd-4449-a5a0-d30d0d39f3b8}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {97846447-d1b2-4174-9e1a-b4255ec85b6e}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {4a8838bd-6198-4890-8ef7-dccca0573d2f}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {113a5866-0dd1-4f4c-8b1c-271e96b8492d}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {263ebe66-f6ed-48af-a2ea-34307d534fcb}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {a1212aeb-913c-46a1-adce-e52d75ad52fc}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:ModelObjectList,
+  {d922f41d-9ed3-4e1d-8d8c-9d9f076012ff}, !- Handle
+  {6567edd5-fa28-44f6-904f-eda3b8603560}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {db0f35e1-7e94-41a6-a63f-d611306c8ed1}, !- Handle
+  Mitsubishi PURY-EP72TNU/YNU-A1 DUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  20200,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.70642201834862,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {0cb4731e-ae1f-49e4-b0f5-199229bb9f1d}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {9af67cdf-3825-4fc8-8075-2eee561896fe}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {2e878a4c-c5bf-4a30-9fbf-3415a3979a6f}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Cooling Part-Load Fraction Correlation Curve Name
+  22300,                                  !- Gross Rated Heating Capacity {W}
+  1.1039603960396,                        !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.22348484848485,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {0497c6fa-7062-4425-b567-acd4472d4751}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {00b98e80-c59c-4aeb-8e0f-d65d13814ec7}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {d5b89a82-299c-4456-86ff-c67e15c0a262}, !- Heating Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {6e787a6f-6564-4620-b2ad-fb927812de86}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {68128f14-3749-4d43-8582-40fdd804b28d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {be1b31df-43cb-4eb6-8c76-4d24bf16d626}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {dfedc648-a776-4fe9-bb1f-09cbcce7c3c2}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {add47734-36c1-4ca0-9ea9-66b1271deb9e}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {9cef2489-8e06-4c97-a4ea-d795673caa49}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {38eab9c8-1e65-4bb5-8e92-1c36fd5eefec}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {c72f87bb-fdf8-4760-8b62-6fff19c7399d}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {0cb4731e-ae1f-49e4-b0f5-199229bb9f1d}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CCR_fn_T-Output, !- Name
+  {bb2e68a3-a33c-4e66-b352-0bb0eed6577c}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.427,                                  !- Minimum Output {BasedOnField A5}
+  1.098,                                  !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.098,                                  !- Output Value 1 {BasedOnField A5}
+  1.098,                                  !- Output Value 2 {BasedOnField A5}
+  0.934,                                  !- Output Value 3 {BasedOnField A5}
+  0.427,                                  !- Output Value 4 {BasedOnField A5}
+  1.098,                                  !- Output Value 5 {BasedOnField A5}
+  1.098,                                  !- Output Value 6 {BasedOnField A5}
+  0.934,                                  !- Output Value 7 {BasedOnField A5}
+  0.427,                                  !- Output Value 8 {BasedOnField A5}
+  1.098,                                  !- Output Value 9 {BasedOnField A5}
+  1.098,                                  !- Output Value 10 {BasedOnField A5}
+  0.934,                                  !- Output Value 11 {BasedOnField A5}
+  0.427,                                  !- Output Value 12 {BasedOnField A5}
+  1.098,                                  !- Output Value 13 {BasedOnField A5}
+  1.098,                                  !- Output Value 14 {BasedOnField A5}
+  0.934,                                  !- Output Value 15 {BasedOnField A5}
+  0.427,                                  !- Output Value 16 {BasedOnField A5}
+  1.098,                                  !- Output Value 17 {BasedOnField A5}
+  1.098,                                  !- Output Value 18 {BasedOnField A5}
+  0.934,                                  !- Output Value 19 {BasedOnField A5}
+  0.427;                                  !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {bb2e68a3-a33c-4e66-b352-0bb0eed6577c}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CCR_fn_T-IV_List, !- Name
+  {e85c2fb3-3465-437e-9c0f-47722dc2b083}, !- Model Object 1
+  {22e552fd-161f-43ab-b62f-a1a9dab63610}; !- Model Object 2
+
+OS:Table:Lookup,
+  {9af67cdf-3825-4fc8-8075-2eee561896fe}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CEIRM_fn_T-Output, !- Name
+  {59b97d1f-1094-4ad3-8032-0634dedfa1ee}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.22017,                                !- Minimum Output {BasedOnField A5}
+  1.27445,                                !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.572,                                  !- Output Value 1 {BasedOnField A5}
+  0.611,                                  !- Output Value 2 {BasedOnField A5}
+  0.613,                                  !- Output Value 3 {BasedOnField A5}
+  0.614,                                  !- Output Value 4 {BasedOnField A5}
+  0.616,                                  !- Output Value 5 {BasedOnField A5}
+  0.616,                                  !- Output Value 6 {BasedOnField A5}
+  0.618,                                  !- Output Value 7 {BasedOnField A5}
+  0.618,                                  !- Output Value 8 {BasedOnField A5}
+  1.038,                                  !- Output Value 9 {BasedOnField A5}
+  0.22,                                   !- Output Value 10 {BasedOnField A5}
+  0.614,                                  !- Output Value 11 {BasedOnField A5}
+  0.652,                                  !- Output Value 12 {BasedOnField A5}
+  0.653,                                  !- Output Value 13 {BasedOnField A5}
+  0.656,                                  !- Output Value 14 {BasedOnField A5}
+  0.656,                                  !- Output Value 15 {BasedOnField A5}
+  0.657,                                  !- Output Value 16 {BasedOnField A5}
+  0.66,                                   !- Output Value 17 {BasedOnField A5}
+  0.671,                                  !- Output Value 18 {BasedOnField A5}
+  1.104,                                  !- Output Value 19 {BasedOnField A5}
+  0.283,                                  !- Output Value 20 {BasedOnField A5}
+  0.696,                                  !- Output Value 21 {BasedOnField A5}
+  0.733,                                  !- Output Value 22 {BasedOnField A5}
+  0.734,                                  !- Output Value 23 {BasedOnField A5}
+  0.737,                                  !- Output Value 24 {BasedOnField A5}
+  0.737,                                  !- Output Value 25 {BasedOnField A5}
+  0.739,                                  !- Output Value 26 {BasedOnField A5}
+  0.758,                                  !- Output Value 27 {BasedOnField A5}
+  0.769,                                  !- Output Value 28 {BasedOnField A5}
+  1.182,                                  !- Output Value 29 {BasedOnField A5}
+  0.365,                                  !- Output Value 30 {BasedOnField A5}
+  0.7,                                    !- Output Value 31 {BasedOnField A5}
+  0.738,                                  !- Output Value 32 {BasedOnField A5}
+  0.742,                                  !- Output Value 33 {BasedOnField A5}
+  0.743,                                  !- Output Value 34 {BasedOnField A5}
+  0.746,                                  !- Output Value 35 {BasedOnField A5}
+  0.754,                                  !- Output Value 36 {BasedOnField A5}
+  0.773,                                  !- Output Value 37 {BasedOnField A5}
+  0.782,                                  !- Output Value 38 {BasedOnField A5}
+  1.182,                                  !- Output Value 39 {BasedOnField A5}
+  0.365,                                  !- Output Value 40 {BasedOnField A5}
+  0.772,                                  !- Output Value 41 {BasedOnField A5}
+  0.806,                                  !- Output Value 42 {BasedOnField A5}
+  0.811,                                  !- Output Value 43 {BasedOnField A5}
+  0.812,                                  !- Output Value 44 {BasedOnField A5}
+  0.82,                                   !- Output Value 45 {BasedOnField A5}
+  0.828,                                  !- Output Value 46 {BasedOnField A5}
+  0.845,                                  !- Output Value 47 {BasedOnField A5}
+  0.856,                                  !- Output Value 48 {BasedOnField A5}
+  1.237,                                  !- Output Value 49 {BasedOnField A5}
+  0.426,                                  !- Output Value 50 {BasedOnField A5}
+  0.782,                                  !- Output Value 51 {BasedOnField A5}
+  0.82,                                   !- Output Value 52 {BasedOnField A5}
+  0.821,                                  !- Output Value 53 {BasedOnField A5}
+  0.841,                                  !- Output Value 54 {BasedOnField A5}
+  0.85,                                   !- Output Value 55 {BasedOnField A5}
+  0.858,                                  !- Output Value 56 {BasedOnField A5}
+  0.875,                                  !- Output Value 57 {BasedOnField A5}
+  0.884,                                  !- Output Value 58 {BasedOnField A5}
+  1.258,                                  !- Output Value 59 {BasedOnField A5}
+  0.445,                                  !- Output Value 60 {BasedOnField A5}
+  0.796,                                  !- Output Value 61 {BasedOnField A5}
+  0.832,                                  !- Output Value 62 {BasedOnField A5}
+  0.855,                                  !- Output Value 63 {BasedOnField A5}
+  0.872,                                  !- Output Value 64 {BasedOnField A5}
+  0.879,                                  !- Output Value 65 {BasedOnField A5}
+  0.889,                                  !- Output Value 66 {BasedOnField A5}
+  0.905,                                  !- Output Value 67 {BasedOnField A5}
+  0.914,                                  !- Output Value 68 {BasedOnField A5}
+  1.274,                                  !- Output Value 69 {BasedOnField A5}
+  0.465;                                  !- Output Value 70 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {59b97d1f-1094-4ad3-8032-0634dedfa1ee}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CEIRM_fn_T-IV_List, !- Name
+  {138b38a4-1c28-44fd-a349-56f376c07f31}, !- Model Object 1
+  {7f015c28-aa89-43e4-b1fa-9d657d766811}; !- Model Object 2
+
+OS:Table:Lookup,
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CEIRM_fn_LPLR-Output, !- Name
+  {3f4d4a66-32f5-4b80-87d8-7505099d2dda}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.5145,                                 !- Minimum Output {BasedOnField A5}
+  1.02679,                                !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.515,                                  !- Output Value 1 {BasedOnField A5}
+  0.515,                                  !- Output Value 2 {BasedOnField A5}
+  0.622,                                  !- Output Value 3 {BasedOnField A5}
+  0.739,                                  !- Output Value 4 {BasedOnField A5}
+  0.854,                                  !- Output Value 5 {BasedOnField A5}
+  1.002,                                  !- Output Value 6 {BasedOnField A5}
+  1.027;                                  !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {3f4d4a66-32f5-4b80-87d8-7505099d2dda}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_CEIRM_fn_LPLR-IV_List, !- Name
+  {262e23e3-aaad-4bca-a11a-1cf94c7c8e61}; !- Model Object 1
+
+OS:Curve:Linear,
+  {2e878a4c-c5bf-4a30-9fbf-3415a3979a6f}, !- Handle
+  PURY-EP72TNU/YNU-A1 CC_fn_CR_Curve,     !- Name
+  0.820790723389203,                      !- Coefficient1 Constant
+  0.179209276610797,                      !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.49941611111111,                       !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.0895;                                 !- Maximum Curve Output
+
+OS:Curve:Cubic,
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Handle
+  PURY-EP72TNU/YNU-A1 C_H_PLF_Cor_Curve,  !- Name
+  0.85,                                   !- Coefficient1 Constant
+  0.15,                                   !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 x**3
+  1,                                      !- Minimum Value of x
+  1,                                      !- Maximum Value of x
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:Lookup,
+  {0497c6fa-7062-4425-b567-acd4472d4751}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HCR_fn_T-Output, !- Name
+  {321318b6-28f0-4200-b17e-5635d80ad5b4}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.78,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.78,                                   !- Output Value 1 {BasedOnField A5}
+  0.84,                                   !- Output Value 2 {BasedOnField A5}
+  0.91,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.78,                                   !- Output Value 6 {BasedOnField A5}
+  0.84,                                   !- Output Value 7 {BasedOnField A5}
+  0.91,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.78,                                   !- Output Value 11 {BasedOnField A5}
+  0.84,                                   !- Output Value 12 {BasedOnField A5}
+  0.91,                                   !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.78,                                   !- Output Value 16 {BasedOnField A5}
+  0.84,                                   !- Output Value 17 {BasedOnField A5}
+  0.91,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.78,                                   !- Output Value 21 {BasedOnField A5}
+  0.84,                                   !- Output Value 22 {BasedOnField A5}
+  0.91,                                   !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {321318b6-28f0-4200-b17e-5635d80ad5b4}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HCR_fn_T-IV_List, !- Name
+  {f755e4dc-0fe5-4c0b-b427-67efc69438b4}, !- Model Object 1
+  {94a5bb07-5e11-407b-90c4-cfec1206a0d0}; !- Model Object 2
+
+OS:Table:Lookup,
+  {00b98e80-c59c-4aeb-8e0f-d65d13814ec7}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Output, !- Name
+  {9cda28b2-a29c-49a1-86b8-e3658caa9562}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.57,                                   !- Minimum Output {BasedOnField A5}
+  1.9,                                    !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.58,                                   !- Output Value 1 {BasedOnField A5}
+  1.62,                                   !- Output Value 2 {BasedOnField A5}
+  1.67,                                   !- Output Value 3 {BasedOnField A5}
+  1.74,                                   !- Output Value 4 {BasedOnField A5}
+  1.8,                                    !- Output Value 5 {BasedOnField A5}
+  1.41,                                   !- Output Value 6 {BasedOnField A5}
+  1.2,                                    !- Output Value 7 {BasedOnField A5}
+  1.11,                                   !- Output Value 8 {BasedOnField A5}
+  0.98,                                   !- Output Value 9 {BasedOnField A5}
+  0.85,                                   !- Output Value 10 {BasedOnField A5}
+  1.73,                                   !- Output Value 11 {BasedOnField A5}
+  1.77,                                   !- Output Value 12 {BasedOnField A5}
+  1.82,                                   !- Output Value 13 {BasedOnField A5}
+  1.9,                                    !- Output Value 14 {BasedOnField A5}
+  1.56,                                   !- Output Value 15 {BasedOnField A5}
+  1.3,                                    !- Output Value 16 {BasedOnField A5}
+  1.1,                                    !- Output Value 17 {BasedOnField A5}
+  1,                                      !- Output Value 18 {BasedOnField A5}
+  0.89,                                   !- Output Value 19 {BasedOnField A5}
+  0.8,                                    !- Output Value 20 {BasedOnField A5}
+  1.75,                                   !- Output Value 21 {BasedOnField A5}
+  1.79,                                   !- Output Value 22 {BasedOnField A5}
+  1.85,                                   !- Output Value 23 {BasedOnField A5}
+  1.3,                                    !- Output Value 24 {BasedOnField A5}
+  1.18,                                   !- Output Value 25 {BasedOnField A5}
+  1.06,                                   !- Output Value 26 {BasedOnField A5}
+  0.9,                                    !- Output Value 27 {BasedOnField A5}
+  0.83,                                   !- Output Value 28 {BasedOnField A5}
+  0.73,                                   !- Output Value 29 {BasedOnField A5}
+  0.66,                                   !- Output Value 30 {BasedOnField A5}
+  1.77,                                   !- Output Value 31 {BasedOnField A5}
+  1.86,                                   !- Output Value 32 {BasedOnField A5}
+  1.45,                                   !- Output Value 33 {BasedOnField A5}
+  1.16,                                   !- Output Value 34 {BasedOnField A5}
+  1.04,                                   !- Output Value 35 {BasedOnField A5}
+  0.92,                                   !- Output Value 36 {BasedOnField A5}
+  0.8,                                    !- Output Value 37 {BasedOnField A5}
+  0.73,                                   !- Output Value 38 {BasedOnField A5}
+  0.65,                                   !- Output Value 39 {BasedOnField A5}
+  0.57;                                   !- Output Value 40 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {9cda28b2-a29c-49a1-86b8-e3658caa9562}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-IV_List, !- Name
+  {3e8be439-87b7-4dbd-a4c4-484376dfd9dd}, !- Model Object 1
+  {0c59b406-3f99-42cc-b34f-f8299745d6bc}; !- Model Object 2
+
+OS:Table:Lookup,
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HEIRM_fn_LPLR-Output, !- Name
+  {b56484ad-c714-4702-b71f-adbff7155381}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.49,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.49,                                   !- Output Value 1 {BasedOnField A5}
+  0.49,                                   !- Output Value 2 {BasedOnField A5}
+  0.6,                                    !- Output Value 3 {BasedOnField A5}
+  0.72,                                   !- Output Value 4 {BasedOnField A5}
+  0.84,                                   !- Output Value 5 {BasedOnField A5}
+  1,                                      !- Output Value 6 {BasedOnField A5}
+  0.9;                                    !- Output Value 7 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {b56484ad-c714-4702-b71f-adbff7155381}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HEIRM_fn_LPLR-IV_List, !- Name
+  {caf4cc4c-3e52-480f-aa4a-1536010e95ac}; !- Model Object 1
+
+OS:Curve:Linear,
+  {d5b89a82-299c-4456-86ff-c67e15c0a262}, !- Handle
+  PURY-EP72TNU/YNU-A1 HC_fn_CR_Curve,     !- Name
+  0.971428571428571,                      !- Coefficient1 Constant
+  0.0285714285714286,                     !- Coefficient2 x
+  1,                                      !- Minimum Value of x
+  1.35,                                   !- Maximum Value of x
+  1,                                      !- Minimum Curve Output
+  1.01;                                   !- Maximum Curve Output
+
+OS:Table:Lookup,
+  {68128f14-3749-4d43-8582-40fdd804b28d}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_PCFC_fn_L_CR-Output, !- Name
+  {61dd5d97-d1ff-42bb-9664-a07aa6e76d16}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.66973,                                !- Minimum Output {BasedOnField A5}
+  1.00039,                                !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1.00039,                                !- Output Value 5 {BasedOnField A5}
+  1.00039,                                !- Output Value 6 {BasedOnField A5}
+  1.00039,                                !- Output Value 7 {BasedOnField A5}
+  1.00039,                                !- Output Value 8 {BasedOnField A5}
+  0.99921,                                !- Output Value 9 {BasedOnField A5}
+  0.99921,                                !- Output Value 10 {BasedOnField A5}
+  0.89899,                                !- Output Value 11 {BasedOnField A5}
+  0.88991,                                !- Output Value 12 {BasedOnField A5}
+  1,                                      !- Output Value 13 {BasedOnField A5}
+  0.87176,                                !- Output Value 14 {BasedOnField A5}
+  0.77469,                                !- Output Value 15 {BasedOnField A5}
+  0.7597,                                 !- Output Value 16 {BasedOnField A5}
+  0.99921,                                !- Output Value 17 {BasedOnField A5}
+  0.77193,                                !- Output Value 18 {BasedOnField A5}
+  0.68472,                                !- Output Value 19 {BasedOnField A5}
+  0.66973;                                !- Output Value 20 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {61dd5d97-d1ff-42bb-9664-a07aa6e76d16}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_PCFC_fn_L_CR-IV_List, !- Name
+  {7d7848f3-d6c3-4f13-aee5-98eb923bcd89}, !- Model Object 1
+  {4c457d1f-703e-4100-9476-33557abad911}; !- Model Object 2
+
+OS:Table:Lookup,
+  {be1b31df-43cb-4eb6-8c76-4d24bf16d626}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_PCFH_fn_L-Output, !- Name
+  {4246cbdf-ab3b-4bb7-bf34-8ad6a701edee}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.91,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1,                                      !- Output Value 1 {BasedOnField A5}
+  1,                                      !- Output Value 2 {BasedOnField A5}
+  0.98,                                   !- Output Value 3 {BasedOnField A5}
+  0.96,                                   !- Output Value 4 {BasedOnField A5}
+  0.95,                                   !- Output Value 5 {BasedOnField A5}
+  0.93,                                   !- Output Value 6 {BasedOnField A5}
+  0.92,                                   !- Output Value 7 {BasedOnField A5}
+  0.91;                                   !- Output Value 8 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {4246cbdf-ab3b-4bb7-bf34-8ad6a701edee}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_PCFH_fn_L-IV_List, !- Name
+  {60b4aafa-7366-4cf4-b4f3-86c2d655d496}; !- Model Object 1
+
+OS:Table:Lookup,
+  {dfedc648-a776-4fe9-bb1f-09cbcce7c3c2}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_DEF_EIRM_fn_T-Output, !- Name
+  {d78f9f62-fdbf-4d75-8b5b-c70efd22add0}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.83,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.95,                                   !- Output Value 1 {BasedOnField A5}
+  0.95,                                   !- Output Value 2 {BasedOnField A5}
+  0.95,                                   !- Output Value 3 {BasedOnField A5}
+  0.95,                                   !- Output Value 4 {BasedOnField A5}
+  0.9,                                    !- Output Value 5 {BasedOnField A5}
+  0.87,                                   !- Output Value 6 {BasedOnField A5}
+  0.83,                                   !- Output Value 7 {BasedOnField A5}
+  0.83,                                   !- Output Value 8 {BasedOnField A5}
+  0.84,                                   !- Output Value 9 {BasedOnField A5}
+  0.95,                                   !- Output Value 10 {BasedOnField A5}
+  1,                                      !- Output Value 11 {BasedOnField A5}
+  0.95,                                   !- Output Value 12 {BasedOnField A5}
+  0.95,                                   !- Output Value 13 {BasedOnField A5}
+  0.95,                                   !- Output Value 14 {BasedOnField A5}
+  0.95,                                   !- Output Value 15 {BasedOnField A5}
+  0.9,                                    !- Output Value 16 {BasedOnField A5}
+  0.87,                                   !- Output Value 17 {BasedOnField A5}
+  0.83,                                   !- Output Value 18 {BasedOnField A5}
+  0.83,                                   !- Output Value 19 {BasedOnField A5}
+  0.84,                                   !- Output Value 20 {BasedOnField A5}
+  0.95,                                   !- Output Value 21 {BasedOnField A5}
+  1;                                      !- Output Value 22 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {d78f9f62-fdbf-4d75-8b5b-c70efd22add0}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_DEF_EIRM_fn_T-IV_List, !- Name
+  {da481267-ee23-41ac-9447-8b9898ee3180}, !- Model Object 1
+  {d871dfcf-de82-437c-a9a0-f0202cfcf2a0}; !- Model Object 2
+
+OS:Curve:Biquadratic,
+  {add47734-36c1-4ca0-9ea9-66b1271deb9e}, !- Handle
+  PURY-EP72TNU/YNU-A1_HRCCR_fn_T_Curve,   !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  24,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  24,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {9cef2489-8e06-4c97-a4ea-d795673caa49}, !- Handle
+  PURY-EP72TNU/YNU-A1_HRCEIRM_fn_T_Curve, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  23.9,                                   !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  24,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {38eab9c8-1e65-4bb5-8e92-1c36fd5eefec}, !- Handle
+  PURY-EP72TNU/YNU-A1_HRHCR_fn_T_Curve,   !- Name
+  0.9,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  27,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  27,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Curve:Biquadratic,
+  {c72f87bb-fdf8-4760-8b62-6fff19c7399d}, !- Handle
+  PURY-EP72TNU/YNU-A1_HRHCR_fn_T_Curve 1, !- Name
+  1.1,                                    !- Coefficient1 Constant
+  0,                                      !- Coefficient2 x
+  0,                                      !- Coefficient3 x**2
+  0,                                      !- Coefficient4 y
+  0,                                      !- Coefficient5 y**2
+  0,                                      !- Coefficient6 x*y
+  15,                                     !- Minimum Value of x
+  27,                                     !- Maximum Value of x
+  15,                                     !- Minimum Value of y
+  27,                                     !- Maximum Value of y
+  ,                                       !- Minimum Curve Output
+  ,                                       !- Maximum Curve Output
+  Dimensionless,                          !- Input Unit Type for X
+  Dimensionless,                          !- Input Unit Type for Y
+  Dimensionless;                          !- Output Unit Type
+
+OS:Table:IndependentVariable,
+  {3e8be439-87b7-4dbd-a4c4-484376dfd9dd}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Input_0 1, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {0c59b406-3f99-42cc-b34f-f8299745d6bc}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Input_2, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -21.8,                                  !- Value 2
+  -17.1,                                  !- Value 3
+  -10,                                    !- Value 4
+  -6,                                     !- Value 5
+  -2,                                     !- Value 6
+  3.1,                                    !- Value 7
+  6.2,                                    !- Value 8
+  10,                                     !- Value 9
+  15;                                     !- Value 10
+
+OS:ModelObjectList,
+  {6e787a6f-6564-4620-b2ad-fb927812de86}, !- Handle
+  {1bafcad4-7260-4b5c-9450-30d44d8330a2}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {276c5384-982a-4cba-9314-6163d85cf60a}, !- Handle
+  Mitsubishi PURY-EP72TNU/YNU-A1 DUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  20200,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.70642201834862,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {0cb4731e-ae1f-49e4-b0f5-199229bb9f1d}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {9af67cdf-3825-4fc8-8075-2eee561896fe}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {2e878a4c-c5bf-4a30-9fbf-3415a3979a6f}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Cooling Part-Load Fraction Correlation Curve Name
+  22300,                                  !- Gross Rated Heating Capacity {W}
+  1.1039603960396,                        !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.22348484848485,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {2c8a58c0-22e4-44de-956b-5a2cf428e507}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {f5996033-6def-40ad-8bd8-41cdb9799448}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {d5b89a82-299c-4456-86ff-c67e15c0a262}, !- Heating Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {0d9c3493-3bd5-4d64-b627-d260261ea995}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {68128f14-3749-4d43-8582-40fdd804b28d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {be1b31df-43cb-4eb6-8c76-4d24bf16d626}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {dfedc648-a776-4fe9-bb1f-09cbcce7c3c2}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {add47734-36c1-4ca0-9ea9-66b1271deb9e}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {9cef2489-8e06-4c97-a4ea-d795673caa49}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {38eab9c8-1e65-4bb5-8e92-1c36fd5eefec}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {c72f87bb-fdf8-4760-8b62-6fff19c7399d}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {2c8a58c0-22e4-44de-956b-5a2cf428e507}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HCR_fn_T-Output, !- Name
+  {f9fd85c7-17a1-4d69-a815-b1a41f37a432}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.48,                                   !- Minimum Output {BasedOnField A5}
+  1,                                      !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.48,                                   !- Output Value 1 {BasedOnField A5}
+  0.6,                                    !- Output Value 2 {BasedOnField A5}
+  0.72,                                   !- Output Value 3 {BasedOnField A5}
+  1,                                      !- Output Value 4 {BasedOnField A5}
+  1,                                      !- Output Value 5 {BasedOnField A5}
+  0.48,                                   !- Output Value 6 {BasedOnField A5}
+  0.6,                                    !- Output Value 7 {BasedOnField A5}
+  0.72,                                   !- Output Value 8 {BasedOnField A5}
+  1,                                      !- Output Value 9 {BasedOnField A5}
+  1,                                      !- Output Value 10 {BasedOnField A5}
+  0.48,                                   !- Output Value 11 {BasedOnField A5}
+  0.6,                                    !- Output Value 12 {BasedOnField A5}
+  0.72,                                   !- Output Value 13 {BasedOnField A5}
+  1,                                      !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.48,                                   !- Output Value 16 {BasedOnField A5}
+  0.6,                                    !- Output Value 17 {BasedOnField A5}
+  0.72,                                   !- Output Value 18 {BasedOnField A5}
+  1,                                      !- Output Value 19 {BasedOnField A5}
+  1,                                      !- Output Value 20 {BasedOnField A5}
+  0.48,                                   !- Output Value 21 {BasedOnField A5}
+  0.6,                                    !- Output Value 22 {BasedOnField A5}
+  0.72,                                   !- Output Value 23 {BasedOnField A5}
+  1,                                      !- Output Value 24 {BasedOnField A5}
+  1;                                      !- Output Value 25 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {f9fd85c7-17a1-4d69-a815-b1a41f37a432}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HCR_fn_T-IV_List, !- Name
+  {54be5ff8-8bed-416c-af6e-46dde1aa2c1d}, !- Model Object 1
+  {9bf0fb81-396e-4da7-9e01-d4d63b3ea538}; !- Model Object 2
+
+OS:Table:Lookup,
+  {f5996033-6def-40ad-8bd8-41cdb9799448}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HEIRM_fn_T-Output, !- Name
+  {e2a33864-1f67-4c95-b31c-de0bc63e28a6}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.58,                                   !- Minimum Output {BasedOnField A5}
+  1.15,                                   !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  0.85,                                   !- Output Value 1 {BasedOnField A5}
+  0.97,                                   !- Output Value 2 {BasedOnField A5}
+  1,                                      !- Output Value 3 {BasedOnField A5}
+  1.01,                                   !- Output Value 4 {BasedOnField A5}
+  1.04,                                   !- Output Value 5 {BasedOnField A5}
+  0.9,                                    !- Output Value 6 {BasedOnField A5}
+  0.94,                                   !- Output Value 7 {BasedOnField A5}
+  0.99,                                   !- Output Value 8 {BasedOnField A5}
+  1.03,                                   !- Output Value 9 {BasedOnField A5}
+  0.89,                                   !- Output Value 10 {BasedOnField A5}
+  1.02,                                   !- Output Value 11 {BasedOnField A5}
+  1.06,                                   !- Output Value 12 {BasedOnField A5}
+  1.09,                                   !- Output Value 13 {BasedOnField A5}
+  1.12,                                   !- Output Value 14 {BasedOnField A5}
+  1,                                      !- Output Value 15 {BasedOnField A5}
+  0.92,                                   !- Output Value 16 {BasedOnField A5}
+  0.84,                                   !- Output Value 17 {BasedOnField A5}
+  0.8,                                    !- Output Value 18 {BasedOnField A5}
+  0.93,                                   !- Output Value 19 {BasedOnField A5}
+  1.07,                                   !- Output Value 20 {BasedOnField A5}
+  1.12,                                   !- Output Value 21 {BasedOnField A5}
+  1.15,                                   !- Output Value 22 {BasedOnField A5}
+  0.92,                                   !- Output Value 23 {BasedOnField A5}
+  0.82,                                   !- Output Value 24 {BasedOnField A5}
+  0.75,                                   !- Output Value 25 {BasedOnField A5}
+  0.69,                                   !- Output Value 26 {BasedOnField A5}
+  0.66,                                   !- Output Value 27 {BasedOnField A5}
+  0.95,                                   !- Output Value 28 {BasedOnField A5}
+  1.09,                                   !- Output Value 29 {BasedOnField A5}
+  1.14,                                   !- Output Value 30 {BasedOnField A5}
+  1.01,                                   !- Output Value 31 {BasedOnField A5}
+  0.81,                                   !- Output Value 32 {BasedOnField A5}
+  0.72,                                   !- Output Value 33 {BasedOnField A5}
+  0.66,                                   !- Output Value 34 {BasedOnField A5}
+  0.61,                                   !- Output Value 35 {BasedOnField A5}
+  0.58;                                   !- Output Value 36 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {e2a33864-1f67-4c95-b31c-de0bc63e28a6}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HEIRM_fn_T-IV_List, !- Name
+  {d21e2a67-5868-40ce-b1f9-e9d1de7c71dc}, !- Model Object 1
+  {f8715925-ea2c-41ea-a1e1-e97d9cea8e44}; !- Model Object 2
+
+OS:ModelObjectList,
+  {0d9c3493-3bd5-4d64-b627-d260261ea995}, !- Handle
+  {991ad58a-c2a7-4991-9228-f07628e9e420}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {54be1a4b-ffe2-4b97-909f-db98fc7a3441}, !- Handle
+  Mitsubishi PURY-EP72TNU/YNU-A1 NONDUCTED-HIGHHEAT-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  20200,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.74074074074074,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {0cb4731e-ae1f-49e4-b0f5-199229bb9f1d}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {9af67cdf-3825-4fc8-8075-2eee561896fe}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {2e878a4c-c5bf-4a30-9fbf-3415a3979a6f}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Cooling Part-Load Fraction Correlation Curve Name
+  22300,                                  !- Gross Rated Heating Capacity {W}
+  1.1039603960396,                        !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.67505241090147,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {0497c6fa-7062-4425-b567-acd4472d4751}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {80c01cdb-2fa1-4603-8017-3f314f144086}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {d5b89a82-299c-4456-86ff-c67e15c0a262}, !- Heating Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {805b4950-df92-4d95-9b34-536c6dc54860}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {68128f14-3749-4d43-8582-40fdd804b28d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {be1b31df-43cb-4eb6-8c76-4d24bf16d626}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {dfedc648-a776-4fe9-bb1f-09cbcce7c3c2}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {add47734-36c1-4ca0-9ea9-66b1271deb9e}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {9cef2489-8e06-4c97-a4ea-d795673caa49}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {38eab9c8-1e65-4bb5-8e92-1c36fd5eefec}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {c72f87bb-fdf8-4760-8b62-6fff19c7399d}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:Table:Lookup,
+  {80c01cdb-2fa1-4603-8017-3f314f144086}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Output 1, !- Name
+  {90d88d0a-5269-4136-8c1f-9dfb4e43ed27}, !- Independent Variable List Name
+  DivisorOnly,                            !- Normalization Method
+  1,                                      !- Normalization Divisor
+  0.57,                                   !- Minimum Output {BasedOnField A5}
+  1.9,                                    !- Maximum Output {BasedOnField A5}
+  Dimensionless,                          !- Output Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  1.58,                                   !- Output Value 1 {BasedOnField A5}
+  1.62,                                   !- Output Value 2 {BasedOnField A5}
+  1.67,                                   !- Output Value 3 {BasedOnField A5}
+  1.74,                                   !- Output Value 4 {BasedOnField A5}
+  1.8,                                    !- Output Value 5 {BasedOnField A5}
+  1.41,                                   !- Output Value 6 {BasedOnField A5}
+  1.2,                                    !- Output Value 7 {BasedOnField A5}
+  1.11,                                   !- Output Value 8 {BasedOnField A5}
+  0.98,                                   !- Output Value 9 {BasedOnField A5}
+  0.85,                                   !- Output Value 10 {BasedOnField A5}
+  1.73,                                   !- Output Value 11 {BasedOnField A5}
+  1.77,                                   !- Output Value 12 {BasedOnField A5}
+  1.82,                                   !- Output Value 13 {BasedOnField A5}
+  1.9,                                    !- Output Value 14 {BasedOnField A5}
+  1.56,                                   !- Output Value 15 {BasedOnField A5}
+  1.3,                                    !- Output Value 16 {BasedOnField A5}
+  1.1,                                    !- Output Value 17 {BasedOnField A5}
+  1,                                      !- Output Value 18 {BasedOnField A5}
+  0.89,                                   !- Output Value 19 {BasedOnField A5}
+  0.8,                                    !- Output Value 20 {BasedOnField A5}
+  1.75,                                   !- Output Value 21 {BasedOnField A5}
+  1.79,                                   !- Output Value 22 {BasedOnField A5}
+  1.85,                                   !- Output Value 23 {BasedOnField A5}
+  1.3,                                    !- Output Value 24 {BasedOnField A5}
+  1.18,                                   !- Output Value 25 {BasedOnField A5}
+  1.06,                                   !- Output Value 26 {BasedOnField A5}
+  0.9,                                    !- Output Value 27 {BasedOnField A5}
+  0.83,                                   !- Output Value 28 {BasedOnField A5}
+  0.73,                                   !- Output Value 29 {BasedOnField A5}
+  0.66,                                   !- Output Value 30 {BasedOnField A5}
+  1.77,                                   !- Output Value 31 {BasedOnField A5}
+  1.86,                                   !- Output Value 32 {BasedOnField A5}
+  1.45,                                   !- Output Value 33 {BasedOnField A5}
+  1.16,                                   !- Output Value 34 {BasedOnField A5}
+  1.04,                                   !- Output Value 35 {BasedOnField A5}
+  0.92,                                   !- Output Value 36 {BasedOnField A5}
+  0.8,                                    !- Output Value 37 {BasedOnField A5}
+  0.73,                                   !- Output Value 38 {BasedOnField A5}
+  0.65,                                   !- Output Value 39 {BasedOnField A5}
+  0.57;                                   !- Output Value 40 {BasedOnField A5}
+
+OS:ModelObjectList,
+  {90d88d0a-5269-4136-8c1f-9dfb4e43ed27}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-IV_List 1, !- Name
+  {02c30ce5-7285-4e36-9a22-2b53ddac0aa5}, !- Model Object 1
+  {9eb0a6b7-f02f-4d87-8b61-cf8041d428b3}; !- Model Object 2
+
+OS:Table:IndependentVariable,
+  {02c30ce5-7285-4e36-9a22-2b53ddac0aa5}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Input_0 2, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  15,                                     !- Minimum Value {BasedOnField A5}
+  27,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  15,                                     !- Value 1
+  21.1,                                   !- Value 2
+  25,                                     !- Value 3
+  27;                                     !- Value 4
+
+OS:Table:IndependentVariable,
+  {9eb0a6b7-f02f-4d87-8b61-cf8041d428b3}, !- Handle
+  Tbl Lookup PURY-EP72TNU/YNU-A1_HH_HEIRM_fn_T-Input_3, !- Name
+  Linear,                                 !- Interpolation Method
+  Constant,                               !- Extrapolation Method
+  -25,                                    !- Minimum Value {BasedOnField A5}
+  15,                                     !- Maximum Value {BasedOnField A5}
+  ,                                       !- Normalization Reference Value {BasedOnField A5}
+  Temperature,                            !- Unit Type
+  ,                                       !- External File Name
+  ,                                       !- External File Column Number
+  ,                                       !- External File Starting Row Number
+  -25,                                    !- Value 1
+  -21.8,                                  !- Value 2
+  -17.1,                                  !- Value 3
+  -10,                                    !- Value 4
+  -6,                                     !- Value 5
+  -2,                                     !- Value 6
+  3.1,                                    !- Value 7
+  6.2,                                    !- Value 8
+  10,                                     !- Value 9
+  15;                                     !- Value 10
+
+OS:ModelObjectList,
+  {805b4950-df92-4d95-9b34-536c6dc54860}, !- Handle
+  {874ff0a1-6edc-46b1-810b-53f6fce9f33a}; !- Name
+
+OS:AirConditioner:VariableRefrigerantFlow,
+  {d70febc5-fe4d-4e3f-b3fa-0ea8edca9d99}, !- Handle
+  Mitsubishi PURY-EP72TNU/YNU-A1 NONDUCTED-VRF-OU, !- Name
+  ,                                       !- Availability Schedule
+  20200,                                  !- Gross Rated Total Cooling Capacity {W}
+  3.74074074074074,                       !- Gross Rated Cooling COP {W/W}
+  -5,                                     !- Minimum Outdoor Temperature in Cooling Mode {C}
+  52,                                     !- Maximum Outdoor Temperature in Cooling Mode {C}
+  {0cb4731e-ae1f-49e4-b0f5-199229bb9f1d}, !- Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Capacity Ratio Boundary Curve Name
+  ,                                       !- Cooling Capacity Ratio Modifier Function of High Temperature Curve Name
+  {9af67cdf-3825-4fc8-8075-2eee561896fe}, !- Cooling Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Cooling Energy Input Ratio Boundary Curve Name
+  ,                                       !- Cooling Energy Input Ratio Modifier Function of High Temperature Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {b67d6cd3-9d11-4c30-a3d7-8b587032546c}, !- Cooling Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {2e878a4c-c5bf-4a30-9fbf-3415a3979a6f}, !- Cooling Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Cooling Part-Load Fraction Correlation Curve Name
+  22300,                                  !- Gross Rated Heating Capacity {W}
+  1.1039603960396,                        !- Rated Heating Capacity Sizing Ratio {W/W}
+  4.67505241090147,                       !- Rated Heating COP {W/W}
+  -25,                                    !- Minimum Outdoor Temperature in Heating Mode {C}
+  15.5,                                   !- Maximum Outdoor Temperature in Heating Mode {C}
+  {2c8a58c0-22e4-44de-956b-5a2cf428e507}, !- Heating Capacity Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Capacity Ratio Boundary Curve Name
+  ,                                       !- Heating Capacity Ratio Modifier Function of High Temperature Curve Name
+  {f5996033-6def-40ad-8bd8-41cdb9799448}, !- Heating Energy Input Ratio Modifier Function of Low Temperature Curve Name
+  ,                                       !- Heating Energy Input Ratio Boundary Curve Name
+  ,                                       !- Heating Energy Input Ratio Modifier Function of High Temperature Curve Name
+  WetBulbTemperature,                     !- Heating Performance Curve Outdoor Temperature Type
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of Low Part-Load Ratio Curve Name
+  {8f5d6522-d348-40fa-85cd-0fad896ede5f}, !- Heating Energy Input Ratio Modifier Function of High Part-Load Ratio Curve Name
+  {d5b89a82-299c-4456-86ff-c67e15c0a262}, !- Heating Combination Ratio Correction Factor Curve Name
+  {873596c4-c4c9-4a11-9e23-cfc969f48a60}, !- Heating Part-Load Fraction Correlation Curve Name
+  0.15,                                   !- Minimum Heat Pump Part-Load Ratio {dimensionless}
+  ,                                       !- Zone Name for Master Thermostat Location
+  LoadPriority,                           !- Master Thermostat Priority Control Type
+  ,                                       !- Thermostat Priority Schedule
+  {214cb6bd-9363-4114-811b-90f9b3d58117}, !- Zone Terminal Unit List
+  Yes,                                    !- Heat Pump Waste Heat Recovery
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Cooling Mode {m}
+  10,                                     !- Vertical Height used for Piping Correction Factor {m}
+  {68128f14-3749-4d43-8582-40fdd804b28d}, !- Piping Correction Factor for Length in Cooling Mode Curve Name
+  -0.000386,                              !- Piping Correction Factor for Height in Cooling Mode Coefficient {1/m}
+  30,                                     !- Equivalent Piping Length used for Piping Correction Factor in Heating Mode {m}
+  {be1b31df-43cb-4eb6-8c76-4d24bf16d626}, !- Piping Correction Factor for Length in Heating Mode Curve Name
+  0,                                      !- Piping Correction Factor for Height in Heating Mode Coefficient {1/m}
+  0,                                      !- Crankcase Heater Power per Compressor {W}
+  1,                                      !- Number of Compressors {dimensionless}
+  1,                                      !- Ratio of Compressor Size to Total Compressor Capacity {W/W}
+  0,                                      !- Maximum Outdoor Dry-bulb Temperature for Crankcase Heater {C}
+  ReverseCycle,                           !- Defrost Strategy
+  OnDemand,                               !- Defrost Control
+  {dfedc648-a776-4fe9-bb1f-09cbcce7c3c2}, !- Defrost Energy Input Ratio Modifier Function of Temperature Curve Name
+  0.058333,                               !- Defrost Time Period Fraction {dimensionless}
+  0,                                      !- Resistive Defrost Heater Capacity {W}
+  6,                                      !- Maximum Outdoor Dry-bulb Temperature for Defrost Operation {C}
+  AirCooled,                              !- Condenser Type
+  ,                                       !- Condenser Inlet Node
+  ,                                       !- Condenser Outlet Node
+  ,                                       !- Water Condenser Volume Flow Rate {m3/s}
+  0.9,                                    !- Evaporative Condenser Effectiveness {dimensionless}
+  ,                                       !- Evaporative Condenser Air Flow Rate {m3/s}
+  ,                                       !- Evaporative Condenser Pump Rated Power Consumption {W}
+  ,                                       !- Supply Water Storage Tank
+  0,                                      !- Basin Heater Capacity {W/K}
+  2,                                      !- Basin Heater Setpoint Temperature {C}
+  ,                                       !- Basin Heater Operating Schedule
+  Electricity,                            !- Fuel Type
+  15,                                     !- Minimum Outdoor Temperature in Heat Recovery Mode {C}
+  27,                                     !- Maximum Outdoor Temperature in Heat Recovery Mode {C}
+  {add47734-36c1-4ca0-9ea9-66b1271deb9e}, !- Heat Recovery Cooling Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Cooling Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Cooling Capacity Time Constant {hr}
+  {9cef2489-8e06-4c97-a4ea-d795673caa49}, !- Heat Recovery Cooling Energy Modifier Curve Name
+  1,                                      !- Initial Heat Recovery Cooling Energy Fraction {W/W}
+  0,                                      !- Heat Recovery Cooling Energy Time Constant {hr}
+  {38eab9c8-1e65-4bb5-8e92-1c36fd5eefec}, !- Heat Recovery Heating Capacity Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Capacity Fraction {W/W}
+  0.083,                                  !- Heat Recovery Heating Capacity Time Constant {hr}
+  {c72f87bb-fdf8-4760-8b62-6fff19c7399d}, !- Heat Recovery Heating Energy Modifier Curve Name
+  0.5,                                    !- Initial Heat Recovery Heating Energy Fraction {W/W}
+  0;                                      !- Heat Recovery Heating Energy Time Constant {hr}
+
+OS:ModelObjectList,
+  {214cb6bd-9363-4114-811b-90f9b3d58117}, !- Handle
+  {8a25787c-a09c-4026-a137-a2505f0ba1ae}; !- Name
+

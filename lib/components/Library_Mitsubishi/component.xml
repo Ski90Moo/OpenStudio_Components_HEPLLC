@@ -3,7 +3,7 @@
   <name>Library_Mitsubishi</name>
   <uid>810c7754-2057-4706-8e0f-b1fff5e2e3ef</uid>
   <version_id>fde78ae4-bb0d-48bb-86ad-bf3399ec9688</version_id>
-  <xml_checksum>BA15249784736E25036A038BD06F68F8</xml_checksum>
+  <xml_checksum>39B36D75DDF76DA1AB9B3B015D8F0210</xml_checksum>
   <display_name>Library Mitsubishi</display_name>
   <description>
      Library of objects for various Mitsubishi Equipment. Currently holds
@@ -63,7 +63,7 @@
       <filename>Library_Mitsubishi_VRF.osm</filename>
       <filetype>osm</filetype>
       <usage_type>resource</usage_type>
-      <checksum>758B2FF1</checksum>
+      <checksum>AA6F70FD</checksum>
     </file>
   </files>
   <costs/>
